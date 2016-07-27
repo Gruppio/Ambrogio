@@ -18,8 +18,8 @@ double temperature = 0;
 
 void setup() {
     Particle.variable("Temperature", temperature);
-    Particle.function("turnOnLight", turnOnLedPanel);
-    Particle.function("turnOffLight", turnOffLedPanel);
+    Particle.function("turnLightOn", turnLedPanelOn);
+    Particle.function("turnLightOff", turnLedPanelOff);
     WiFi.setCredentials(SSID, PASSWORD);
 }
 
@@ -36,14 +36,14 @@ void readTemperature() {
   temperature = thermometer->getTemperature();
 }
 
-int turnOnLedPanel(String command) {
+int turnLedPanelOn(String command) {
   led->turnOn();
   ledPanel->turnOn();
   led->turnOff();
   return 0;
 }
 
-int turnOffLedPanel(String command) {
+int turnLedPanelOff(String command) {
   led->turnOn();
   ledPanel->turnOff();
   led->turnOff();
