@@ -4,7 +4,7 @@
 #include "Powered.h"
 #include "Pinout.h"
 
-#define PULSE_LENGHT 3000
+#define PULSE_LENGHT 250
 
 class LedPanel : public Powered {
 public:
@@ -28,7 +28,7 @@ public:
     delay(PULSE_LENGHT);
     pinMode(pin, INPUT);
   }
-  
+
 };
 
 #endif
