@@ -1,6 +1,8 @@
 # Passwords
 WifiCredentials.h
 
+scripts/
+
 # Compiled Object files
 *.slo
 *.lo
