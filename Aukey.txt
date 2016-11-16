@@ -1,0 +1,30 @@
+1 On:
+15802527 / 24bit Protocol: 1
+
+1 Off:
+15802526 / 24bit Protocol: 1
+
+2 On: 
+15802525 / 24bit Protocol: 1
+
+2 Off:
+15802524 / 24bit Protocol: 1
+
+3 On:
+15802523 / 24bit Protocol: 1
+
+3 Off: 
+15802522 / 24bit Protocol: 1
+
+4 On:
+15802519 / 24bit Protocol: 1
+
+4 Off:
+15802518 / 24bit Protocol: 1
+
+All On:
+15802514 / 24bit Protocol: 1
+
+All Off:
+15802513 / 24bit Protocol: 1
+
