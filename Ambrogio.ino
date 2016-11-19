@@ -4,12 +4,14 @@
 #include "LedPanel.h"
 #include "OnboardLed.h"
 #include "WifiCredentials.h"
+#include "RCSwitch.h"
 
 #define LOOP_TIME 1000
 
 WifiUser wifiUsers[]  = { WifiUser(IPAddress(192,168,0,5), "Gruppio"),
                           WifiUser(IPAddress(192,168,0,3), "Fede") };
 
+RCSwitch *rcSwitch        = new RCSwitch();
 Powered *led              = new OnboardLed();
 Powered *ledPanel         = new LedPanel();
 Thermometer *thermometer  = new MCP9700();
