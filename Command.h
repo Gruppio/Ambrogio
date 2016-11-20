@@ -11,7 +11,7 @@
 
 class Command {
 public:
-    const char *description = NULL;
+    const char *description;
     
     Command(){};
     virtual ~Command(){};

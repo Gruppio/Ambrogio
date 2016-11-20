@@ -11,6 +11,7 @@
 
 #include <string.h>
 #include "Command.h"
+#include "NullCommand.h"
 
 class CommandFactory {
 public:
@@ -18,7 +19,5 @@ public:
     virtual ~CommandFactory(){};
     Command* createCommand(char* commandName);
 };
-
-
 
 #endif /* CommandFactory_h */

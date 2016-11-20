@@ -7,7 +7,14 @@
 //
 
 #include "CommandFactory.h"
+#include "LedPanelOnCommand.h"
+
+#define LED_PANEL_ON "LedPanelOn"
 
 Command* CommandFactory::createCommand(char* commandName) {
-    return NULL;
+    if (strcmp(commandName, LED_PANEL_ON) == 0) {
+        return new LedPanelOnCommand();
+    }
+    
+    return new NullCommand();
 }
