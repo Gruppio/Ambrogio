@@ -8,6 +8,10 @@
 
 #include "TestCommand.h"
 
+TestCommand::TestCommand() {
+    description = "Test Command";
+}
+
 void TestCommand::execute() {
     numberOfExecutions++;
 }

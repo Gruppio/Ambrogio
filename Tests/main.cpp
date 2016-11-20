@@ -16,6 +16,7 @@
 #include "CommandFactory.h"
 #include "TestCommand.h"
 #include "TestDoubleExecutionCommandExecutor.h"
+#include "SerialLoggerCommandExecutor.h"
 
 
 // CommandExecutorTests
@@ -26,6 +27,7 @@ void testCommandExecutorExecuteTwice();
 // CommandExecutorDecoratedTests
 void commandExecutorDecoratedTests();
 void testCommandExecutorDecoratorExecutedDouble();
+void testCommandExecutorLogger();
 
 
 int main(int argc, const char * argv[]) {
@@ -45,6 +47,7 @@ void commandExecutorTests() {
 
 void commandExecutorDecoratedTests() {
     testCommandExecutorDecoratorExecutedDouble();
+    testCommandExecutorLogger();
 }
 
 
@@ -84,6 +87,18 @@ void testCommandExecutorDecoratorExecutedDouble() {
     
     delete command;
     delete commandExecutorDecorated;
+    delete commandExecutor;
+}
+
+void testCommandExecutorLogger() {
+    TestCommand *command = new TestCommand();
+    CommandExecutor *commandExecutor = new CommandExecutor();
+    CommandExecutor *commandExecutorLogger = new SerialLoggerCommandExecutor(commandExecutor);
+    
+    commandExecutorLogger->executeCommand(command);
+    
+    delete command;
+    delete commandExecutorLogger;
     delete commandExecutor;
 }
 

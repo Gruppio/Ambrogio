@@ -13,6 +13,7 @@
 		71BF106B1DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10691DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp */; };
 		71BF106E1DE1F2070092DAE1 /* TestCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF106C1DE1F2070092DAE1 /* TestCommand.cpp */; };
 		71BF10711DE23DE50092DAE1 /* TestDoubleExecutionCommandExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF106F1DE23DE50092DAE1 /* TestDoubleExecutionCommandExecutor.cpp */; };
+		71BF10741DE244C90092DAE1 /* SerialLoggerCommandExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10721DE244C90092DAE1 /* SerialLoggerCommandExecutor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,8 @@
 		71BF106D1DE1F2070092DAE1 /* TestCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCommand.h; sourceTree = "<group>"; };
 		71BF106F1DE23DE50092DAE1 /* TestDoubleExecutionCommandExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestDoubleExecutionCommandExecutor.cpp; sourceTree = "<group>"; };
 		71BF10701DE23DE50092DAE1 /* TestDoubleExecutionCommandExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDoubleExecutionCommandExecutor.h; sourceTree = "<group>"; };
+		71BF10721DE244C90092DAE1 /* SerialLoggerCommandExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SerialLoggerCommandExecutor.cpp; sourceTree = "<group>"; };
+		71BF10731DE244C90092DAE1 /* SerialLoggerCommandExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerialLoggerCommandExecutor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,8 @@
 		71BF10471DE0BE640092DAE1 = {
 			isa = PBXGroup;
 			children = (
+				71BF10721DE244C90092DAE1 /* SerialLoggerCommandExecutor.cpp */,
+				71BF10731DE244C90092DAE1 /* SerialLoggerCommandExecutor.h */,
 				71BF106F1DE23DE50092DAE1 /* TestDoubleExecutionCommandExecutor.cpp */,
 				71BF10701DE23DE50092DAE1 /* TestDoubleExecutionCommandExecutor.h */,
 				71BF106C1DE1F2070092DAE1 /* TestCommand.cpp */,
@@ -147,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71BF10741DE244C90092DAE1 /* SerialLoggerCommandExecutor.cpp in Sources */,
 				71BF10621DE1EC120092DAE1 /* CommandFactory.cpp in Sources */,
 				71BF106E1DE1F2070092DAE1 /* TestCommand.cpp in Sources */,
 				71BF106B1DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp in Sources */,
