@@ -9,8 +9,6 @@
 #ifndef Command_h
 #define Command_h
 
-#include <string.h>
-
 class Command {
 public:
     const char *description = NULL;
