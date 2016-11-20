@@ -16,6 +16,7 @@
 		71BF10771DE2498B0092DAE1 /* CommandFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10751DE2498B0092DAE1 /* CommandFactory.cpp */; };
 		71BF107A1DE24AA20092DAE1 /* NullCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10781DE24AA20092DAE1 /* NullCommand.cpp */; };
 		71BF107D1DE24BC30092DAE1 /* LedPanelOnCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF107B1DE24BC30092DAE1 /* LedPanelOnCommand.cpp */; };
+		71BF10811DE260980092DAE1 /* LedPanelOffCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF107F1DE260980092DAE1 /* LedPanelOffCommand.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,9 @@
 		71BF107B1DE24BC30092DAE1 /* LedPanelOnCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LedPanelOnCommand.cpp; sourceTree = "<group>"; };
 		71BF107C1DE24BC30092DAE1 /* LedPanelOnCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LedPanelOnCommand.h; sourceTree = "<group>"; };
 		71BF107E1DE24DEC0092DAE1 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		71BF107F1DE260980092DAE1 /* LedPanelOffCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LedPanelOffCommand.cpp; sourceTree = "<group>"; };
+		71BF10801DE260980092DAE1 /* LedPanelOffCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LedPanelOffCommand.h; sourceTree = "<group>"; };
+		71BF10821DE2626A0092DAE1 /* CommandsName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandsName.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,9 @@
 		71BF10471DE0BE640092DAE1 = {
 			isa = PBXGroup;
 			children = (
+				71BF10821DE2626A0092DAE1 /* CommandsName.h */,
+				71BF107F1DE260980092DAE1 /* LedPanelOffCommand.cpp */,
+				71BF10801DE260980092DAE1 /* LedPanelOffCommand.h */,
 				71BF107E1DE24DEC0092DAE1 /* Particle.h */,
 				71BF107B1DE24BC30092DAE1 /* LedPanelOnCommand.cpp */,
 				71BF107C1DE24BC30092DAE1 /* LedPanelOnCommand.h */,
@@ -172,6 +179,7 @@
 				71BF106B1DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp in Sources */,
 				71BF10681DE1ED250092DAE1 /* CommandExecutor.cpp in Sources */,
 				71BF10711DE23DE50092DAE1 /* TestDoubleExecutionCommandExecutor.cpp in Sources */,
+				71BF10811DE260980092DAE1 /* LedPanelOffCommand.cpp in Sources */,
 				71BF105B1DE1EB6F0092DAE1 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
