@@ -23,6 +23,8 @@ void setup() {
     Particle.function("turnLightOn", turnLedPanelOn);
     Particle.function("turnLightOff", turnLedPanelOff);
     WiFi.setCredentials(SSID, PASSWORD);
+    Serial.begin(9600);
+    Serial.println("Hello World!");
 }
 
 void loop() {
@@ -30,6 +32,7 @@ void loop() {
     for( int userIndex = 0; userIndex < arraySize(wifiUsers); userIndex++ ) {
     }
 */
+  Serial.printlnf("System version: %s", System.version().c_str());
   readTemperature();
   delay(LOOP_TIME);
 }
