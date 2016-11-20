@@ -1,15 +1,15 @@
 //
-//  CommandExecutorDecorator.hpp
+//  CommandExecutorDecorator.h
 //  Ambrogio
 //
 //  Created by Gruppioni Michele on 20/11/2016.
 //  Copyright © 2016 Michele Gruppioni. All rights reserved.
 //
 
-#ifndef CommandExecutorDecorator_hpp
-#define CommandExecutorDecorator_hpp
+#ifndef CommandExecutorDecorator_h
+#define CommandExecutorDecorator_h
 
-#include "CommandExecutor.hpp"
+#include "CommandExecutor.h"
 
 class CommandExecutorDecorator: public CommandExecutor {
 protected:
@@ -19,4 +19,4 @@ public:
     
 };
 
-#endif /* CommandExecutorDecorator_hpp */
+#endif /* CommandExecutorDecorator_h */

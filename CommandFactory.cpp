@@ -6,7 +6,7 @@
 //  Copyright © 2016 Michele Gruppioni. All rights reserved.
 //
 
-#include "CommandFactory.hpp"
+#include "CommandFactory.h"
 
 Command* CommandFactory::createCommand(char* commandName) {
     return NULL;

@@ -6,7 +6,7 @@
 //  Copyright © 2016 Michele Gruppioni. All rights reserved.
 //
 
-#include "CommandExecutor.hpp"
+#include "CommandExecutor.h"
 
 void CommandExecutor::executeCommand(Command *command) {
     command->execute();

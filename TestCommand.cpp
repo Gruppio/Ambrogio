@@ -6,7 +6,7 @@
 //  Copyright © 2016 Michele Gruppioni. All rights reserved.
 //
 
-#include "TestCommand.hpp"
+#include "TestCommand.h"
 
 void TestCommand::execute() {
     numberOfExecutions++;

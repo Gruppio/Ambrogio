@@ -1,15 +1,15 @@
 //
-//  TestCommand.hpp
+//  TestCommand.h
 //  Ambrogio
 //
 //  Created by Gruppioni Michele on 20/11/2016.
 //  Copyright © 2016 Michele Gruppioni. All rights reserved.
 //
 
-#ifndef TestCommand_hpp
-#define TestCommand_hpp
+#ifndef TestCommand_h
+#define TestCommand_h
 
-#include "Command.hpp"
+#include "Command.h"
 
 class TestCommand: public Command {
 public:
@@ -17,4 +17,4 @@ public:
     virtual void execute();
 };
 
-#endif /* TestCommand_hpp */
+#endif /* TestCommand_h */

@@ -31,15 +31,15 @@
 		71BF10501DE0BE640092DAE1 /* Ambrogio */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ambrogio; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BF105A1DE1EB6F0092DAE1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Tests/main.cpp; sourceTree = "<group>"; };
 		71BF10601DE1EC120092DAE1 /* CommandFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandFactory.cpp; sourceTree = "<group>"; };
-		71BF10611DE1EC120092DAE1 /* CommandFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CommandFactory.hpp; sourceTree = "<group>"; };
+		71BF10611DE1EC120092DAE1 /* CommandFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandFactory.h; sourceTree = "<group>"; };
 		71BF10631DE1EC5B0092DAE1 /* Command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
-		71BF10641DE1EC5B0092DAE1 /* Command.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Command.hpp; sourceTree = "<group>"; };
+		71BF10641DE1EC5B0092DAE1 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
 		71BF10661DE1ED250092DAE1 /* CommandExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandExecutor.cpp; sourceTree = "<group>"; };
-		71BF10671DE1ED250092DAE1 /* CommandExecutor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CommandExecutor.hpp; sourceTree = "<group>"; };
+		71BF10671DE1ED250092DAE1 /* CommandExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandExecutor.h; sourceTree = "<group>"; };
 		71BF10691DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandExecutorDecorator.cpp; sourceTree = "<group>"; };
-		71BF106A1DE1F1C60092DAE1 /* CommandExecutorDecorator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CommandExecutorDecorator.hpp; sourceTree = "<group>"; };
+		71BF106A1DE1F1C60092DAE1 /* CommandExecutorDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandExecutorDecorator.h; sourceTree = "<group>"; };
 		71BF106C1DE1F2070092DAE1 /* TestCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestCommand.cpp; sourceTree = "<group>"; };
-		71BF106D1DE1F2070092DAE1 /* TestCommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TestCommand.hpp; sourceTree = "<group>"; };
+		71BF106D1DE1F2070092DAE1 /* TestCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCommand.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,15 +57,15 @@
 			isa = PBXGroup;
 			children = (
 				71BF106C1DE1F2070092DAE1 /* TestCommand.cpp */,
-				71BF106D1DE1F2070092DAE1 /* TestCommand.hpp */,
+				71BF106D1DE1F2070092DAE1 /* TestCommand.h */,
 				71BF10691DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp */,
-				71BF106A1DE1F1C60092DAE1 /* CommandExecutorDecorator.hpp */,
+				71BF106A1DE1F1C60092DAE1 /* CommandExecutorDecorator.h */,
 				71BF10661DE1ED250092DAE1 /* CommandExecutor.cpp */,
-				71BF10671DE1ED250092DAE1 /* CommandExecutor.hpp */,
+				71BF10671DE1ED250092DAE1 /* CommandExecutor.h */,
 				71BF10631DE1EC5B0092DAE1 /* Command.cpp */,
-				71BF10641DE1EC5B0092DAE1 /* Command.hpp */,
+				71BF10641DE1EC5B0092DAE1 /* Command.h */,
 				71BF10601DE1EC120092DAE1 /* CommandFactory.cpp */,
-				71BF10611DE1EC120092DAE1 /* CommandFactory.hpp */,
+				71BF10611DE1EC120092DAE1 /* CommandFactory.h */,
 				71BF105C1DE1EB7D0092DAE1 /* Tests */,
 				71BF10511DE0BE640092DAE1 /* Products */,
 			);

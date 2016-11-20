@@ -6,10 +6,13 @@
 //  Copyright © 2016 Michele Gruppioni. All rights reserved.
 //
 
+#if defined(SPARK)
+#else
+
 #include <iostream>
-#include "Command.hpp"
-#include "CommandExecutor.hpp"
-#include "CommandFactory.hpp"
+#include "Command.h"
+#include "CommandExecutor.h"
+#include "CommandFactory.h"
 
 void commandExecutorTests();
 
@@ -25,3 +28,5 @@ int main(int argc, const char * argv[]) {
 void commandExecutorTests() {
     
 }
+
+#endif

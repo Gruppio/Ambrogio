@@ -1,16 +1,16 @@
 //
-//  CommandExecutor.hpp
+//  CommandExecutor.h
 //  Ambrogio
 //
 //  Created by Gruppioni Michele on 20/11/2016.
 //  Copyright © 2016 Michele Gruppioni. All rights reserved.
 //
 
-#ifndef CommandExecutor_hpp
-#define CommandExecutor_hpp
+#ifndef CommandExecutor_h
+#define CommandExecutor_h
 
 #include <stdio.h>
-#include "Command.hpp"
+#include "Command.h"
 
 class CommandExecutor {
 public:
@@ -18,4 +18,4 @@ public:
 };
 
 
-#endif /* CommandExecutor_hpp */
+#endif /* CommandExecutor_h */
