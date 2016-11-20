@@ -12,11 +12,14 @@
 #include <iostream>
 #include <assert.h>
 #include "Command.h"
+#include "CommandsName.h"
 #include "CommandExecutor.h"
 #include "CommandFactory.h"
 #include "TestCommand.h"
 #include "TestDoubleExecutionCommandExecutor.h"
 #include "SerialLoggerCommandExecutor.h"
+#include "LedPanelOnCommand.h"
+#include "LedPanelOffCommand.h"
 
 
 // CommandExecutorTests
@@ -29,30 +32,31 @@ void commandExecutorDecoratedTests();
 void testCommandExecutorDecoratorExecutedDouble();
 void testCommandExecutorLogger();
 
+// CommandFactory Tests
+void commandFactoryTests();
+void testCommandFactoryNullCommand();
+void testCommandFactoryLedPanelOn();
+void testCommandFactoryLedPanelOff();
+
+
 
 int main(int argc, const char * argv[]) {
     std::cout << "Start Tests\n";
     
     commandExecutorTests();
     commandExecutorDecoratedTests();
+    commandFactoryTests();
     
     std::cout << "Done\n\n";
     return 0;
 }
 
+///////////////////////////////////////////////
+
 void commandExecutorTests() {
     testCommandExecutorExecuteOnce();
     testCommandExecutorExecuteTwice();
 }
-
-void commandExecutorDecoratedTests() {
-    testCommandExecutorDecoratorExecutedDouble();
-    testCommandExecutorLogger();
-}
-
-
-///////////////////////////////////////////////
-
 
 void testCommandExecutorExecuteOnce() {
     TestCommand *command = new TestCommand();
@@ -75,6 +79,13 @@ void testCommandExecutorExecuteTwice() {
     
     delete command;
     delete commandExecutor;
+}
+
+///////////////////////////////////////////////
+
+void commandExecutorDecoratedTests() {
+    testCommandExecutorDecoratorExecutedDouble();
+    testCommandExecutorLogger();
 }
 
 void testCommandExecutorDecoratorExecutedDouble() {
@@ -100,6 +111,47 @@ void testCommandExecutorLogger() {
     delete command;
     delete commandExecutorLogger;
     delete commandExecutor;
+}
+
+///////////////////////////////////////////////
+
+void commandFactoryTests() {
+    testCommandFactoryNullCommand();
+    testCommandFactoryLedPanelOn();
+    testCommandFactoryLedPanelOff();
+}
+
+void testCommandFactoryNullCommand() {
+    CommandFactory *commandFactory = new CommandFactory();
+    Command *command = commandFactory->createCommand("wrong command name");
+    NullCommand *nullCommand = dynamic_cast<NullCommand*>(command);
+    
+    assert(nullCommand != NULL);
+    
+    delete command;
+    delete commandFactory;
+}
+
+void testCommandFactoryLedPanelOn() {
+    CommandFactory *commandFactory = new CommandFactory();
+    Command *command = commandFactory->createCommand(LED_PANEL_ON);
+    LedPanelOnCommand *ledPanelOnCommand = dynamic_cast<LedPanelOnCommand*>(command);
+    
+    assert(ledPanelOnCommand != NULL);
+    
+    delete command;
+    delete commandFactory;
+}
+
+void testCommandFactoryLedPanelOff() {
+    CommandFactory *commandFactory = new CommandFactory();
+    Command *command = commandFactory->createCommand(LED_PANEL_OFF);
+    LedPanelOffCommand *ledPanelOffCommand = dynamic_cast<LedPanelOffCommand*>(command);
+    
+    assert(ledPanelOffCommand != NULL);
+    
+    delete command;
+    delete commandFactory;
 }
 
 #endif
