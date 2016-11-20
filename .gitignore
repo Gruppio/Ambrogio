@@ -3,6 +3,9 @@ WifiCredentials.h
 
 scripts/
 
+# Executables
+*.bin
+
 # Compiled Object files
 *.slo
 *.lo
