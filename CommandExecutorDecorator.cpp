@@ -7,3 +7,11 @@
 //
 
 #include "CommandExecutorDecorator.h"
+
+CommandExecutorDecorator::CommandExecutorDecorator(CommandExecutor *commandExecutor)
+:commandExecutor(commandExecutor) {
+}
+
+void CommandExecutorDecorator::executeCommand(Command *command) {
+    commandExecutor->executeCommand(command);
+}

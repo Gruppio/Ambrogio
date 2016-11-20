@@ -15,7 +15,9 @@ class CommandExecutorDecorator: public CommandExecutor {
 protected:
     CommandExecutor *commandExecutor;
 public:
-    
+    CommandExecutorDecorator(CommandExecutor *commandExecutor);
+    virtual ~CommandExecutorDecorator(){};
+    virtual void executeCommand(Command *command);
     
 };
 

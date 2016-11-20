@@ -14,6 +14,8 @@
 
 class CommandExecutor {
 public:
+    CommandExecutor(){};
+    virtual ~CommandExecutor(){};
     virtual void executeCommand(Command *command);
 };
 

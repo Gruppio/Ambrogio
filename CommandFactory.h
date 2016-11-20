@@ -14,6 +14,8 @@
 
 class CommandFactory {
 public:
+    CommandFactory(){};
+    virtual ~CommandFactory(){};
     Command* createCommand(char* commandName);
 };
 

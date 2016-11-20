@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		71BF105B1DE1EB6F0092DAE1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF105A1DE1EB6F0092DAE1 /* main.cpp */; };
 		71BF10621DE1EC120092DAE1 /* CommandFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10601DE1EC120092DAE1 /* CommandFactory.cpp */; };
-		71BF10651DE1EC5B0092DAE1 /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10631DE1EC5B0092DAE1 /* Command.cpp */; };
 		71BF10681DE1ED250092DAE1 /* CommandExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10661DE1ED250092DAE1 /* CommandExecutor.cpp */; };
 		71BF106B1DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10691DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp */; };
 		71BF106E1DE1F2070092DAE1 /* TestCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF106C1DE1F2070092DAE1 /* TestCommand.cpp */; };
@@ -32,7 +31,6 @@
 		71BF105A1DE1EB6F0092DAE1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Tests/main.cpp; sourceTree = "<group>"; };
 		71BF10601DE1EC120092DAE1 /* CommandFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandFactory.cpp; sourceTree = "<group>"; };
 		71BF10611DE1EC120092DAE1 /* CommandFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandFactory.h; sourceTree = "<group>"; };
-		71BF10631DE1EC5B0092DAE1 /* Command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
 		71BF10641DE1EC5B0092DAE1 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
 		71BF10661DE1ED250092DAE1 /* CommandExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandExecutor.cpp; sourceTree = "<group>"; };
 		71BF10671DE1ED250092DAE1 /* CommandExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandExecutor.h; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 				71BF106A1DE1F1C60092DAE1 /* CommandExecutorDecorator.h */,
 				71BF10661DE1ED250092DAE1 /* CommandExecutor.cpp */,
 				71BF10671DE1ED250092DAE1 /* CommandExecutor.h */,
-				71BF10631DE1EC5B0092DAE1 /* Command.cpp */,
 				71BF10641DE1EC5B0092DAE1 /* Command.h */,
 				71BF10601DE1EC120092DAE1 /* CommandFactory.cpp */,
 				71BF10611DE1EC120092DAE1 /* CommandFactory.h */,
@@ -148,7 +145,6 @@
 				71BF10621DE1EC120092DAE1 /* CommandFactory.cpp in Sources */,
 				71BF106E1DE1F2070092DAE1 /* TestCommand.cpp in Sources */,
 				71BF106B1DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp in Sources */,
-				71BF10651DE1EC5B0092DAE1 /* Command.cpp in Sources */,
 				71BF10681DE1ED250092DAE1 /* CommandExecutor.cpp in Sources */,
 				71BF105B1DE1EB6F0092DAE1 /* main.cpp in Sources */,
 			);
