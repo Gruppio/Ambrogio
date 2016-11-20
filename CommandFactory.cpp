@@ -7,9 +7,11 @@
 //
 
 #include "CommandFactory.h"
+#include "CommandsName.h"
 #include "LedPanelOnCommand.h"
 #include "LedPanelOffCommand.h"
-#include "CommandsName.h"
+#include "LivingRoomLampOnCommand.h"
+#include "LivingRoomLampOffCommand.h"
 
 Command* CommandFactory::createCommand(const char* commandName) {
     if (strcmp(commandName, LED_PANEL_ON) == 0) {
@@ -18,6 +20,14 @@ Command* CommandFactory::createCommand(const char* commandName) {
     
     if (strcmp(commandName, LED_PANEL_OFF) == 0) {
         return new LedPanelOffCommand();
+    }
+    
+    if (strcmp(commandName, LIVING_ROOM_LAMP_ON) == 0) {
+        return new LivingRoomLampOnCommand();
+    }
+    
+    if (strcmp(commandName, LIVING_ROOM_LAMP_OFF) == 0) {
+        return new LivingRoomLampOffCommand();
     }
     
     return new NullCommand();

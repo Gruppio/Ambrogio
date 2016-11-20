@@ -5,5 +5,6 @@
 #define PIN_LED_PANEL_OFF D1
 #define PIN_ONBOARD_LED   D7
 #define PIN_THERMOMETER   A1
+#define PIN_433_MHZ_TX    D2
 
 #endif

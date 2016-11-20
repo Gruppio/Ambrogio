@@ -20,6 +20,8 @@
 #include "SerialLoggerCommandExecutor.h"
 #include "LedPanelOnCommand.h"
 #include "LedPanelOffCommand.h"
+#include "LivingRoomLampOnCommand.h"
+#include "LivingRoomLampOffCommand.h"
 
 
 // CommandExecutorTests
@@ -37,6 +39,8 @@ void commandFactoryTests();
 void testCommandFactoryNullCommand();
 void testCommandFactoryLedPanelOn();
 void testCommandFactoryLedPanelOff();
+void testCommandFactoryLivingRoomLampOn();
+void testCommandFactoryLivingRoomLampOff();
 
 
 
@@ -119,6 +123,8 @@ void commandFactoryTests() {
     testCommandFactoryNullCommand();
     testCommandFactoryLedPanelOn();
     testCommandFactoryLedPanelOff();
+    testCommandFactoryLivingRoomLampOn();
+    testCommandFactoryLivingRoomLampOff();
 }
 
 void testCommandFactoryNullCommand() {
@@ -153,6 +159,29 @@ void testCommandFactoryLedPanelOff() {
     delete command;
     delete commandFactory;
 }
+
+void testCommandFactoryLivingRoomLampOn() {
+    CommandFactory *commandFactory = new CommandFactory();
+    Command *command = commandFactory->createCommand(LIVING_ROOM_LAMP_ON);
+    LivingRoomLampOnCommand *livingRoomLampOnCommand = dynamic_cast<LivingRoomLampOnCommand*>(command);
+    
+    assert(livingRoomLampOnCommand != NULL);
+    
+    delete command;
+    delete commandFactory;
+}
+
+void testCommandFactoryLivingRoomLampOff() {
+    CommandFactory *commandFactory = new CommandFactory();
+    Command *command = commandFactory->createCommand(LIVING_ROOM_LAMP_OFF);
+    LivingRoomLampOffCommand *livingRoomLampOffCommand = dynamic_cast<LivingRoomLampOffCommand*>(command);
+    
+    assert(livingRoomLampOffCommand != NULL);
+    
+    delete command;
+    delete commandFactory;
+}
+
 
 #endif
 

@@ -11,5 +11,7 @@
 
 #define LED_PANEL_ON "LedPanelOn"
 #define LED_PANEL_OFF "LedPanelOff"
+#define LIVING_ROOM_LAMP_ON "LivingRoomLampOn"
+#define LIVING_ROOM_LAMP_OFF "LivingRoomLampOff"
 
 #endif /* CommandsName_h */
