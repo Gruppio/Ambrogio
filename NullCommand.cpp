@@ -10,6 +10,8 @@
 #include "Pinout.h"
 #include "Particle.h"
 
+#define DELAY 150
+
 NullCommand::NullCommand() {
     description = "Null Command";
     pinMode(PIN_ONBOARD_LED, OUTPUT);
@@ -18,8 +20,8 @@ NullCommand::NullCommand() {
 void NullCommand::execute() {
     for(int i = 0; i < 3; i++) {
         digitalWrite(PIN_ONBOARD_LED, HIGH);
-        delay(300);
+        delay(DELAY);
         digitalWrite(PIN_ONBOARD_LED, LOW);
-        delay(300);
+        delay(DELAY);
     }
 }

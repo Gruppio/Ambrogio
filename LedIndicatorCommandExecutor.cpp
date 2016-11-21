@@ -18,5 +18,6 @@ LedIndicatorCommandExecutor::LedIndicatorCommandExecutor(CommandExecutor *comman
 void LedIndicatorCommandExecutor::executeCommand(Command *command) {
     digitalWrite(PIN_ONBOARD_LED, HIGH);
     commandExecutor->executeCommand(command);
+    delay(1000);
     digitalWrite(PIN_ONBOARD_LED, LOW);
 }
