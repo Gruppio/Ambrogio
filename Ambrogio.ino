@@ -13,7 +13,7 @@
 
 Thermometer *thermometer  = new MCP9700();
 CommandFactory *commandFactory = new CommandFactory();
-CommandExecutor *commandExecutor = new SerialLoggerCommandExecutor(new CommandExecutor());
+CommandExecutor *commandExecutor = new SerialLoggerCommandExecutor(new LedIndicatorCommandExecutor(new CommandExecutor()));
 
 double temperature = 0;
 

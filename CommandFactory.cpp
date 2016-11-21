@@ -6,6 +6,7 @@
 //  Copyright © 2016 Michele Gruppioni. All rights reserved.
 //
 
+#include <string.h>
 #include "CommandFactory.h"
 #include "CommandsName.h"
 #include "LedPanelOnCommand.h"
