@@ -7,10 +7,19 @@
 //
 
 #include "NullCommand.h"
+#include "Pinout.h"
+#include "Particle.h"
 
 NullCommand::NullCommand() {
     description = "Null Command";
+    pinMode(PIN_ONBOARD_LED, OUTPUT);
 }
 
 void NullCommand::execute() {
+    for(int i = 0; i < 3; i++) {
+        digitalWrite(PIN_ONBOARD_LED, HIGH);
+        delay(300);
+        digitalWrite(PIN_ONBOARD_LED, LOW);
+        delay(300);
+    }
 }
