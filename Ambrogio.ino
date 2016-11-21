@@ -5,6 +5,7 @@
 #include "CommandFactory.h"
 #include "CommandExecutor.h"
 #include "SerialLoggerCommandExecutor.h"
+#include "LedIndicatorCommandExecutor.h"
 
 #define LOOP_TIME 1000
 

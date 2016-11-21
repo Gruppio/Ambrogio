@@ -12,6 +12,7 @@
 
 LedIndicatorCommandExecutor::LedIndicatorCommandExecutor(CommandExecutor *commandExecutor)
 : CommandExecutorDecorator(commandExecutor) {
+    pinMode(PIN_ONBOARD_LED, OUTPUT);
 }
 
 void LedIndicatorCommandExecutor::executeCommand(Command *command) {
