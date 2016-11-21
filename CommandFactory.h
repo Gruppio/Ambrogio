@@ -9,7 +9,6 @@
 #ifndef CommandFactory_h
 #define CommandFactory_h
 
-#include <string.h>
 #include "Command.h"
 #include "NullCommand.h"
 
