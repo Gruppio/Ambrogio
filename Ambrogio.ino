@@ -6,19 +6,25 @@
 #include "CommandExecutor.h"
 #include "SerialLoggerCommandExecutor.h"
 #include "LedIndicatorCommandExecutor.h"
+#include "RemoteController.h"
+#include "RemoteController433.h"
 
 #define LOOP_TIME 1000
 
 /*WifiUser wifiUsers[]  = { WifiUser(IPAddress(192,168,0,5), "Gruppio"),
                           WifiUser(IPAddress(192,168,0,3), "Fede") };*/
 
-Thermometer *thermometer  = new MCP9700();
-CommandFactory *commandFactory = new CommandFactory();
+Thermometer *thermometer = new MCP9700();
+RCSwitch *rcSwitch = new RCSwitch();
+RemoteController *remoteController = new RemoteController433(rcSwitch);
+CommandFactory *commandFactory = new CommandFactory(remoteController);
 CommandExecutor *commandExecutor = new SerialLoggerCommandExecutor(new LedIndicatorCommandExecutor(new CommandExecutor()));
 
 double temperature = 0;
 
 void setup() {
+    pinMode(PIN_433_MHZ_TX, OUTPUT);
+    rcSwitch->enableTransmit(PIN_433_MHZ_TX);
     Particle.variable("temperature", temperature);
     Particle.function("execute", execute);
     WiFi.setCredentials(SSID, PASSWORD);
