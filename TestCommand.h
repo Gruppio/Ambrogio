@@ -13,9 +13,10 @@
 
 class TestCommand: public Command {
 public:
+    int numberOfExecutions = 0;
+    
     TestCommand();
     virtual ~TestCommand(){};
-    int numberOfExecutions = 0;
     virtual void execute();
 };
 
