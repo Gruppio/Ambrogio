@@ -10,16 +10,17 @@
 #define AukeyCommand_h
 
 #include "Command.h"
+#include "RemoteController.h"
 #include "Ambrogio.h"
 
 class AukeyCommand: public Command {
 protected:
-    RCSwitch *rcSwitch;
-    void transmitCode(unsigned long code);
+    RemoteController *remoteController;
+    REMOTE_CONTROLLER_TRANSMIT_TYPE code;
     
 public:
-    AukeyCommand();
-    virtual ~AukeyCommand();
+    AukeyCommand(RemoteController *remoteController, REMOTE_CONTROLLER_TRANSMIT_TYPE code, const char *description);
+    virtual ~AukeyCommand() {};
     virtual void execute();
     
 };

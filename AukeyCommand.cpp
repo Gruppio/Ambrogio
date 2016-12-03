@@ -8,20 +8,16 @@
 
 #include "AukeyCommand.h"
 
-AukeyCommand::AukeyCommand() {
-    description = "Aukey Command";
-    pinMode(PIN_433_MHZ_TX, OUTPUT);
-    rcSwitch = new RCSwitch();
-    rcSwitch->enableTransmit(PIN_433_MHZ_TX);
-}
+//pinMode(PIN_433_MHZ_TX, OUTPUT);
+//rcSwitch = rcSwitch;
+//rcSwitch->enableTransmit(PIN_433_MHZ_TX);
 
-AukeyCommand::~AukeyCommand() {
-    delete rcSwitch;
+AukeyCommand::AukeyCommand(RemoteController *remoteController, REMOTE_CONTROLLER_TRANSMIT_TYPE code, const char *description) {
+    remoteController = remoteController;
+    code = code;
+    description = description;
 }
 
 void AukeyCommand::execute() {
-}
-
-void AukeyCommand::transmitCode(unsigned long code) {
-    rcSwitch->send(code, AUKEY_PROTOCOL_CODE);
+    remoteController->transmit(code);
 }
