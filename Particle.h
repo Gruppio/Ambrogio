@@ -19,9 +19,13 @@
     #define delay(x)
     #define pinMode(x, y)
     #define digitalWrite(x, y)
+    #define Particle
+    #define publish(x, y, z)
+    #define String(x)
     #define INPUT
     #define OUTPUT
     #define HIGH
+    #define PRIVATE
 
     #define D0 0
     #define D1 1

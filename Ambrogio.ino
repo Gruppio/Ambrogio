@@ -9,7 +9,7 @@
 #include "RemoteController.h"
 #include "RemoteController433.h"
 
-#define LOOP_TIME 1000
+#define LOOP_TIME 500000
 
 /*WifiUser wifiUsers[]  = { WifiUser(IPAddress(192,168,0,5), "Gruppio"),
                           WifiUser(IPAddress(192,168,0,3), "Fede") };*/
@@ -33,6 +33,7 @@ void setup() {
 
 void loop() {
   readTemperature();
+  Particle.publish("temperature", String::format("%.1f", temperature), PRIVATE);
   delay(LOOP_TIME);
 }
 

@@ -21,6 +21,7 @@
 		71BF107A1DE24AA20092DAE1 /* NullCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10781DE24AA20092DAE1 /* NullCommand.cpp */; };
 		71BF107D1DE24BC30092DAE1 /* LedPanelOnCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF107B1DE24BC30092DAE1 /* LedPanelOnCommand.cpp */; };
 		71BF10811DE260980092DAE1 /* LedPanelOffCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF107F1DE260980092DAE1 /* LedPanelOffCommand.cpp */; };
+		71EF6B151DF36DF700E336CA /* ParticleEventCommandExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71EF6B131DF36DF700E336CA /* ParticleEventCommandExecutor.cpp */; };
 		71F939881DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71F939861DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,8 @@
 		71BF10821DE2626A0092DAE1 /* CommandsName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandsName.h; sourceTree = "<group>"; };
 		71BF10891DE267460092DAE1 /* Pinout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pinout.h; sourceTree = "<group>"; };
 		71BF108A1DE26A0E0092DAE1 /* AukeyCommandCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AukeyCommandCodes.h; sourceTree = "<group>"; };
+		71EF6B131DF36DF700E336CA /* ParticleEventCommandExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleEventCommandExecutor.cpp; sourceTree = "<group>"; };
+		71EF6B141DF36DF700E336CA /* ParticleEventCommandExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEventCommandExecutor.h; sourceTree = "<group>"; };
 		71F939861DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LedIndicatorCommandExecutor.cpp; sourceTree = "<group>"; };
 		71F939871DE275E80010DA95 /* LedIndicatorCommandExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LedIndicatorCommandExecutor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +93,10 @@
 		71BF10471DE0BE640092DAE1 = {
 			isa = PBXGroup;
 			children = (
+				71EF6B131DF36DF700E336CA /* ParticleEventCommandExecutor.cpp */,
+				71EF6B141DF36DF700E336CA /* ParticleEventCommandExecutor.h */,
+				71BF10821DE2626A0092DAE1 /* CommandsName.h */,
+				71BF108A1DE26A0E0092DAE1 /* AukeyCommandCodes.h */,
 				71089A6A1DF3426F000D234D /* RemoteControllerMock.cpp */,
 				71089A6B1DF3426F000D234D /* RemoteControllerMock.h */,
 				71089A671DF330C8000D234D /* RemoteController433.cpp */,
@@ -98,13 +105,11 @@
 				71089A621DF32847000D234D /* Ambrogio.h */,
 				71089A5F1DF326EB000D234D /* RCSwitchMock.cpp */,
 				71089A601DF326EB000D234D /* RCSwitchMock.h */,
-				71BF108A1DE26A0E0092DAE1 /* AukeyCommandCodes.h */,
 				71089A5C1DF316F7000D234D /* AukeyCommand.cpp */,
 				71089A5D1DF316F7000D234D /* AukeyCommand.h */,
 				71F939861DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp */,
 				71F939871DE275E80010DA95 /* LedIndicatorCommandExecutor.h */,
 				71BF10891DE267460092DAE1 /* Pinout.h */,
-				71BF10821DE2626A0092DAE1 /* CommandsName.h */,
 				71BF107F1DE260980092DAE1 /* LedPanelOffCommand.cpp */,
 				71BF10801DE260980092DAE1 /* LedPanelOffCommand.h */,
 				71BF107E1DE24DEC0092DAE1 /* Particle.h */,
@@ -214,6 +219,7 @@
 				71F939881DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp in Sources */,
 				71BF107D1DE24BC30092DAE1 /* LedPanelOnCommand.cpp in Sources */,
 				71BF106B1DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp in Sources */,
+				71EF6B151DF36DF700E336CA /* ParticleEventCommandExecutor.cpp in Sources */,
 				71089A5E1DF316F7000D234D /* AukeyCommand.cpp in Sources */,
 				71BF10681DE1ED250092DAE1 /* CommandExecutor.cpp in Sources */,
 				71BF10711DE23DE50092DAE1 /* TestDoubleExecutionCommandExecutor.cpp in Sources */,
