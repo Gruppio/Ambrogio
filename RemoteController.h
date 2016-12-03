@@ -15,7 +15,7 @@ class RemoteController {
 public:
     RemoteController() {};
     virtual ~RemoteController() {};
-    virtual void transmit(REMOTE_CONTROLLER_TRANSMIT_TYPE);
+    virtual void transmit(REMOTE_CONTROLLER_TRANSMIT_TYPE) = 0;
 };
 
 

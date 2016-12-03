@@ -11,8 +11,11 @@
 #include "CommandsName.h"
 #include "LedPanelOnCommand.h"
 #include "LedPanelOffCommand.h"
-#include "LivingRoomLampOnCommand.h"
-#include "LivingRoomLampOffCommand.h"
+#include "AukeyCommand.h"
+
+CommandFactory::CommandFactory(RemoteController *remoteController) {
+    remoteController = remoteController;
+}
 
 Command* CommandFactory::createCommand(const char* commandName) {
     if (strcmp(commandName, LED_PANEL_ON) == 0) {
@@ -24,11 +27,11 @@ Command* CommandFactory::createCommand(const char* commandName) {
     }
     
     if (strcmp(commandName, LIVING_ROOM_LAMP_ON) == 0) {
-        return new LivingRoomLampOnCommand();
+        return new AukeyCommand(remoteController, AUKEY_LIVING_ROOM_LAMP_ON_COMMAND_CODE, "Turn on the living room lamp");
     }
     
     if (strcmp(commandName, LIVING_ROOM_LAMP_OFF) == 0) {
-        return new LivingRoomLampOffCommand();
+        return new AukeyCommand(remoteController, AUKEY_LIVING_ROOM_LAMP_OFF_COMMAND_CODE, "Turn off the living room lamp");
     }
     
     return new NullCommand();

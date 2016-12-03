@@ -11,11 +11,14 @@
 
 #include "Command.h"
 #include "NullCommand.h"
+#include "RemoteController.h"
 
 class CommandFactory {
 public:
-    CommandFactory(){};
-    virtual ~CommandFactory(){};
+    RemoteController *remoteController;
+    
+    CommandFactory(RemoteController *remoteController);
+    virtual ~CommandFactory() {};
     Command* createCommand(const char* commandName);
 };
 

@@ -19,9 +19,13 @@
 #include "SerialLoggerCommandExecutor.h"
 #include "LedPanelOnCommand.h"
 #include "LedPanelOffCommand.h"
-#include "LivingRoomLampOnCommand.h"
-#include "LivingRoomLampOffCommand.h"
+#include "AukeyCommand.h"
+#include "RemoteController.h"
+#include "RemoteController433.h"
 
+//Global Dependencies
+RCSwitch *rcSwitch = new RCSwitch();
+RemoteController *remoteController = new RemoteController433(rcSwitch);
 
 // CommandExecutorTests
 void commandExecutorTests();
@@ -42,7 +46,6 @@ void testCommandFactoryLivingRoomLampOn();
 void testCommandFactoryLivingRoomLampOff();
 
 
-
 int main(int argc, const char * argv[]) {
     std::cout << "Start Tests\n";
     
@@ -50,8 +53,15 @@ int main(int argc, const char * argv[]) {
     commandExecutorDecoratedTests();
     commandFactoryTests();
     
+    delete rcSwitch;
+    delete remoteController;
     std::cout << "Done\n\n";
     return 0;
+}
+
+///////////////////////////////////////////////
+CommandFactory* createCommandFactory() {
+    return new CommandFactory(remoteController);
 }
 
 ///////////////////////////////////////////////
@@ -127,7 +137,7 @@ void commandFactoryTests() {
 }
 
 void testCommandFactoryNullCommand() {
-    CommandFactory *commandFactory = new CommandFactory();
+    CommandFactory *commandFactory = new CommandFactory(remoteController);
     Command *command = commandFactory->createCommand("wrong command name");
     NullCommand *nullCommand = dynamic_cast<NullCommand*>(command);
     
@@ -138,7 +148,7 @@ void testCommandFactoryNullCommand() {
 }
 
 void testCommandFactoryLedPanelOn() {
-    CommandFactory *commandFactory = new CommandFactory();
+    CommandFactory *commandFactory = new CommandFactory(remoteController);
     Command *command = commandFactory->createCommand(LED_PANEL_ON);
     LedPanelOnCommand *ledPanelOnCommand = dynamic_cast<LedPanelOnCommand*>(command);
     
@@ -149,7 +159,7 @@ void testCommandFactoryLedPanelOn() {
 }
 
 void testCommandFactoryLedPanelOff() {
-    CommandFactory *commandFactory = new CommandFactory();
+    CommandFactory *commandFactory = new CommandFactory(remoteController);
     Command *command = commandFactory->createCommand(LED_PANEL_OFF);
     LedPanelOffCommand *ledPanelOffCommand = dynamic_cast<LedPanelOffCommand*>(command);
     
@@ -160,22 +170,24 @@ void testCommandFactoryLedPanelOff() {
 }
 
 void testCommandFactoryLivingRoomLampOn() {
-    CommandFactory *commandFactory = new CommandFactory();
+    CommandFactory *commandFactory = new CommandFactory(remoteController);
     Command *command = commandFactory->createCommand(LIVING_ROOM_LAMP_ON);
-    LivingRoomLampOnCommand *livingRoomLampOnCommand = dynamic_cast<LivingRoomLampOnCommand*>(command);
+    AukeyCommand *aukeyCommand = dynamic_cast<AukeyCommand*>(command);
     
-    assert(livingRoomLampOnCommand != NULL);
+    assert(aukeyCommand != NULL);
+    //assert(aukeyCommand->code == AUKEY_LIVING_ROOM_LAMP_ON_COMMAND_CODE);
     
     delete command;
     delete commandFactory;
 }
 
 void testCommandFactoryLivingRoomLampOff() {
-    CommandFactory *commandFactory = new CommandFactory();
+    CommandFactory *commandFactory = new CommandFactory(remoteController);
     Command *command = commandFactory->createCommand(LIVING_ROOM_LAMP_OFF);
-    LivingRoomLampOffCommand *livingRoomLampOffCommand = dynamic_cast<LivingRoomLampOffCommand*>(command);
+    AukeyCommand *aukeyCommand = dynamic_cast<AukeyCommand*>(command);
     
-    assert(livingRoomLampOffCommand != NULL);
+    assert(aukeyCommand != NULL);
+    //assert(aukeyCommand->code == AUKEY_LIVING_ROOM_LAMP_ON_COMMAND_CODE);
     
     delete command;
     delete commandFactory;

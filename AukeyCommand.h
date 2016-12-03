@@ -16,9 +16,9 @@
 class AukeyCommand: public Command {
 protected:
     RemoteController *remoteController;
-    REMOTE_CONTROLLER_TRANSMIT_TYPE code;
     
 public:
+    REMOTE_CONTROLLER_TRANSMIT_TYPE code;
     AukeyCommand(RemoteController *remoteController, REMOTE_CONTROLLER_TRANSMIT_TYPE code, const char *description);
     virtual ~AukeyCommand() {};
     virtual void execute();

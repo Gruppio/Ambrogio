@@ -20,8 +20,6 @@
 		71BF107A1DE24AA20092DAE1 /* NullCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10781DE24AA20092DAE1 /* NullCommand.cpp */; };
 		71BF107D1DE24BC30092DAE1 /* LedPanelOnCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF107B1DE24BC30092DAE1 /* LedPanelOnCommand.cpp */; };
 		71BF10811DE260980092DAE1 /* LedPanelOffCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF107F1DE260980092DAE1 /* LedPanelOffCommand.cpp */; };
-		71BF10851DE265DE0092DAE1 /* LivingRoomLampOnCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10831DE265DE0092DAE1 /* LivingRoomLampOnCommand.cpp */; };
-		71BF108D1DE26AE90092DAE1 /* LivingRoomLampOffCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF108B1DE26AE90092DAE1 /* LivingRoomLampOffCommand.cpp */; };
 		71F939881DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71F939861DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp */; };
 /* End PBXBuildFile section */
 
@@ -69,12 +67,8 @@
 		71BF107F1DE260980092DAE1 /* LedPanelOffCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LedPanelOffCommand.cpp; sourceTree = "<group>"; };
 		71BF10801DE260980092DAE1 /* LedPanelOffCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LedPanelOffCommand.h; sourceTree = "<group>"; };
 		71BF10821DE2626A0092DAE1 /* CommandsName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandsName.h; sourceTree = "<group>"; };
-		71BF10831DE265DE0092DAE1 /* LivingRoomLampOnCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LivingRoomLampOnCommand.cpp; sourceTree = "<group>"; };
-		71BF10841DE265DE0092DAE1 /* LivingRoomLampOnCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivingRoomLampOnCommand.h; sourceTree = "<group>"; };
 		71BF10891DE267460092DAE1 /* Pinout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pinout.h; sourceTree = "<group>"; };
 		71BF108A1DE26A0E0092DAE1 /* AukeyCommandCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AukeyCommandCodes.h; sourceTree = "<group>"; };
-		71BF108B1DE26AE90092DAE1 /* LivingRoomLampOffCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LivingRoomLampOffCommand.cpp; sourceTree = "<group>"; };
-		71BF108C1DE26AE90092DAE1 /* LivingRoomLampOffCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivingRoomLampOffCommand.h; sourceTree = "<group>"; };
 		71F939861DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LedIndicatorCommandExecutor.cpp; sourceTree = "<group>"; };
 		71F939871DE275E80010DA95 /* LedIndicatorCommandExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LedIndicatorCommandExecutor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,11 +98,7 @@
 				71089A5D1DF316F7000D234D /* AukeyCommand.h */,
 				71F939861DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp */,
 				71F939871DE275E80010DA95 /* LedIndicatorCommandExecutor.h */,
-				71BF108B1DE26AE90092DAE1 /* LivingRoomLampOffCommand.cpp */,
-				71BF108C1DE26AE90092DAE1 /* LivingRoomLampOffCommand.h */,
 				71BF10891DE267460092DAE1 /* Pinout.h */,
-				71BF10831DE265DE0092DAE1 /* LivingRoomLampOnCommand.cpp */,
-				71BF10841DE265DE0092DAE1 /* LivingRoomLampOnCommand.h */,
 				71BF10821DE2626A0092DAE1 /* CommandsName.h */,
 				71BF107F1DE260980092DAE1 /* LedPanelOffCommand.cpp */,
 				71BF10801DE260980092DAE1 /* LedPanelOffCommand.h */,
@@ -214,9 +204,7 @@
 				71089A691DF330C8000D234D /* RemoteController433.cpp in Sources */,
 				71BF107A1DE24AA20092DAE1 /* NullCommand.cpp in Sources */,
 				71089A611DF326EB000D234D /* RCSwitchMock.cpp in Sources */,
-				71BF10851DE265DE0092DAE1 /* LivingRoomLampOnCommand.cpp in Sources */,
 				71BF106E1DE1F2070092DAE1 /* TestCommand.cpp in Sources */,
-				71BF108D1DE26AE90092DAE1 /* LivingRoomLampOffCommand.cpp in Sources */,
 				71F939881DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp in Sources */,
 				71BF107D1DE24BC30092DAE1 /* LedPanelOnCommand.cpp in Sources */,
 				71BF106B1DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp in Sources */,
