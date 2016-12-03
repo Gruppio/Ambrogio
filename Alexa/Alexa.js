@@ -1,6 +1,4 @@
 
- 
- 
 var https = require('https');
 var querystring = require('querystring');
 const REMOTE_CLOUD_BASE_PATH = '/v1/devices/1a002b000447343337373737/execute';
@@ -58,10 +56,10 @@ exports.handler = function (event, context, callback) {
 var handleDiscovery = function(event) {
     var appliances = [];
 
-    var applianceDiscovered = {
+    var ledPanel = {
         applianceId: 'LedPanel',
         manufacturerName: 'Gruppio',
-        modelName: 'Pannellone a Leddoni',
+        modelName: 'LedPanel',
         version: '1.0',
         friendlyName: 'Led Panel',
         friendlyDescription: 'The led panel upon the table',
@@ -73,7 +71,110 @@ var handleDiscovery = function(event) {
         additionalApplianceDetails: {
         }
     };
-    appliances.push(applianceDiscovered);
+
+    var livingRoomLamp = {
+        applianceId: 'LivingRoomLamp',
+        manufacturerName: 'Gruppio',
+        modelName: 'LivingRoomLamp',
+        version: '1.0',
+        friendlyName: 'Living Room Lamp',
+        friendlyDescription: 'The living room lamp',
+        isReachable: true,
+        actions: [
+            "turnOn",
+            "turnOff"
+        ],
+        additionalApplianceDetails: {
+        }
+    };
+
+    var ledStripLeft = {
+        applianceId: 'LedStripLeft',
+        manufacturerName: 'Gruppio',
+        modelName: 'LedStripLeft',
+        version: '1.0',
+        friendlyName: 'Led Strip Left',
+        friendlyDescription: 'The Left Led Strip in the kitchen',
+        isReachable: true,
+        actions: [
+            "turnOn",
+            "turnOff"
+        ],
+        additionalApplianceDetails: {
+        }
+    };
+
+    var ledStripRight = {
+        applianceId: 'LedStripRight',
+        manufacturerName: 'Gruppio',
+        modelName: 'LedStripRight',
+        version: '1.0',
+        friendlyName: 'Led Strip Right',
+        friendlyDescription: 'The Right Led Strip in the kitchen',
+        isReachable: true,
+        actions: [
+            "turnOn",
+            "turnOff"
+        ],
+        additionalApplianceDetails: {
+        }
+    };
+
+    var coffeeMachine = {
+        applianceId: 'CoffeeMachine',
+        manufacturerName: 'Gruppio',
+        modelName: 'CoffeeMachine',
+        version: '1.0',
+        friendlyName: 'Coffee Machine',
+        friendlyDescription: 'The Coffee Machine in the kitchen',
+        isReachable: true,
+        actions: [
+            "turnOn",
+            "turnOff"
+        ],
+        additionalApplianceDetails: {
+        }
+    };
+
+    var tv = {
+        applianceId: 'Tv',
+        manufacturerName: 'Gruppio',
+        modelName: 'Tv',
+        version: '1.0',
+        friendlyName: 'Tv',
+        friendlyDescription: 'The Tv in the living room',
+        isReachable: true,
+        actions: [
+            "turnOn",
+            "turnOff"
+        ],
+        additionalApplianceDetails: {
+        }
+    };
+
+    var christmasTree = {
+        applianceId: 'ChristmasTree',
+        manufacturerName: 'Gruppio',
+        modelName: 'ChristmasTree',
+        version: '1.0',
+        friendlyName: 'Christmas Tree',
+        friendlyDescription: 'The Christmas Tree in the living room',
+        isReachable: true,
+        actions: [
+            "turnOn",
+            "turnOff"
+        ],
+        additionalApplianceDetails: {
+        }
+    };
+
+    appliances.push(ledPanel);
+    appliances.push(livingRoomLamp);
+    appliances.push(ledStripLeft);
+    appliances.push(ledStripRight);
+    appliances.push(coffeeMachine);
+    appliances.push(tv);
+    appliances.push(christmasTree);
 
   var header = createHeader(NAMESPACE_DISCOVERY, RESPONSE_DISCOVER);
   var payload = {
@@ -105,29 +206,20 @@ var handleControl = function(event) {
 
 
 var handleControlTurnOn = function(event) {
-  var applianceId = event.payload.appliance.applianceId;
-  var accessToken = event.payload.accessToken.trim();
-  var command = "LedPanelOn";
-  log("Executing", command);
-  executeCommand("LedPanelOn", function(response) {
-    log("Command Response", response);
-  }, function(failure) {
-    log("Command Error", failure);
-  });
-
+  handleControlTurnOnOff(event, 'On');
   var header = createHeader(NAMESPACE_CONTROL,RESPONSE_TURN_ON);
   var payload = {};
   return createDirective(header,payload);
 }
 
 var handleControlTurnOff = function(event) {
-  handleControl(event, "Off");
+  handleControlTurnOnOff(event, 'Off');
   var header = createHeader(NAMESPACE_CONTROL,RESPONSE_TURN_OFF);
   var payload = {};
   return createDirective(header,payload);
 }
 
-var handleControl = function(event, controlType) {
+var handleControlTurnOnOff = function(event, controlType) {
   var applianceId = event.payload.appliance.applianceId;
   var accessToken = event.payload.accessToken.trim();
   var command = applianceId + controlType;
