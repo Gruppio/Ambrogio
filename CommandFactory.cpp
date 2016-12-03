@@ -50,5 +50,21 @@ Command* CommandFactory::createCommand(const char* commandName) {
         return new AukeyCommand(remoteController, AUKEY_LED_STRIP_RIGHT_OFF_COMMAND_CODE, "Turn off the kitchen right led strip");
     }
     
+    if (strcmp(commandName, COFFEE_MACHINE_ON) == 0) {
+        return new AukeyCommand(remoteController, AUKEY_COFFEE_MACHINE_ON_COMMAND_CODE, "Turn on the coffee machine");
+    }
+    
+    if (strcmp(commandName, COFFEE_MACHINE_OFF) == 0) {
+        return new AukeyCommand(remoteController, AUKEY_COFFEE_MACHINE_OFF_COMMAND_CODE, "Turn off the coffee machine");
+    }
+    
+    if (strcmp(commandName, CHRISTMAS_TREE_ON) == 0) {
+        return new AukeyCommand(remoteController, AUKEY_CHRISTMAS_TREE_ON_COMMAND_CODE, "Turn on the christmas tree");
+    }
+    
+    if (strcmp(commandName, CHRISTMAS_TREE_OFF) == 0) {
+        return new AukeyCommand(remoteController, AUKEY_CHRISTMAS_TREE_OFF_COMMAND_CODE, "Turn off the christmas tree");
+    }
+    
     return new NullCommand();
 }
