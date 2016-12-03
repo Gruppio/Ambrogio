@@ -1,75 +1,61 @@
-/**
- * This sample demonstrates a simple driver  built against the Alexa Lighting Api.
- * For additional details, please refer to the Alexa Lighting API developer documentation 
- * https://developer.amazon.com/public/binaries/content/assets/html/alexa-lighting-api.html
- */
+
  
  
 var https = require('https');
 var querystring = require('querystring');
-var REMOTE_CLOUD_BASE_PATH = '/v1/devices/1a002b000447343337373737/execute';
-var REMOTE_CLOUD_HOSTNAME = 'api.particle.io';
-var PARTICLE_ACCESS_TOKEN = process.env.PARTICLE_ACCESS_TOKEN;
+const REMOTE_CLOUD_BASE_PATH = '/v1/devices/1a002b000447343337373737/execute';
+const REMOTE_CLOUD_HOSTNAME = 'api.particle.io';
+const PARTICLE_ACCESS_TOKEN = process.env.PARTICLE_ACCESS_TOKEN;
 
-/**
- * Main entry point.
- * Incoming events from Alexa Lighting APIs are processed via this method.
- */
-exports.handler = function(event, context) {
+// namespaces
+const NAMESPACE_CONTROL = "Alexa.ConnectedHome.Control";
+const NAMESPACE_DISCOVERY = "Alexa.ConnectedHome.Discovery";
 
-    console.log("Request Received");
-    console.log(event.header.namespace + " - " + event.header.name + " - " + event.payload.switchControlAction);
+// discovery
+const REQUEST_DISCOVER = "DiscoverAppliancesRequest";
+const RESPONSE_DISCOVER = "DiscoverAppliancesResponse";
 
-    switch (event.header.namespace) {
-        
-        /**
-         * The namespace of "Discovery" indicates a request is being made to the lambda for
-         * discovering all appliances associated with the customer's appliance cloud account.
-         * can use the accessToken that is made available as part of the payload to determine
-         * the customer.
-         */
-        case 'Alexa.ConnectedHome.Discovery':
-            handleDiscovery(event, context);
-            break;
+// control
+const REQUEST_TURN_ON = "TurnOnRequest";
+const RESPONSE_TURN_ON = "TurnOnConfirmation";
+const REQUEST_TURN_OFF = "TurnOffRequest";
+const RESPONSE_TURN_OFF = "TurnOffConfirmation";
 
-            /**
-             * The namespace of "Control" indicates a request is being made to us to turn a
-             * given device on, off or brighten. This message comes with the "appliance"
-             * parameter which indicates the appliance that needs to be acted on.
-             */
-        case 'Alexa.ConnectedHome.Control':
-            handleControl(event, context);
-            break;
+// errors
+const ERROR_UNSUPPORTED_OPERATION = "UnsupportedOperationError";
+const ERROR_UNEXPECTED_INFO = "UnexpectedInformationReceivedError";
 
-            /**
-             * We received an unexpected message
-             */
-        default:
-            log('Err', 'No supported namespace: ' + event.header.namespace);
-            context.fail('Something went wrong');
-            break;
+// entry
+exports.handler = function (event, context, callback) {
+
+  log("Received Directive", event);
+
+  var requestedNamespace = event.header.namespace;
+  var response = null;
+
+  try {
+    switch (requestedNamespace) {
+      case NAMESPACE_DISCOVERY:
+        response = handleDiscovery(event);
+        break;
+
+      case NAMESPACE_CONTROL:
+        response = handleControl(event);
+        break;
+
+      default:
+        log("Error", "Unsupported namespace: " + requestedNamespace);
+        response = handleUnexpectedInfo(requestedNamespace);
+        break;
     }
-};
+  } catch (error) {
+    log("Error", error);
+  }
+  callback(null, response);
+}
 
-/**
- * This method is invoked when we receive a "Discovery" message from Alexa Smart Home Skill.
- * We are expected to respond back with a list of appliances that we have discovered for a given
- * customer. 
- */
-function handleDiscovery(accessToken, context) {
 
-    /**
-     * Crafting the response header
-     */
-    var headers = {
-        namespace: 'Alexa.ConnectedHome.Discovery',
-        name: 'DiscoverAppliancesResponse',
-        payloadVersion: '1'
-    };
-
-    /**
-     * Response body will be an array of discovered devices.
-     */
+var handleDiscovery = function(event) {
     var appliances = [];
 
     var applianceDiscovered = {
@@ -85,63 +71,75 @@ function handleDiscovery(accessToken, context) {
             "turnOff"
         ],
         additionalApplianceDetails: {
-            /**
-             * OPTIONAL:
-             * We can use this to persist any appliance specific metadata.
-             * This information will be returned back to the driver when user requests
-             * action on this appliance.
-             */
-            //'fullApplianceId': '2cd6b650-c0h0-4062-b31d-7ec2c146c5ea'
         }
     };
     appliances.push(applianceDiscovered);
 
-    var payloads = {
-        discoveredAppliances: appliances
-    };
-    var result = {
-        header: headers,
-        payload: payloads
-    };
-
-    console.log('Discovery Result' + result);
-
-    context.succeed(result);
+  var header = createHeader(NAMESPACE_DISCOVERY, RESPONSE_DISCOVER);
+  var payload = {
+    "discoveredAppliances": appliances
+  };
+  return createDirective(header,payload);
 }
 
-/**
- * Control events are processed here.
- * This is called when Alexa requests an action (IE turn off appliance).
- */
-function handleControl(event, context) {
+var handleControl = function(event) {
+  var response = null;
+  var requestedName = event.header.name;
 
-    /**
-     * Fail the invocation if the header is unexpected. This example only demonstrates
-     * turn on / turn off, hence we are filtering on anything that is not SwitchOnOffRequest.
-     */
-    if (event.header.namespace != 'Alexa.ConnectedHome.Control') { 
-        context.fail(generateControlError('SwitchOnOffRequest', 'UNSUPPORTED_OPERATION', 'Unrecognized operation'));
-    }
-    
-    if (event.header.name != 'TurnOnRequest' && event.header.name != 'TurnOffRequest') {
-        context.fail(generateControlError('SwitchOnOffRequest', 'UNSUPPORTED_OPERATION', 'Unrecognized operation'));
-    }
+  switch (requestedName) {
+    case REQUEST_TURN_ON :
+      response = handleControlTurnOn(event);
+      break;
 
-    var applianceId = event.payload.appliance.applianceId;
-    var accessToken = event.payload.accessToken.trim();
-    console.log("applianceId:" + applianceId);
+    case REQUEST_TURN_OFF :
+      response = handleControlTurnOff(event);
+      break;
 
-    if (event.header.name == 'TurnOnRequest') {
-        executeCommand('LedPanelOn', event, context);
-    } else if (event.header.name == 'TurnOffRequest') {
-        executeCommand('LedPanelOff', event, context);
-    }
+    default:
+      log("Error", "Unsupported operation" + requestedName);
+      response = handleUnsupportedOperation();
+      break;     
+  }
+  return response;
 }
 
-/**
- * Utility functions.
- */
- function executeCommand(command, event, context) {
+
+var handleControlTurnOn = function(event) {
+  var applianceId = event.payload.appliance.applianceId;
+  var accessToken = event.payload.accessToken.trim();
+  var command = "LedPanelOn";
+  log("Executing", command);
+  executeCommand("LedPanelOn", function(response) {
+    log("Command Response", response);
+  }, function(failure) {
+    log("Command Error", failure);
+  });
+
+  var header = createHeader(NAMESPACE_CONTROL,RESPONSE_TURN_ON);
+  var payload = {};
+  return createDirective(header,payload);
+}
+
+var handleControlTurnOff = function(event) {
+  handleControl(event, "Off");
+  var header = createHeader(NAMESPACE_CONTROL,RESPONSE_TURN_OFF);
+  var payload = {};
+  return createDirective(header,payload);
+}
+
+var handleControl = function(event, controlType) {
+  var applianceId = event.payload.appliance.applianceId;
+  var accessToken = event.payload.accessToken.trim();
+  var command = applianceId + controlType;
+  log("Executing", command);
+  executeCommand(command, function(response) {
+    log("Command Response", response);
+  }, function(failure) {
+    log("Command Error", failure);
+  });
+}
+
+ function executeCommand(command, onSuccess, onError) {
     var postData = querystring.stringify({
         arg: command,
         access_token: PARTICLE_ACCESS_TOKEN
@@ -166,57 +164,63 @@ function handleControl(event, context) {
         });
 
         response.on('end', function() {
-            var headers = {
-                namespace: event.header.namespace,
-                name: event.header.name,
-                payloadVersion: '1'
-            };
-            var payloads = {
-                success: true
-            };
-            var result = {
-                header: headers,
-                payload: payloads
-            };
-            log('Particle Response:', str);
-            context.succeed(result);
+            onSuccess(str);
         });
 
         response.on('error', function() {
+            onError(e.message);
             log('Error', e.message);
-            context.fail(generateControlError(event.header.name, 'DEPENDENT_SERVICE_UNAVAILABLE', 'Unable to connect to server'));
         });
     };
 
-
-    console.log("Sending the request");
     var req = https.request(options, callback);
     req.write(postData);
     req.end();
 }
- 
-function log(title, msg) {
-    console.log(title + ": " + msg);
+
+
+var handleUnsupportedOperation = function() {
+  var header = createHeader(NAMESPACE_CONTROL,ERROR_UNSUPPORTED_OPERATION);
+  var payload = {};
+  return createDirective(header,payload);
 }
 
-function generateControlError(name, code, description) {
-    var headers = {
-        namespace: 'Alexa.ConnectedHome.Control',
-        name: name,
-        payloadVersion: '1'
-    };
+var handleUnexpectedInfo = function(fault) {
+  var header = createHeader(NAMESPACE_CONTROL,ERROR_UNEXPECTED_INFO);
+  var payload = {
+    "faultingParameter" : fault
+  };
+  return createDirective(header,payload);
+}
 
-    var payload = {
-        exception: {
-            code: code,
-            description: description
-        }
-    };
+// support functions
+var createMessageId = function() {
+  var d = new Date().getTime();
+  var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = (d + Math.random()*16)%16 | 0;
+    d = Math.floor(d/16);
+    return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+  });
+  return uuid;
+}
 
-    var result = {
-        header: headers,
-        payload: payload
-    };
+var createHeader = function(namespace, name) {
+  return {
+    "messageId": createMessageId(),
+    "namespace": namespace,
+    "name": name,
+    "payloadVersion": "2"
+  };
+}
 
-    return result;
+var createDirective = function(header, payload) {
+  return {
+    "header" : header,
+    "payload" : payload
+  };
+}
+
+
+var log = function(title, msg) {
+  console.log('* ' + title + ': ' + JSON.stringify(msg));
 }
