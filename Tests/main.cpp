@@ -6,8 +6,7 @@
 //  Copyright © 2016 Michele Gruppioni. All rights reserved.
 //
 
-#if defined(SPARK)
-#else
+#if !defined(SPARK)
 
 #include <iostream>
 #include <assert.h>

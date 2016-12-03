@@ -6,6 +6,8 @@
 //  Copyright © 2016 Michele Gruppioni. All rights reserved.
 //
 
+#ifdef TEST
+
 #include "TestDoubleExecutionCommandExecutor.h"
 
 TestDoubleExecutionCommandExecutor::TestDoubleExecutionCommandExecutor(CommandExecutor *commandExecutor)
@@ -16,3 +18,5 @@ void TestDoubleExecutionCommandExecutor::executeCommand(Command *command) {
     command->execute();
     commandExecutor->executeCommand(command);
 }
+
+#endif

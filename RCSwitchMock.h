@@ -6,7 +6,8 @@
 //  Copyright © 2016 Michele Gruppioni. All rights reserved.
 //
 
-#if !defined(SPARK)
+#ifdef TEST
+
 #ifndef RCSwitchMock_h
 #define RCSwitchMock_h
 
@@ -21,4 +22,5 @@ public:
 };
 
 #endif /* RCSwitchMock_h */
+
 #endif

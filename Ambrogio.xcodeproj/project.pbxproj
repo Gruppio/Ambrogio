@@ -314,6 +314,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 975R26MN46;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D",
+					TEST,
+					"$(OTHER_CFLAGS)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -322,6 +327,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 975R26MN46;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D",
+					TEST,
+					"$(OTHER_CFLAGS)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

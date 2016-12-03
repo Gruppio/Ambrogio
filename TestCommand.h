@@ -6,6 +6,8 @@
 //  Copyright © 2016 Michele Gruppioni. All rights reserved.
 //
 
+#ifdef TEST
+
 #ifndef TestCommand_h
 #define TestCommand_h
 
@@ -21,3 +23,5 @@ public:
 };
 
 #endif /* TestCommand_h */
+
+#endif

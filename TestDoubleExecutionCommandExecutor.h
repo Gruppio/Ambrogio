@@ -6,6 +6,8 @@
 //  Copyright © 2016 Michele Gruppioni. All rights reserved.
 //
 
+#ifdef TEST
+
 #ifndef TestDoubleExecutionCommandExecutor_h
 #define TestDoubleExecutionCommandExecutor_h
 
@@ -19,3 +21,5 @@ public:
 };
 
 #endif /* TestDoubleExecutionCommandExecutor_h */
+
+#endif

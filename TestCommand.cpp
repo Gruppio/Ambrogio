@@ -6,6 +6,8 @@
 //  Copyright © 2016 Michele Gruppioni. All rights reserved.
 //
 
+#ifdef TEST
+
 #include "TestCommand.h"
 
 TestCommand::TestCommand() {
@@ -15,3 +17,5 @@ TestCommand::TestCommand() {
 void TestCommand::execute() {
     numberOfExecutions++;
 }
+
+#endif

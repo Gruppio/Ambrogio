@@ -6,6 +6,8 @@
 //  Copyright © 2016 Michele Gruppioni. All rights reserved.
 //
 
+#ifdef TEST
+
 #include "RCSwitchMock.h"
 
 RCSwitch::RCSwitch() {
@@ -19,3 +21,5 @@ void RCSwitch::disableTransmit() {
 
 void RCSwitch::send(unsigned long code, unsigned int length) {
 }
+
+#endif
