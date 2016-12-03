@@ -13,13 +13,8 @@
 
 LivingRoomLampOnCommand::LivingRoomLampOnCommand() {
     description = "Turn On the Living room lamp";
-#if defined(SPARK)
-    rcSwitch.enableTransmit(PIN_433_MHZ_TX);
-#endif
 }
 
 void LivingRoomLampOnCommand::execute() {
-#if defined(SPARK)
-    rcSwitch.send(AUKEY_LIVING_ROOM_LAMP_ON_COMMAND_CODE, AUKEY_PROTOCOL_CODE);
-#endif
+    transmitCode(AUKEY_LIVING_ROOM_LAMP_ON_COMMAND_CODE);
 }

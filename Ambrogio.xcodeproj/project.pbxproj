@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71089A5E1DF316F7000D234D /* AukeyCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71089A5C1DF316F7000D234D /* AukeyCommand.cpp */; };
 		71BF105B1DE1EB6F0092DAE1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF105A1DE1EB6F0092DAE1 /* main.cpp */; };
 		71BF10681DE1ED250092DAE1 /* CommandExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10661DE1ED250092DAE1 /* CommandExecutor.cpp */; };
 		71BF106B1DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10691DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp */; };
@@ -35,6 +36,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		71089A5C1DF316F7000D234D /* AukeyCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AukeyCommand.cpp; sourceTree = "<group>"; };
+		71089A5D1DF316F7000D234D /* AukeyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AukeyCommand.h; sourceTree = "<group>"; };
 		71BF10501DE0BE640092DAE1 /* Ambrogio */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ambrogio; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BF105A1DE1EB6F0092DAE1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Tests/main.cpp; sourceTree = "<group>"; };
 		71BF10641DE1EC5B0092DAE1 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
@@ -82,11 +85,13 @@
 		71BF10471DE0BE640092DAE1 = {
 			isa = PBXGroup;
 			children = (
+				71BF108A1DE26A0E0092DAE1 /* AukeyCommandCodes.h */,
+				71089A5C1DF316F7000D234D /* AukeyCommand.cpp */,
+				71089A5D1DF316F7000D234D /* AukeyCommand.h */,
 				71F939861DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp */,
 				71F939871DE275E80010DA95 /* LedIndicatorCommandExecutor.h */,
 				71BF108B1DE26AE90092DAE1 /* LivingRoomLampOffCommand.cpp */,
 				71BF108C1DE26AE90092DAE1 /* LivingRoomLampOffCommand.h */,
-				71BF108A1DE26A0E0092DAE1 /* AukeyCommandCodes.h */,
 				71BF10891DE267460092DAE1 /* Pinout.h */,
 				71BF10831DE265DE0092DAE1 /* LivingRoomLampOnCommand.cpp */,
 				71BF10841DE265DE0092DAE1 /* LivingRoomLampOnCommand.h */,
@@ -199,6 +204,7 @@
 				71F939881DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp in Sources */,
 				71BF107D1DE24BC30092DAE1 /* LedPanelOnCommand.cpp in Sources */,
 				71BF106B1DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp in Sources */,
+				71089A5E1DF316F7000D234D /* AukeyCommand.cpp in Sources */,
 				71BF10681DE1ED250092DAE1 /* CommandExecutor.cpp in Sources */,
 				71BF10711DE23DE50092DAE1 /* TestDoubleExecutionCommandExecutor.cpp in Sources */,
 				71BF10811DE260980092DAE1 /* LedPanelOffCommand.cpp in Sources */,

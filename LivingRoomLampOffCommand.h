@@ -9,18 +9,9 @@
 #ifndef LivingRoomLampOffCommand_h
 #define LivingRoomLampOffCommand_h
 
-#include "Command.h"
+#include "AukeyCommand.h"
 
-#if defined(SPARK)
-#include "RCSwitch.h"
-#endif
-
-class LivingRoomLampOffCommand: public Command {
-private:
-#if defined(SPARK)
-    RCSwitch rcSwitch = RCSwitch();
-#endif
-    
+class LivingRoomLampOffCommand: public AukeyCommand {    
 public:
     LivingRoomLampOffCommand();
     virtual ~LivingRoomLampOffCommand(){};
