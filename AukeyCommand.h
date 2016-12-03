@@ -19,7 +19,7 @@ protected:
 #if defined(SPARK)
     RCSwitch *rcSwitch;
 #endif
-    void transmitCode(int code);
+    void transmitCode(unsigned long code);
     
 public:
     AukeyCommand();

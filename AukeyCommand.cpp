@@ -13,6 +13,7 @@
 
 AukeyCommand::AukeyCommand() {
     description = "Aukey Command";
+    pinMode(PIN_433_MHZ_TX, OUTPUT);
 #if defined(SPARK)
     rcSwitch = new RCSwitch();
     rcSwitch->enableTransmit(PIN_433_MHZ_TX);
@@ -26,11 +27,10 @@ AukeyCommand::~AukeyCommand() {
 }
 
 void AukeyCommand::execute() {
-
 }
 
-void AukeyCommand::transmitCode(int code) {
+void AukeyCommand::transmitCode(unsigned long code) {
 #if defined(SPARK)
-    rcSwitch.send(code, AUKEY_PROTOCOL_CODE);
+    rcSwitch->send(code, AUKEY_PROTOCOL_CODE);
 #endif
 }
