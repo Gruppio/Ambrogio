@@ -18,5 +18,6 @@
 #include "Particle.h"
 #include "Pinout.h"
 #include "AukeyCommandCodes.h"
+#include "CommandsName.h"
 
 #endif /* Ambrogio_h */

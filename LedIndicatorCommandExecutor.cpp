@@ -7,8 +7,7 @@
 //
 
 #include "LedIndicatorCommandExecutor.h"
-#include "Particle.h"
-#include "Pinout.h"
+#include "Ambrogio.h"
 
 LedIndicatorCommandExecutor::LedIndicatorCommandExecutor(CommandExecutor *commandExecutor)
 : CommandExecutorDecorator(commandExecutor) {

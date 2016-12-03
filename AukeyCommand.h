@@ -10,15 +10,11 @@
 #define AukeyCommand_h
 
 #include "Command.h"
-#if defined(SPARK)
-#include "RCSwitch.h"
-#endif
+#include "Ambrogio.h"
 
 class AukeyCommand: public Command {
 protected:
-#if defined(SPARK)
     RCSwitch *rcSwitch;
-#endif
     void transmitCode(unsigned long code);
     
 public:

@@ -7,14 +7,7 @@
 //
 
 #include "SerialLoggerCommandExecutor.h"
-
-#if defined(SPARK)
-#include "application.h"
-#define log(message) Serial.println(message);
-#else
-#include <iostream>
-#define log(message) std::cout << message << std::endl;
-#endif
+#include "Particle.h"
 
 SerialLoggerCommandExecutor::SerialLoggerCommandExecutor(CommandExecutor *commandExecutor)
 : CommandExecutorDecorator(commandExecutor) {

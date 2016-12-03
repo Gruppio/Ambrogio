@@ -7,9 +7,7 @@
 //
 
 #include "LivingRoomLampOnCommand.h"
-#include "Pinout.h"
-#include "Particle.h"
-#include "AukeyCommandCodes.h"
+#include "Ambrogio.h"
 
 LivingRoomLampOnCommand::LivingRoomLampOnCommand() {
     description = "Turn On the Living room lamp";
