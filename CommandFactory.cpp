@@ -27,43 +27,43 @@ Command* CommandFactory::createCommand(const char* commandName) {
     }
     
     if (strcmp(commandName, LIVING_ROOM_LAMP_ON) == 0) {
-        return new AukeyCommand(remoteController, AUKEY_LIVING_ROOM_LAMP_ON_COMMAND_CODE, "Turn on the living room lamp");
+        return new AukeyCommand(remoteController, AUKEY_LIVING_ROOM_LAMP_ON_COMMAND_CODE, "Turned on the living room lamp");
     }
     
     if (strcmp(commandName, LIVING_ROOM_LAMP_OFF) == 0) {
-        return new AukeyCommand(remoteController, AUKEY_LIVING_ROOM_LAMP_OFF_COMMAND_CODE, "Turn off the living room lamp");
+        return new AukeyCommand(remoteController, AUKEY_LIVING_ROOM_LAMP_OFF_COMMAND_CODE, "Turned off the living room lamp");
     }
     
     if (strcmp(commandName, LED_STRIP_LEFT_ON) == 0) {
-        return new AukeyCommand(remoteController, AUKEY_LED_STRIP_LEFT_ON_COMMAND_CODE, "Turn on the kitchen left led strip");
+        return new AukeyCommand(remoteController, AUKEY_LED_STRIP_LEFT_ON_COMMAND_CODE, "Turned on the kitchen left led strip");
     }
     
     if (strcmp(commandName, LED_STRIP_LEFT_OFF) == 0) {
-        return new AukeyCommand(remoteController, AUKEY_LED_STRIP_LEFT_OFF_COMMAND_CODE, "Turn off the kitchen left led strip");
+        return new AukeyCommand(remoteController, AUKEY_LED_STRIP_LEFT_OFF_COMMAND_CODE, "Turned off the kitchen left led strip");
     }
     
     if (strcmp(commandName, LED_STRIP_RIGHT_ON) == 0) {
-        return new AukeyCommand(remoteController, AUKEY_LED_STRIP_RIGHT_ON_COMMAND_CODE, "Turn on the kitchen right led strip");
+        return new AukeyCommand(remoteController, AUKEY_LED_STRIP_RIGHT_ON_COMMAND_CODE, "Turned on the kitchen right led strip");
     }
     
     if (strcmp(commandName, LED_STRIP_RIGHT_OFF) == 0) {
-        return new AukeyCommand(remoteController, AUKEY_LED_STRIP_RIGHT_OFF_COMMAND_CODE, "Turn off the kitchen right led strip");
+        return new AukeyCommand(remoteController, AUKEY_LED_STRIP_RIGHT_OFF_COMMAND_CODE, "Turned off the kitchen right led strip");
     }
     
     if (strcmp(commandName, COFFEE_MACHINE_ON) == 0) {
-        return new AukeyCommand(remoteController, AUKEY_COFFEE_MACHINE_ON_COMMAND_CODE, "Turn on the coffee machine");
+        return new AukeyCommand(remoteController, AUKEY_COFFEE_MACHINE_ON_COMMAND_CODE, "Turned on the coffee machine");
     }
     
     if (strcmp(commandName, COFFEE_MACHINE_OFF) == 0) {
-        return new AukeyCommand(remoteController, AUKEY_COFFEE_MACHINE_OFF_COMMAND_CODE, "Turn off the coffee machine");
+        return new AukeyCommand(remoteController, AUKEY_COFFEE_MACHINE_OFF_COMMAND_CODE, "Turned off the coffee machine");
     }
     
     if (strcmp(commandName, CHRISTMAS_TREE_ON) == 0) {
-        return new AukeyCommand(remoteController, AUKEY_CHRISTMAS_TREE_ON_COMMAND_CODE, "Turn on the christmas tree");
+        return new AukeyCommand(remoteController, AUKEY_CHRISTMAS_TREE_ON_COMMAND_CODE, "Turned on the christmas tree");
     }
     
     if (strcmp(commandName, CHRISTMAS_TREE_OFF) == 0) {
-        return new AukeyCommand(remoteController, AUKEY_CHRISTMAS_TREE_OFF_COMMAND_CODE, "Turn off the christmas tree");
+        return new AukeyCommand(remoteController, AUKEY_CHRISTMAS_TREE_OFF_COMMAND_CODE, "Turned off the christmas tree");
     }
     
     return new NullCommand();
