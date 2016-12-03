@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		71089A5E1DF316F7000D234D /* AukeyCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71089A5C1DF316F7000D234D /* AukeyCommand.cpp */; };
+		71089A611DF326EB000D234D /* RCSwitchMock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71089A5F1DF326EB000D234D /* RCSwitchMock.cpp */; };
 		71BF105B1DE1EB6F0092DAE1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF105A1DE1EB6F0092DAE1 /* main.cpp */; };
 		71BF10681DE1ED250092DAE1 /* CommandExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10661DE1ED250092DAE1 /* CommandExecutor.cpp */; };
 		71BF106B1DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10691DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp */; };
@@ -38,6 +39,9 @@
 /* Begin PBXFileReference section */
 		71089A5C1DF316F7000D234D /* AukeyCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AukeyCommand.cpp; sourceTree = "<group>"; };
 		71089A5D1DF316F7000D234D /* AukeyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AukeyCommand.h; sourceTree = "<group>"; };
+		71089A5F1DF326EB000D234D /* RCSwitchMock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RCSwitchMock.cpp; sourceTree = "<group>"; };
+		71089A601DF326EB000D234D /* RCSwitchMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSwitchMock.h; sourceTree = "<group>"; };
+		71089A621DF32847000D234D /* Ambrogio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ambrogio.h; sourceTree = "<group>"; };
 		71BF10501DE0BE640092DAE1 /* Ambrogio */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ambrogio; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BF105A1DE1EB6F0092DAE1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Tests/main.cpp; sourceTree = "<group>"; };
 		71BF10641DE1EC5B0092DAE1 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
@@ -85,6 +89,9 @@
 		71BF10471DE0BE640092DAE1 = {
 			isa = PBXGroup;
 			children = (
+				71089A621DF32847000D234D /* Ambrogio.h */,
+				71089A5F1DF326EB000D234D /* RCSwitchMock.cpp */,
+				71089A601DF326EB000D234D /* RCSwitchMock.h */,
 				71BF108A1DE26A0E0092DAE1 /* AukeyCommandCodes.h */,
 				71089A5C1DF316F7000D234D /* AukeyCommand.cpp */,
 				71089A5D1DF316F7000D234D /* AukeyCommand.h */,
@@ -198,6 +205,7 @@
 				71BF10741DE244C90092DAE1 /* SerialLoggerCommandExecutor.cpp in Sources */,
 				71BF10771DE2498B0092DAE1 /* CommandFactory.cpp in Sources */,
 				71BF107A1DE24AA20092DAE1 /* NullCommand.cpp in Sources */,
+				71089A611DF326EB000D234D /* RCSwitchMock.cpp in Sources */,
 				71BF10851DE265DE0092DAE1 /* LivingRoomLampOnCommand.cpp in Sources */,
 				71BF106E1DE1F2070092DAE1 /* TestCommand.cpp in Sources */,
 				71BF108D1DE26AE90092DAE1 /* LivingRoomLampOffCommand.cpp in Sources */,
