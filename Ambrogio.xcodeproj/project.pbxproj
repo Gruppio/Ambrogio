@@ -10,6 +10,7 @@
 		71089A5E1DF316F7000D234D /* AukeyCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71089A5C1DF316F7000D234D /* AukeyCommand.cpp */; };
 		71089A611DF326EB000D234D /* RCSwitchMock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71089A5F1DF326EB000D234D /* RCSwitchMock.cpp */; };
 		71089A691DF330C8000D234D /* RemoteController433.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71089A671DF330C8000D234D /* RemoteController433.cpp */; };
+		71089A6C1DF3426F000D234D /* RemoteControllerMock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71089A6A1DF3426F000D234D /* RemoteControllerMock.cpp */; };
 		71BF105B1DE1EB6F0092DAE1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF105A1DE1EB6F0092DAE1 /* main.cpp */; };
 		71BF10681DE1ED250092DAE1 /* CommandExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10661DE1ED250092DAE1 /* CommandExecutor.cpp */; };
 		71BF106B1DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10691DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp */; };
@@ -44,6 +45,8 @@
 		71089A631DF32F5C000D234D /* RemoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteController.h; sourceTree = "<group>"; };
 		71089A671DF330C8000D234D /* RemoteController433.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RemoteController433.cpp; sourceTree = "<group>"; };
 		71089A681DF330C8000D234D /* RemoteController433.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteController433.h; sourceTree = "<group>"; };
+		71089A6A1DF3426F000D234D /* RemoteControllerMock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RemoteControllerMock.cpp; sourceTree = "<group>"; };
+		71089A6B1DF3426F000D234D /* RemoteControllerMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteControllerMock.h; sourceTree = "<group>"; };
 		71BF10501DE0BE640092DAE1 /* Ambrogio */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ambrogio; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BF105A1DE1EB6F0092DAE1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Tests/main.cpp; sourceTree = "<group>"; };
 		71BF10641DE1EC5B0092DAE1 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 		71BF10471DE0BE640092DAE1 = {
 			isa = PBXGroup;
 			children = (
+				71089A6A1DF3426F000D234D /* RemoteControllerMock.cpp */,
+				71089A6B1DF3426F000D234D /* RemoteControllerMock.h */,
 				71089A671DF330C8000D234D /* RemoteController433.cpp */,
 				71089A681DF330C8000D234D /* RemoteController433.h */,
 				71089A631DF32F5C000D234D /* RemoteController.h */,
@@ -203,6 +208,7 @@
 				71BF10771DE2498B0092DAE1 /* CommandFactory.cpp in Sources */,
 				71089A691DF330C8000D234D /* RemoteController433.cpp in Sources */,
 				71BF107A1DE24AA20092DAE1 /* NullCommand.cpp in Sources */,
+				71089A6C1DF3426F000D234D /* RemoteControllerMock.cpp in Sources */,
 				71089A611DF326EB000D234D /* RCSwitchMock.cpp in Sources */,
 				71BF106E1DE1F2070092DAE1 /* TestCommand.cpp in Sources */,
 				71F939881DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp in Sources */,

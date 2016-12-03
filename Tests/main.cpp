@@ -21,11 +21,7 @@
 #include "LedPanelOffCommand.h"
 #include "AukeyCommand.h"
 #include "RemoteController.h"
-#include "RemoteController433.h"
-
-//Global Dependencies
-RCSwitch *rcSwitch = new RCSwitch();
-RemoteController *remoteController = new RemoteController433(rcSwitch);
+#include "RemoteControllerMock.h"
 
 // CommandExecutorTests
 void commandExecutorTests();
@@ -39,6 +35,7 @@ void testCommandExecutorLogger();
 
 // CommandFactory Tests
 void commandFactoryTests();
+void testCommandFactoryNotNullRemoteController();
 void testCommandFactoryNullCommand();
 void testCommandFactoryLedPanelOn();
 void testCommandFactoryLedPanelOff();
@@ -53,15 +50,8 @@ int main(int argc, const char * argv[]) {
     commandExecutorDecoratedTests();
     commandFactoryTests();
     
-    delete rcSwitch;
-    delete remoteController;
     std::cout << "Done\n\n";
     return 0;
-}
-
-///////////////////////////////////////////////
-CommandFactory* createCommandFactory() {
-    return new CommandFactory(remoteController);
 }
 
 ///////////////////////////////////////////////
@@ -129,6 +119,7 @@ void testCommandExecutorLogger() {
 ///////////////////////////////////////////////
 
 void commandFactoryTests() {
+    testCommandFactoryNotNullRemoteController();
     testCommandFactoryNullCommand();
     testCommandFactoryLedPanelOn();
     testCommandFactoryLedPanelOff();
@@ -136,7 +127,18 @@ void commandFactoryTests() {
     testCommandFactoryLivingRoomLampOff();
 }
 
+void testCommandFactoryNotNullRemoteController() {
+    RemoteController *remoteController = new RemoteControllerMock();
+    CommandFactory *commandFactory = new CommandFactory(remoteController);
+    
+    assert(commandFactory->remoteController != NULL);
+
+    delete commandFactory;
+    delete remoteController;
+}
+
 void testCommandFactoryNullCommand() {
+    RemoteController *remoteController = new RemoteControllerMock();
     CommandFactory *commandFactory = new CommandFactory(remoteController);
     Command *command = commandFactory->createCommand("wrong command name");
     NullCommand *nullCommand = dynamic_cast<NullCommand*>(command);
@@ -145,9 +147,11 @@ void testCommandFactoryNullCommand() {
     
     delete command;
     delete commandFactory;
+    delete remoteController;
 }
 
 void testCommandFactoryLedPanelOn() {
+    RemoteController *remoteController = new RemoteControllerMock();
     CommandFactory *commandFactory = new CommandFactory(remoteController);
     Command *command = commandFactory->createCommand(LED_PANEL_ON);
     LedPanelOnCommand *ledPanelOnCommand = dynamic_cast<LedPanelOnCommand*>(command);
@@ -156,9 +160,11 @@ void testCommandFactoryLedPanelOn() {
     
     delete command;
     delete commandFactory;
+    delete remoteController;
 }
 
 void testCommandFactoryLedPanelOff() {
+    RemoteController *remoteController = new RemoteControllerMock();
     CommandFactory *commandFactory = new CommandFactory(remoteController);
     Command *command = commandFactory->createCommand(LED_PANEL_OFF);
     LedPanelOffCommand *ledPanelOffCommand = dynamic_cast<LedPanelOffCommand*>(command);
@@ -167,30 +173,35 @@ void testCommandFactoryLedPanelOff() {
     
     delete command;
     delete commandFactory;
+    delete remoteController;
 }
 
 void testCommandFactoryLivingRoomLampOn() {
+    RemoteController *remoteController = new RemoteControllerMock();
     CommandFactory *commandFactory = new CommandFactory(remoteController);
     Command *command = commandFactory->createCommand(LIVING_ROOM_LAMP_ON);
     AukeyCommand *aukeyCommand = dynamic_cast<AukeyCommand*>(command);
     
     assert(aukeyCommand != NULL);
-    //assert(aukeyCommand->code == AUKEY_LIVING_ROOM_LAMP_ON_COMMAND_CODE);
+    assert(aukeyCommand->code == AUKEY_LIVING_ROOM_LAMP_ON_COMMAND_CODE);
     
     delete command;
     delete commandFactory;
+    delete remoteController;
 }
 
 void testCommandFactoryLivingRoomLampOff() {
+    RemoteController *remoteController = new RemoteControllerMock();
     CommandFactory *commandFactory = new CommandFactory(remoteController);
     Command *command = commandFactory->createCommand(LIVING_ROOM_LAMP_OFF);
     AukeyCommand *aukeyCommand = dynamic_cast<AukeyCommand*>(command);
     
     assert(aukeyCommand != NULL);
-    //assert(aukeyCommand->code == AUKEY_LIVING_ROOM_LAMP_ON_COMMAND_CODE);
+    assert(aukeyCommand->code == AUKEY_LIVING_ROOM_LAMP_ON_COMMAND_CODE);
     
     delete command;
     delete commandFactory;
+    delete remoteController;
 }
 
 

@@ -16,9 +16,7 @@
 class CommandFactory {
 public:
     RemoteController *remoteController;
-    
     CommandFactory(RemoteController *remoteController);
-    virtual ~CommandFactory() {};
     Command* createCommand(const char* commandName);
 };
 

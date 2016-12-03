@@ -9,7 +9,7 @@
 #include "RemoteController433.h"
 
 RemoteController433::RemoteController433(RCSwitch *rcSwitch) {
-    rcSwitch = rcSwitch;
+    this->rcSwitch = rcSwitch;
 }
 
 void RemoteController433::transmit(REMOTE_CONTROLLER_TRANSMIT_TYPE code) {

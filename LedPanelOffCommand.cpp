@@ -12,7 +12,7 @@
 #define PULSE_LENGHT 250
 
 LedPanelOffCommand::LedPanelOffCommand() {
-    description = "Turn Led Panel Off";
+    this->description = "Turn Led Panel Off";
     pinMode(PIN_LED_PANEL_OFF, INPUT);
 }
 

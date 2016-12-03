@@ -11,7 +11,7 @@
 #include "TestCommand.h"
 
 TestCommand::TestCommand() {
-    description = "Test Command";
+    this->description = "Test Command";
 }
 
 void TestCommand::execute() {

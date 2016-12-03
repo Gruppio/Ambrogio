@@ -14,7 +14,7 @@
 #include "AukeyCommand.h"
 
 CommandFactory::CommandFactory(RemoteController *remoteController) {
-    remoteController = remoteController;
+    this->remoteController = remoteController;
 }
 
 Command* CommandFactory::createCommand(const char* commandName) {

@@ -22,7 +22,6 @@ public:
     AukeyCommand(RemoteController *remoteController, REMOTE_CONTROLLER_TRANSMIT_TYPE code, const char *description);
     virtual ~AukeyCommand() {};
     virtual void execute();
-    
 };
 
 #endif /* AukeyCommand_h */
