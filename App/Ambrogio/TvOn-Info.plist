@@ -7,13 +7,13 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.michelegruppioni.Ambrogio.CoffeeMachineOff</string>
+	<string>com.michelegruppioni.Ambrogio.TvOn</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Macchina Caffè Off</string>
+	<string>Tv On</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -35,10 +35,10 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>Command</key>
-	<string>CoffeeMachineOff</string>
+	<string>TvOn</string>
 	<key>Title</key>
-	<string>☕️</string>
+	<string>📺</string>
 	<key>Description</key>
-	<string>Coffee Machine Off</string>
+	<string>Tv On</string>
 </dict>
 </plist>

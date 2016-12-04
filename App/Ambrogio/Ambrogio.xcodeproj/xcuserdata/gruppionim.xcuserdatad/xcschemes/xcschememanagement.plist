@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ChristmasTreeOff.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>ChristmasTreeOn.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
 		<key>CoffeeMachineOff.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -58,6 +68,16 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
+		</dict>
+		<key>TvOff.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>TvOn.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -123,6 +143,26 @@
 			<true/>
 		</dict>
 		<key>71D411E41DF47C36006B0694</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D411F31DF47CA1006B0694</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D412021DF47CE6006B0694</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D412111DF47D30006B0694</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D412201DF47D9E006B0694</key>
 		<dict>
 			<key>primary</key>
 			<true/>

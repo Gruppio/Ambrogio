@@ -74,6 +74,30 @@
 		71D411EB1DF47C36006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
 		71D411EC1DF47C36006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
 		71D411ED1DF47C36006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
+		71D411F51DF47CA1006B0694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112E1DF464AF006B0694 /* ViewController.swift */; };
+		71D411F61DF47CA1006B0694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112C1DF464AF006B0694 /* AppDelegate.swift */; };
+		71D411F71DF47CA1006B0694 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4114C1DF46913006B0694 /* AccessToken.swift */; };
+		71D411FA1DF47CA1006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
+		71D411FB1DF47CA1006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
+		71D411FC1DF47CA1006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
+		71D412041DF47CE6006B0694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112E1DF464AF006B0694 /* ViewController.swift */; };
+		71D412051DF47CE6006B0694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112C1DF464AF006B0694 /* AppDelegate.swift */; };
+		71D412061DF47CE6006B0694 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4114C1DF46913006B0694 /* AccessToken.swift */; };
+		71D412091DF47CE6006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
+		71D4120A1DF47CE6006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
+		71D4120B1DF47CE6006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
+		71D412131DF47D30006B0694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112E1DF464AF006B0694 /* ViewController.swift */; };
+		71D412141DF47D30006B0694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112C1DF464AF006B0694 /* AppDelegate.swift */; };
+		71D412151DF47D30006B0694 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4114C1DF46913006B0694 /* AccessToken.swift */; };
+		71D412181DF47D30006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
+		71D412191DF47D30006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
+		71D4121A1DF47D30006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
+		71D412221DF47D9E006B0694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112E1DF464AF006B0694 /* ViewController.swift */; };
+		71D412231DF47D9E006B0694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112C1DF464AF006B0694 /* AppDelegate.swift */; };
+		71D412241DF47D9E006B0694 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4114C1DF46913006B0694 /* AccessToken.swift */; };
+		71D412271DF47D9E006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
+		71D412281DF47D9E006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
+		71D412291DF47D9E006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +142,14 @@
 		71D411E31DF47BD7006B0694 /* CoffeeMachineOn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CoffeeMachineOn-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/CoffeeMachineOn-Info.plist"; sourceTree = "<absolute>"; };
 		71D411F11DF47C36006B0694 /* CoffeeMachineOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeMachineOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D411F21DF47C36006B0694 /* CoffeeMachineOff-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CoffeeMachineOff-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/CoffeeMachineOff-Info.plist"; sourceTree = "<absolute>"; };
+		71D412001DF47CA1006B0694 /* TvOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TvOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D412011DF47CA1006B0694 /* TvOn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TvOn-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/TvOn-Info.plist"; sourceTree = "<absolute>"; };
+		71D4120F1DF47CE6006B0694 /* TvOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TvOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D412101DF47CE6006B0694 /* TvOff-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TvOff-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/TvOff-Info.plist"; sourceTree = "<absolute>"; };
+		71D4121E1DF47D30006B0694 /* ChristmasTreeOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChristmasTreeOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D4121F1DF47D30006B0694 /* ChristmasTreeOn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ChristmasTreeOn-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/ChristmasTreeOn-Info.plist"; sourceTree = "<absolute>"; };
+		71D4122D1DF47D9E006B0694 /* ChristmasTreeOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChristmasTreeOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D4122E1DF47D9F006B0694 /* ChristmasTreeOff-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ChristmasTreeOff-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/ChristmasTreeOff-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +237,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71D411F81DF47CA1006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D412071DF47CE6006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D412161DF47D30006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D412251DF47D9E006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -224,6 +284,10 @@
 				71D411D41DF47B61006B0694 /* LedStripRightOff-Info.plist */,
 				71D411E31DF47BD7006B0694 /* CoffeeMachineOn-Info.plist */,
 				71D411F21DF47C36006B0694 /* CoffeeMachineOff-Info.plist */,
+				71D412011DF47CA1006B0694 /* TvOn-Info.plist */,
+				71D412101DF47CE6006B0694 /* TvOff-Info.plist */,
+				71D4121F1DF47D30006B0694 /* ChristmasTreeOn-Info.plist */,
+				71D4122E1DF47D9F006B0694 /* ChristmasTreeOff-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,6 +306,10 @@
 				71D411D31DF47B60006B0694 /* LedStripRightOff.app */,
 				71D411E21DF47BD7006B0694 /* CoffeeMachineOn.app */,
 				71D411F11DF47C36006B0694 /* CoffeeMachineOff.app */,
+				71D412001DF47CA1006B0694 /* TvOn.app */,
+				71D4120F1DF47CE6006B0694 /* TvOff.app */,
+				71D4121E1DF47D30006B0694 /* ChristmasTreeOn.app */,
+				71D4122D1DF47D9E006B0694 /* ChristmasTreeOff.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -477,6 +545,74 @@
 			productReference = 71D411F11DF47C36006B0694 /* CoffeeMachineOff.app */;
 			productType = "com.apple.product-type.application";
 		};
+		71D411F31DF47CA1006B0694 /* TvOn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D411FD1DF47CA1006B0694 /* Build configuration list for PBXNativeTarget "TvOn" */;
+			buildPhases = (
+				71D411F41DF47CA1006B0694 /* Sources */,
+				71D411F81DF47CA1006B0694 /* Frameworks */,
+				71D411F91DF47CA1006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TvOn;
+			productName = Ambrogio;
+			productReference = 71D412001DF47CA1006B0694 /* TvOn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71D412021DF47CE6006B0694 /* TvOff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D4120C1DF47CE6006B0694 /* Build configuration list for PBXNativeTarget "TvOff" */;
+			buildPhases = (
+				71D412031DF47CE6006B0694 /* Sources */,
+				71D412071DF47CE6006B0694 /* Frameworks */,
+				71D412081DF47CE6006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TvOff;
+			productName = Ambrogio;
+			productReference = 71D4120F1DF47CE6006B0694 /* TvOff.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71D412111DF47D30006B0694 /* ChristmasTreeOn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D4121B1DF47D30006B0694 /* Build configuration list for PBXNativeTarget "ChristmasTreeOn" */;
+			buildPhases = (
+				71D412121DF47D30006B0694 /* Sources */,
+				71D412161DF47D30006B0694 /* Frameworks */,
+				71D412171DF47D30006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChristmasTreeOn;
+			productName = Ambrogio;
+			productReference = 71D4121E1DF47D30006B0694 /* ChristmasTreeOn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71D412201DF47D9E006B0694 /* ChristmasTreeOff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D4122A1DF47D9E006B0694 /* Build configuration list for PBXNativeTarget "ChristmasTreeOff" */;
+			buildPhases = (
+				71D412211DF47D9E006B0694 /* Sources */,
+				71D412251DF47D9E006B0694 /* Frameworks */,
+				71D412261DF47D9E006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChristmasTreeOff;
+			productName = Ambrogio;
+			productReference = 71D4122D1DF47D9E006B0694 /* ChristmasTreeOff.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -528,6 +664,18 @@
 					71D411E41DF47C36006B0694 = {
 						DevelopmentTeam = 975R26MN46;
 					};
+					71D411F31DF47CA1006B0694 = {
+						DevelopmentTeam = 975R26MN46;
+					};
+					71D412021DF47CE6006B0694 = {
+						DevelopmentTeam = 975R26MN46;
+					};
+					71D412111DF47D30006B0694 = {
+						DevelopmentTeam = 975R26MN46;
+					};
+					71D412201DF47D9E006B0694 = {
+						DevelopmentTeam = 975R26MN46;
+					};
 				};
 			};
 			buildConfigurationList = 71D411241DF464AF006B0694 /* Build configuration list for PBXProject "Ambrogio" */;
@@ -555,6 +703,10 @@
 				71D411C61DF47B60006B0694 /* LedStripRightOff */,
 				71D411D51DF47BD7006B0694 /* CoffeeMachineOn */,
 				71D411E41DF47C36006B0694 /* CoffeeMachineOff */,
+				71D411F31DF47CA1006B0694 /* TvOn */,
+				71D412021DF47CE6006B0694 /* TvOff */,
+				71D412111DF47D30006B0694 /* ChristmasTreeOn */,
+				71D412201DF47D9E006B0694 /* ChristmasTreeOff */,
 			);
 		};
 /* End PBXProject section */
@@ -677,6 +829,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71D411F91DF47CA1006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411FA1DF47CA1006B0694 /* LaunchScreen.storyboard in Resources */,
+				71D411FB1DF47CA1006B0694 /* Assets.xcassets in Resources */,
+				71D411FC1DF47CA1006B0694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D412081DF47CE6006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D412091DF47CE6006B0694 /* LaunchScreen.storyboard in Resources */,
+				71D4120A1DF47CE6006B0694 /* Assets.xcassets in Resources */,
+				71D4120B1DF47CE6006B0694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D412171DF47D30006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D412181DF47D30006B0694 /* LaunchScreen.storyboard in Resources */,
+				71D412191DF47D30006B0694 /* Assets.xcassets in Resources */,
+				71D4121A1DF47D30006B0694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D412261DF47D9E006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D412271DF47D9E006B0694 /* LaunchScreen.storyboard in Resources */,
+				71D412281DF47D9E006B0694 /* Assets.xcassets in Resources */,
+				71D412291DF47D9E006B0694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -795,6 +987,46 @@
 				71D411E61DF47C36006B0694 /* ViewController.swift in Sources */,
 				71D411E71DF47C36006B0694 /* AppDelegate.swift in Sources */,
 				71D411E81DF47C36006B0694 /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411F41DF47CA1006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411F51DF47CA1006B0694 /* ViewController.swift in Sources */,
+				71D411F61DF47CA1006B0694 /* AppDelegate.swift in Sources */,
+				71D411F71DF47CA1006B0694 /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D412031DF47CE6006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D412041DF47CE6006B0694 /* ViewController.swift in Sources */,
+				71D412051DF47CE6006B0694 /* AppDelegate.swift in Sources */,
+				71D412061DF47CE6006B0694 /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D412121DF47D30006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D412131DF47D30006B0694 /* ViewController.swift in Sources */,
+				71D412141DF47D30006B0694 /* AppDelegate.swift in Sources */,
+				71D412151DF47D30006B0694 /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D412211DF47D9E006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D412221DF47D9E006B0694 /* ViewController.swift in Sources */,
+				71D412231DF47D9E006B0694 /* AppDelegate.swift in Sources */,
+				71D412241DF47D9E006B0694 /* AccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1234,7 +1466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 975R26MN46;
-				INFOPLIST_FILE = "CoffeeMachineOn copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CoffeeMachineOff-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1248,7 +1480,119 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 975R26MN46;
-				INFOPLIST_FILE = "CoffeeMachineOn copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CoffeeMachineOff-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71D411FE1DF47CA1006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/TvOn-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D411FF1DF47CA1006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/TvOn-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71D4120D1DF47CE6006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/TvOff-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D4120E1DF47CE6006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/TvOff-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71D4121C1DF47D30006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/ChristmasTreeOn-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D4121D1DF47D30006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/ChristmasTreeOn-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71D4122B1DF47D9E006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/ChristmasTreeOff-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D4122C1DF47D9E006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/ChristmasTreeOff-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1371,6 +1715,42 @@
 			buildConfigurations = (
 				71D411EF1DF47C36006B0694 /* Debug */,
 				71D411F01DF47C36006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D411FD1DF47CA1006B0694 /* Build configuration list for PBXNativeTarget "TvOn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D411FE1DF47CA1006B0694 /* Debug */,
+				71D411FF1DF47CA1006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D4120C1DF47CE6006B0694 /* Build configuration list for PBXNativeTarget "TvOff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D4120D1DF47CE6006B0694 /* Debug */,
+				71D4120E1DF47CE6006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D4121B1DF47D30006B0694 /* Build configuration list for PBXNativeTarget "ChristmasTreeOn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D4121C1DF47D30006B0694 /* Debug */,
+				71D4121D1DF47D30006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D4122A1DF47D9E006B0694 /* Build configuration list for PBXNativeTarget "ChristmasTreeOff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D4122B1DF47D9E006B0694 /* Debug */,
+				71D4122C1DF47D9E006B0694 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
