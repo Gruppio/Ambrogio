@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71D4112D1DF464AF006B0694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112C1DF464AF006B0694 /* AppDelegate.swift */; };
+		71D4112F1DF464AF006B0694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112E1DF464AF006B0694 /* ViewController.swift */; };
+		71D411321DF464AF006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
+		71D411341DF464AF006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
+		71D411371DF464AF006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
+		71D411421DF464AF006B0694 /* AmbrogioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D411411DF464AF006B0694 /* AmbrogioTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71D4113E1DF464AF006B0694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71D411211DF464AF006B0694 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71D411281DF464AF006B0694;
+			remoteInfo = Ambrogio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71D411291DF464AF006B0694 /* Ambrogio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ambrogio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D4112C1DF464AF006B0694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71D4112E1DF464AF006B0694 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71D411311DF464AF006B0694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71D411331DF464AF006B0694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71D411361DF464AF006B0694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71D411381DF464AF006B0694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71D4113D1DF464AF006B0694 /* AmbrogioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmbrogioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D411411DF464AF006B0694 /* AmbrogioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbrogioTests.swift; sourceTree = "<group>"; };
+		71D411431DF464AF006B0694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71D411261DF464AF006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D4113A1DF464AF006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71D411201DF464AF006B0694 = {
+			isa = PBXGroup;
+			children = (
+				71D4112B1DF464AF006B0694 /* Ambrogio */,
+				71D411401DF464AF006B0694 /* AmbrogioTests */,
+				71D4112A1DF464AF006B0694 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71D4112A1DF464AF006B0694 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71D411291DF464AF006B0694 /* Ambrogio.app */,
+				71D4113D1DF464AF006B0694 /* AmbrogioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71D4112B1DF464AF006B0694 /* Ambrogio */ = {
+			isa = PBXGroup;
+			children = (
+				71D4112C1DF464AF006B0694 /* AppDelegate.swift */,
+				71D4112E1DF464AF006B0694 /* ViewController.swift */,
+				71D411301DF464AF006B0694 /* Main.storyboard */,
+				71D411331DF464AF006B0694 /* Assets.xcassets */,
+				71D411351DF464AF006B0694 /* LaunchScreen.storyboard */,
+				71D411381DF464AF006B0694 /* Info.plist */,
+			);
+			path = Ambrogio;
+			sourceTree = "<group>";
+		};
+		71D411401DF464AF006B0694 /* AmbrogioTests */ = {
+			isa = PBXGroup;
+			children = (
+				71D411411DF464AF006B0694 /* AmbrogioTests.swift */,
+				71D411431DF464AF006B0694 /* Info.plist */,
+			);
+			path = AmbrogioTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71D411281DF464AF006B0694 /* Ambrogio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D411461DF464AF006B0694 /* Build configuration list for PBXNativeTarget "Ambrogio" */;
+			buildPhases = (
+				71D411251DF464AF006B0694 /* Sources */,
+				71D411261DF464AF006B0694 /* Frameworks */,
+				71D411271DF464AF006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ambrogio;
+			productName = Ambrogio;
+			productReference = 71D411291DF464AF006B0694 /* Ambrogio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71D4113C1DF464AF006B0694 /* AmbrogioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D411491DF464AF006B0694 /* Build configuration list for PBXNativeTarget "AmbrogioTests" */;
+			buildPhases = (
+				71D411391DF464AF006B0694 /* Sources */,
+				71D4113A1DF464AF006B0694 /* Frameworks */,
+				71D4113B1DF464AF006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71D4113F1DF464AF006B0694 /* PBXTargetDependency */,
+			);
+			name = AmbrogioTests;
+			productName = AmbrogioTests;
+			productReference = 71D4113D1DF464AF006B0694 /* AmbrogioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71D411211DF464AF006B0694 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Michele Gruppioni";
+				TargetAttributes = {
+					71D411281DF464AF006B0694 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 975R26MN46;
+						ProvisioningStyle = Automatic;
+					};
+					71D4113C1DF464AF006B0694 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 975R26MN46;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 71D411281DF464AF006B0694;
+					};
+				};
+			};
+			buildConfigurationList = 71D411241DF464AF006B0694 /* Build configuration list for PBXProject "Ambrogio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71D411201DF464AF006B0694;
+			productRefGroup = 71D4112A1DF464AF006B0694 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71D411281DF464AF006B0694 /* Ambrogio */,
+				71D4113C1DF464AF006B0694 /* AmbrogioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71D411271DF464AF006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411371DF464AF006B0694 /* LaunchScreen.storyboard in Resources */,
+				71D411341DF464AF006B0694 /* Assets.xcassets in Resources */,
+				71D411321DF464AF006B0694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D4113B1DF464AF006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71D411251DF464AF006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D4112F1DF464AF006B0694 /* ViewController.swift in Sources */,
+				71D4112D1DF464AF006B0694 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411391DF464AF006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411421DF464AF006B0694 /* AmbrogioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71D4113F1DF464AF006B0694 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71D411281DF464AF006B0694 /* Ambrogio */;
+			targetProxy = 71D4113E1DF464AF006B0694 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71D411301DF464AF006B0694 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71D411311DF464AF006B0694 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		71D411351DF464AF006B0694 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71D411361DF464AF006B0694 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71D411441DF464AF006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		71D411451DF464AF006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71D411471DF464AF006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = Ambrogio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		71D411481DF464AF006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = Ambrogio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		71D4114A1DF464AF006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = AmbrogioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.AmbrogioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ambrogio.app/Ambrogio";
+			};
+			name = Debug;
+		};
+		71D4114B1DF464AF006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = AmbrogioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.AmbrogioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ambrogio.app/Ambrogio";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71D411241DF464AF006B0694 /* Build configuration list for PBXProject "Ambrogio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D411441DF464AF006B0694 /* Debug */,
+				71D411451DF464AF006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D411461DF464AF006B0694 /* Build configuration list for PBXNativeTarget "Ambrogio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D411471DF464AF006B0694 /* Debug */,
+				71D411481DF464AF006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		71D411491DF464AF006B0694 /* Build configuration list for PBXNativeTarget "AmbrogioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D4114A1DF464AF006B0694 /* Debug */,
+				71D4114B1DF464AF006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71D411211DF464AF006B0694 /* Project object */;
+}
