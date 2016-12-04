@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ambrogio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,71 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="znk-c4-WNb">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhD-0x-YiA">
+                                <rect key="frame" x="0.0" y="389" width="375" height="278"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GB5-tP-9hJ">
+                                <rect key="frame" x="16" y="40" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="NVC-Rs-G1u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Living Room Lamp On" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="S4l-M4-g8l">
+                                <rect key="frame" x="16" y="160" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wjr-4u-xUs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="GB5-tP-9hJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1EY-3D-ddf"/>
+                            <constraint firstItem="GB5-tP-9hJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="5op-SL-nEc"/>
+                            <constraint firstAttribute="trailing" secondItem="PhD-0x-YiA" secondAttribute="trailing" id="CBf-Jm-SgK"/>
+                            <constraint firstItem="S4l-M4-g8l" firstAttribute="top" secondItem="GB5-tP-9hJ" secondAttribute="bottom" constant="20" id="MQ6-b0-TNH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S4l-M4-g8l" secondAttribute="trailing" id="NmM-Ki-bGv"/>
+                            <constraint firstItem="znk-c4-WNb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SOa-Gw-PAy"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="S4l-M4-g8l" secondAttribute="leading" id="UXL-zt-TmN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PhD-0x-YiA" secondAttribute="bottom" id="chv-t6-urp"/>
+                            <constraint firstItem="PhD-0x-YiA" firstAttribute="top" secondItem="znk-c4-WNb" secondAttribute="bottom" constant="37" id="dVs-1v-zkF"/>
+                            <constraint firstItem="PhD-0x-YiA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iy4-RJ-u0H"/>
+                            <constraint firstItem="GB5-tP-9hJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="olr-0u-IWi"/>
+                            <constraint firstItem="znk-c4-WNb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w2K-cd-8Ii"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ats-Ob-9Pk" appends="YES" id="HBh-yY-IuI"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="znk-c4-WNb" id="BFy-FC-Nnl"/>
+                        <outlet property="descriptionLabel" destination="S4l-M4-g8l" id="Eo5-dF-AQ0"/>
+                        <outlet property="textView" destination="PhD-0x-YiA" id="mib-5q-0Xh"/>
+                        <outlet property="titleLabel" destination="GB5-tP-9hJ" id="ukd-rK-why"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ats-Ob-9Pk">
+                    <connections>
+                        <action selector="didTapTheScreen:" destination="BYZ-38-t0r" id="IDu-VX-J4G"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
