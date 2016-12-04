@@ -7,13 +7,13 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.michelegruppioni.Ambrogio.LivingRoomLampOff</string>
+	<string>com.michelegruppioni.Ambrogio.LedStripRightOff</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Lampada Off</string>
+	<string>Led Destra Off</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -35,10 +35,10 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>Command</key>
-	<string>LivingRoomLampOff</string>
+	<string>LedStripRightOff</string>
 	<key>Title</key>
 	<string>💡</string>
 	<key>Description</key>
-	<string>Living Room Lamp Off</string>
+	<string>Led Strip Right Off</string>
 </dict>
 </plist>

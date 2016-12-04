@@ -38,6 +38,42 @@
 		71D411911DF47879006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
 		71D411921DF47879006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
 		71D411931DF47879006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
+		71D4119B1DF47A0A006B0694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112E1DF464AF006B0694 /* ViewController.swift */; };
+		71D4119C1DF47A0A006B0694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112C1DF464AF006B0694 /* AppDelegate.swift */; };
+		71D4119D1DF47A0A006B0694 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4114C1DF46913006B0694 /* AccessToken.swift */; };
+		71D411A01DF47A0A006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
+		71D411A11DF47A0A006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
+		71D411A21DF47A0A006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
+		71D411AA1DF47AB8006B0694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112E1DF464AF006B0694 /* ViewController.swift */; };
+		71D411AB1DF47AB8006B0694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112C1DF464AF006B0694 /* AppDelegate.swift */; };
+		71D411AC1DF47AB8006B0694 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4114C1DF46913006B0694 /* AccessToken.swift */; };
+		71D411AF1DF47AB8006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
+		71D411B01DF47AB8006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
+		71D411B11DF47AB8006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
+		71D411B91DF47B0E006B0694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112E1DF464AF006B0694 /* ViewController.swift */; };
+		71D411BA1DF47B0E006B0694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112C1DF464AF006B0694 /* AppDelegate.swift */; };
+		71D411BB1DF47B0E006B0694 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4114C1DF46913006B0694 /* AccessToken.swift */; };
+		71D411BE1DF47B0E006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
+		71D411BF1DF47B0E006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
+		71D411C01DF47B0E006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
+		71D411C81DF47B60006B0694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112E1DF464AF006B0694 /* ViewController.swift */; };
+		71D411C91DF47B60006B0694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112C1DF464AF006B0694 /* AppDelegate.swift */; };
+		71D411CA1DF47B60006B0694 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4114C1DF46913006B0694 /* AccessToken.swift */; };
+		71D411CD1DF47B60006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
+		71D411CE1DF47B60006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
+		71D411CF1DF47B60006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
+		71D411D71DF47BD7006B0694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112E1DF464AF006B0694 /* ViewController.swift */; };
+		71D411D81DF47BD7006B0694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112C1DF464AF006B0694 /* AppDelegate.swift */; };
+		71D411D91DF47BD7006B0694 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4114C1DF46913006B0694 /* AccessToken.swift */; };
+		71D411DC1DF47BD7006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
+		71D411DD1DF47BD7006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
+		71D411DE1DF47BD7006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
+		71D411E61DF47C36006B0694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112E1DF464AF006B0694 /* ViewController.swift */; };
+		71D411E71DF47C36006B0694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112C1DF464AF006B0694 /* AppDelegate.swift */; };
+		71D411E81DF47C36006B0694 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4114C1DF46913006B0694 /* AccessToken.swift */; };
+		71D411EB1DF47C36006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
+		71D411EC1DF47C36006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
+		71D411ED1DF47C36006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +106,18 @@
 		71D411891DF47820006B0694 /* LivingRoomLampOn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LivingRoomLampOn-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/LivingRoomLampOn-Info.plist"; sourceTree = "<absolute>"; };
 		71D411971DF47879006B0694 /* LivingRoomLampOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivingRoomLampOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D411981DF47879006B0694 /* LivingRoomLampOff-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LivingRoomLampOff-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/LivingRoomLampOff-Info.plist"; sourceTree = "<absolute>"; };
+		71D411A61DF47A0A006B0694 /* LedStripLeftOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LedStripLeftOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D411A71DF47A0A006B0694 /* LedStripLeftOn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LedStripLeftOn-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/LedStripLeftOn-Info.plist"; sourceTree = "<absolute>"; };
+		71D411B51DF47AB8006B0694 /* LedStripLeftOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LedStripLeftOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D411B61DF47AB9006B0694 /* LedStripLeftOff-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LedStripLeftOff-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/LedStripLeftOff-Info.plist"; sourceTree = "<absolute>"; };
+		71D411C41DF47B0E006B0694 /* LedStripRightOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LedStripRightOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D411C51DF47B0E006B0694 /* LedStripRightOn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LedStripRightOn-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/LedStripRightOn-Info.plist"; sourceTree = "<absolute>"; };
+		71D411D31DF47B60006B0694 /* LedStripRightOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LedStripRightOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D411D41DF47B61006B0694 /* LedStripRightOff-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LedStripRightOff-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/LedStripRightOff-Info.plist"; sourceTree = "<absolute>"; };
+		71D411E21DF47BD7006B0694 /* CoffeeMachineOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeMachineOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D411E31DF47BD7006B0694 /* CoffeeMachineOn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CoffeeMachineOn-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/CoffeeMachineOn-Info.plist"; sourceTree = "<absolute>"; };
+		71D411F11DF47C36006B0694 /* CoffeeMachineOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeMachineOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D411F21DF47C36006B0694 /* CoffeeMachineOff-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CoffeeMachineOff-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/CoffeeMachineOff-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +163,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71D4119E1DF47A0A006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411AD1DF47AB8006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411BC1DF47B0E006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411CB1DF47B60006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411DA1DF47BD7006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411E91DF47C36006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -128,6 +218,12 @@
 				71D4117A1DF477B0006B0694 /* LedPanelOff-Info.plist */,
 				71D411891DF47820006B0694 /* LivingRoomLampOn-Info.plist */,
 				71D411981DF47879006B0694 /* LivingRoomLampOff-Info.plist */,
+				71D411A71DF47A0A006B0694 /* LedStripLeftOn-Info.plist */,
+				71D411B61DF47AB9006B0694 /* LedStripLeftOff-Info.plist */,
+				71D411C51DF47B0E006B0694 /* LedStripRightOn-Info.plist */,
+				71D411D41DF47B61006B0694 /* LedStripRightOff-Info.plist */,
+				71D411E31DF47BD7006B0694 /* CoffeeMachineOn-Info.plist */,
+				71D411F21DF47C36006B0694 /* CoffeeMachineOff-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +236,12 @@
 				71D411791DF477B0006B0694 /* LedPanelOff.app */,
 				71D411881DF47820006B0694 /* LivingRoomLampOn.app */,
 				71D411971DF47879006B0694 /* LivingRoomLampOff.app */,
+				71D411A61DF47A0A006B0694 /* LedStripLeftOn.app */,
+				71D411B51DF47AB8006B0694 /* LedStripLeftOff.app */,
+				71D411C41DF47B0E006B0694 /* LedStripRightOn.app */,
+				71D411D31DF47B60006B0694 /* LedStripRightOff.app */,
+				71D411E21DF47BD7006B0694 /* CoffeeMachineOn.app */,
+				71D411F11DF47C36006B0694 /* CoffeeMachineOff.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,6 +375,108 @@
 			productReference = 71D411971DF47879006B0694 /* LivingRoomLampOff.app */;
 			productType = "com.apple.product-type.application";
 		};
+		71D411991DF47A0A006B0694 /* LedStripLeftOn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D411A31DF47A0A006B0694 /* Build configuration list for PBXNativeTarget "LedStripLeftOn" */;
+			buildPhases = (
+				71D4119A1DF47A0A006B0694 /* Sources */,
+				71D4119E1DF47A0A006B0694 /* Frameworks */,
+				71D4119F1DF47A0A006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LedStripLeftOn;
+			productName = Ambrogio;
+			productReference = 71D411A61DF47A0A006B0694 /* LedStripLeftOn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71D411A81DF47AB8006B0694 /* LedStripLeftOff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D411B21DF47AB8006B0694 /* Build configuration list for PBXNativeTarget "LedStripLeftOff" */;
+			buildPhases = (
+				71D411A91DF47AB8006B0694 /* Sources */,
+				71D411AD1DF47AB8006B0694 /* Frameworks */,
+				71D411AE1DF47AB8006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LedStripLeftOff;
+			productName = Ambrogio;
+			productReference = 71D411B51DF47AB8006B0694 /* LedStripLeftOff.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71D411B71DF47B0E006B0694 /* LedStripRightOn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D411C11DF47B0E006B0694 /* Build configuration list for PBXNativeTarget "LedStripRightOn" */;
+			buildPhases = (
+				71D411B81DF47B0E006B0694 /* Sources */,
+				71D411BC1DF47B0E006B0694 /* Frameworks */,
+				71D411BD1DF47B0E006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LedStripRightOn;
+			productName = Ambrogio;
+			productReference = 71D411C41DF47B0E006B0694 /* LedStripRightOn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71D411C61DF47B60006B0694 /* LedStripRightOff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D411D01DF47B60006B0694 /* Build configuration list for PBXNativeTarget "LedStripRightOff" */;
+			buildPhases = (
+				71D411C71DF47B60006B0694 /* Sources */,
+				71D411CB1DF47B60006B0694 /* Frameworks */,
+				71D411CC1DF47B60006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LedStripRightOff;
+			productName = Ambrogio;
+			productReference = 71D411D31DF47B60006B0694 /* LedStripRightOff.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71D411D51DF47BD7006B0694 /* CoffeeMachineOn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D411DF1DF47BD7006B0694 /* Build configuration list for PBXNativeTarget "CoffeeMachineOn" */;
+			buildPhases = (
+				71D411D61DF47BD7006B0694 /* Sources */,
+				71D411DA1DF47BD7006B0694 /* Frameworks */,
+				71D411DB1DF47BD7006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoffeeMachineOn;
+			productName = Ambrogio;
+			productReference = 71D411E21DF47BD7006B0694 /* CoffeeMachineOn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71D411E41DF47C36006B0694 /* CoffeeMachineOff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D411EE1DF47C36006B0694 /* Build configuration list for PBXNativeTarget "CoffeeMachineOff" */;
+			buildPhases = (
+				71D411E51DF47C36006B0694 /* Sources */,
+				71D411E91DF47C36006B0694 /* Frameworks */,
+				71D411EA1DF47C36006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoffeeMachineOff;
+			productName = Ambrogio;
+			productReference = 71D411F11DF47C36006B0694 /* CoffeeMachineOff.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -306,6 +510,24 @@
 					71D4118A1DF47879006B0694 = {
 						DevelopmentTeam = 975R26MN46;
 					};
+					71D411991DF47A0A006B0694 = {
+						DevelopmentTeam = 975R26MN46;
+					};
+					71D411A81DF47AB8006B0694 = {
+						DevelopmentTeam = 975R26MN46;
+					};
+					71D411B71DF47B0E006B0694 = {
+						DevelopmentTeam = 975R26MN46;
+					};
+					71D411C61DF47B60006B0694 = {
+						DevelopmentTeam = 975R26MN46;
+					};
+					71D411D51DF47BD7006B0694 = {
+						DevelopmentTeam = 975R26MN46;
+					};
+					71D411E41DF47C36006B0694 = {
+						DevelopmentTeam = 975R26MN46;
+					};
 				};
 			};
 			buildConfigurationList = 71D411241DF464AF006B0694 /* Build configuration list for PBXProject "Ambrogio" */;
@@ -327,6 +549,12 @@
 				71D4116C1DF477B0006B0694 /* LedPanelOff */,
 				71D4117B1DF47820006B0694 /* LivingRoomLampOn */,
 				71D4118A1DF47879006B0694 /* LivingRoomLampOff */,
+				71D411991DF47A0A006B0694 /* LedStripLeftOn */,
+				71D411A81DF47AB8006B0694 /* LedStripLeftOff */,
+				71D411B71DF47B0E006B0694 /* LedStripRightOn */,
+				71D411C61DF47B60006B0694 /* LedStripRightOff */,
+				71D411D51DF47BD7006B0694 /* CoffeeMachineOn */,
+				71D411E41DF47C36006B0694 /* CoffeeMachineOff */,
 			);
 		};
 /* End PBXProject section */
@@ -389,6 +617,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71D4119F1DF47A0A006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411A01DF47A0A006B0694 /* LaunchScreen.storyboard in Resources */,
+				71D411A11DF47A0A006B0694 /* Assets.xcassets in Resources */,
+				71D411A21DF47A0A006B0694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411AE1DF47AB8006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411AF1DF47AB8006B0694 /* LaunchScreen.storyboard in Resources */,
+				71D411B01DF47AB8006B0694 /* Assets.xcassets in Resources */,
+				71D411B11DF47AB8006B0694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411BD1DF47B0E006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411BE1DF47B0E006B0694 /* LaunchScreen.storyboard in Resources */,
+				71D411BF1DF47B0E006B0694 /* Assets.xcassets in Resources */,
+				71D411C01DF47B0E006B0694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411CC1DF47B60006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411CD1DF47B60006B0694 /* LaunchScreen.storyboard in Resources */,
+				71D411CE1DF47B60006B0694 /* Assets.xcassets in Resources */,
+				71D411CF1DF47B60006B0694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411DB1DF47BD7006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411DC1DF47BD7006B0694 /* LaunchScreen.storyboard in Resources */,
+				71D411DD1DF47BD7006B0694 /* Assets.xcassets in Resources */,
+				71D411DE1DF47BD7006B0694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411EA1DF47C36006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411EB1DF47C36006B0694 /* LaunchScreen.storyboard in Resources */,
+				71D411EC1DF47C36006B0694 /* Assets.xcassets in Resources */,
+				71D411ED1DF47C36006B0694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -447,6 +735,66 @@
 				71D4118C1DF47879006B0694 /* ViewController.swift in Sources */,
 				71D4118D1DF47879006B0694 /* AppDelegate.swift in Sources */,
 				71D4118E1DF47879006B0694 /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D4119A1DF47A0A006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D4119B1DF47A0A006B0694 /* ViewController.swift in Sources */,
+				71D4119C1DF47A0A006B0694 /* AppDelegate.swift in Sources */,
+				71D4119D1DF47A0A006B0694 /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411A91DF47AB8006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411AA1DF47AB8006B0694 /* ViewController.swift in Sources */,
+				71D411AB1DF47AB8006B0694 /* AppDelegate.swift in Sources */,
+				71D411AC1DF47AB8006B0694 /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411B81DF47B0E006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411B91DF47B0E006B0694 /* ViewController.swift in Sources */,
+				71D411BA1DF47B0E006B0694 /* AppDelegate.swift in Sources */,
+				71D411BB1DF47B0E006B0694 /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411C71DF47B60006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411C81DF47B60006B0694 /* ViewController.swift in Sources */,
+				71D411C91DF47B60006B0694 /* AppDelegate.swift in Sources */,
+				71D411CA1DF47B60006B0694 /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411D61DF47BD7006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411D71DF47BD7006B0694 /* ViewController.swift in Sources */,
+				71D411D81DF47BD7006B0694 /* AppDelegate.swift in Sources */,
+				71D411D91DF47BD7006B0694 /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411E51DF47C36006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411E61DF47C36006B0694 /* ViewController.swift in Sources */,
+				71D411E71DF47C36006B0694 /* AppDelegate.swift in Sources */,
+				71D411E81DF47C36006B0694 /* AccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,6 +1089,174 @@
 			};
 			name = Release;
 		};
+		71D411A41DF47A0A006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/LedStripLeftOn-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D411A51DF47A0A006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/LedStripLeftOn-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71D411B31DF47AB8006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/LedStripLeftOff-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LedStripLeftOff;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D411B41DF47AB8006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/LedStripLeftOff-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LedStripLeftOff;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71D411C21DF47B0E006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/LedStripRightOn-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D411C31DF47B0E006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/LedStripRightOn-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71D411D11DF47B60006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/LedStripRightOff-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D411D21DF47B60006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/LedStripRightOff-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71D411E01DF47BD7006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/CoffeeMachineOn-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D411E11DF47BD7006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/CoffeeMachineOn-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71D411EF1DF47C36006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "CoffeeMachineOn copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D411F01DF47C36006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "CoffeeMachineOn copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -801,6 +1317,60 @@
 			buildConfigurations = (
 				71D411951DF47879006B0694 /* Debug */,
 				71D411961DF47879006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D411A31DF47A0A006B0694 /* Build configuration list for PBXNativeTarget "LedStripLeftOn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D411A41DF47A0A006B0694 /* Debug */,
+				71D411A51DF47A0A006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D411B21DF47AB8006B0694 /* Build configuration list for PBXNativeTarget "LedStripLeftOff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D411B31DF47AB8006B0694 /* Debug */,
+				71D411B41DF47AB8006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D411C11DF47B0E006B0694 /* Build configuration list for PBXNativeTarget "LedStripRightOn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D411C21DF47B0E006B0694 /* Debug */,
+				71D411C31DF47B0E006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D411D01DF47B60006B0694 /* Build configuration list for PBXNativeTarget "LedStripRightOff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D411D11DF47B60006B0694 /* Debug */,
+				71D411D21DF47B60006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D411DF1DF47BD7006B0694 /* Build configuration list for PBXNativeTarget "CoffeeMachineOn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D411E01DF47BD7006B0694 /* Debug */,
+				71D411E11DF47BD7006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D411EE1DF47C36006B0694 /* Build configuration list for PBXNativeTarget "CoffeeMachineOff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D411EF1DF47C36006B0694 /* Debug */,
+				71D411F01DF47C36006B0694 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

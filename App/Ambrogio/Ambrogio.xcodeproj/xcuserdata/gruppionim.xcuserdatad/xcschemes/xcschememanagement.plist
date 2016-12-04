@@ -9,12 +9,17 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>LedPanelOn copy 2.xcscheme</key>
+		<key>CoffeeMachineOff.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>10</integer>
 		</dict>
-		<key>LedPanelOn copy.xcscheme</key>
+		<key>CoffeeMachineOn.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>LedPanelOff.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
@@ -24,10 +29,35 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>LivingRoomLampOn copy.xcscheme</key>
+		<key>LedStripLeftOff.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>LedStripLeftOn.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>LedStripRightOff.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>LedStripRightOn.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>LivingRoomLampOff.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>LivingRoomLampOn.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -63,6 +93,36 @@
 			<true/>
 		</dict>
 		<key>71D4118A1DF47879006B0694</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D411991DF47A0A006B0694</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D411A81DF47AB8006B0694</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D411B71DF47B0E006B0694</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D411C61DF47B60006B0694</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D411D51DF47BD7006B0694</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D411E41DF47C36006B0694</key>
 		<dict>
 			<key>primary</key>
 			<true/>
