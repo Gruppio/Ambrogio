@@ -7,7 +7,9 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<string>com.michelegruppioni.Ambrogio.LedPanelOn</string>
+	<key>CFBundleDisplayName</key>
+	<string>Led Panel On</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -33,10 +35,10 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>Command</key>
-	<string>Command</string>
+	<string>LedPanelOn</string>
 	<key>Title</key>
-	<string>Title</string>
+	<string>💡</string>
 	<key>Description</key>
-	<string>Description</string>
+	<string>Led Panel On</string>
 </dict>
 </plist>

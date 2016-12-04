@@ -14,6 +14,30 @@
 		71D411371DF464AF006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
 		71D411421DF464AF006B0694 /* AmbrogioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D411411DF464AF006B0694 /* AmbrogioTests.swift */; };
 		71D4114D1DF46913006B0694 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4114C1DF46913006B0694 /* AccessToken.swift */; };
+		71D411501DF47293006B0694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112E1DF464AF006B0694 /* ViewController.swift */; };
+		71D411511DF47293006B0694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112C1DF464AF006B0694 /* AppDelegate.swift */; };
+		71D411521DF47293006B0694 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4114C1DF46913006B0694 /* AccessToken.swift */; };
+		71D411551DF47293006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
+		71D411561DF47293006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
+		71D411571DF47293006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
+		71D4116E1DF477B0006B0694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112E1DF464AF006B0694 /* ViewController.swift */; };
+		71D4116F1DF477B0006B0694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112C1DF464AF006B0694 /* AppDelegate.swift */; };
+		71D411701DF477B0006B0694 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4114C1DF46913006B0694 /* AccessToken.swift */; };
+		71D411731DF477B0006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
+		71D411741DF477B0006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
+		71D411751DF477B0006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
+		71D4117D1DF47820006B0694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112E1DF464AF006B0694 /* ViewController.swift */; };
+		71D4117E1DF47820006B0694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112C1DF464AF006B0694 /* AppDelegate.swift */; };
+		71D4117F1DF47820006B0694 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4114C1DF46913006B0694 /* AccessToken.swift */; };
+		71D411821DF47820006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
+		71D411831DF47820006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
+		71D411841DF47820006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
+		71D4118C1DF47879006B0694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112E1DF464AF006B0694 /* ViewController.swift */; };
+		71D4118D1DF47879006B0694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4112C1DF464AF006B0694 /* AppDelegate.swift */; };
+		71D4118E1DF47879006B0694 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4114C1DF46913006B0694 /* AccessToken.swift */; };
+		71D411911DF47879006B0694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411351DF464AF006B0694 /* LaunchScreen.storyboard */; };
+		71D411921DF47879006B0694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D411331DF464AF006B0694 /* Assets.xcassets */; };
+		71D411931DF47879006B0694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D411301DF464AF006B0694 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +62,14 @@
 		71D411411DF464AF006B0694 /* AmbrogioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbrogioTests.swift; sourceTree = "<group>"; };
 		71D411431DF464AF006B0694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71D4114C1DF46913006B0694 /* AccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		71D4115B1DF47293006B0694 /* LedPanelOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LedPanelOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D4115C1DF47293006B0694 /* LedPanelOn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LedPanelOn-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/LedPanelOn-Info.plist"; sourceTree = "<absolute>"; };
+		71D411791DF477B0006B0694 /* LedPanelOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LedPanelOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D4117A1DF477B0006B0694 /* LedPanelOff-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LedPanelOff-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/LedPanelOff-Info.plist"; sourceTree = "<absolute>"; };
+		71D411881DF47820006B0694 /* LivingRoomLampOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivingRoomLampOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D411891DF47820006B0694 /* LivingRoomLampOn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LivingRoomLampOn-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/LivingRoomLampOn-Info.plist"; sourceTree = "<absolute>"; };
+		71D411971DF47879006B0694 /* LivingRoomLampOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivingRoomLampOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D411981DF47879006B0694 /* LivingRoomLampOff-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LivingRoomLampOff-Info.plist"; path = "/Users/gruppionim/Documents/Developer/Software/Ambrogio/App/Ambrogio/LivingRoomLampOff-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +87,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71D411531DF47293006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411711DF477B0006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411801DF47820006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D4118F1DF47879006B0694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +124,10 @@
 				71D4112B1DF464AF006B0694 /* Ambrogio */,
 				71D411401DF464AF006B0694 /* AmbrogioTests */,
 				71D4112A1DF464AF006B0694 /* Products */,
+				71D4115C1DF47293006B0694 /* LedPanelOn-Info.plist */,
+				71D4117A1DF477B0006B0694 /* LedPanelOff-Info.plist */,
+				71D411891DF47820006B0694 /* LivingRoomLampOn-Info.plist */,
+				71D411981DF47879006B0694 /* LivingRoomLampOff-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +136,10 @@
 			children = (
 				71D411291DF464AF006B0694 /* Ambrogio.app */,
 				71D4113D1DF464AF006B0694 /* AmbrogioTests.xctest */,
+				71D4115B1DF47293006B0694 /* LedPanelOn.app */,
+				71D411791DF477B0006B0694 /* LedPanelOff.app */,
+				71D411881DF47820006B0694 /* LivingRoomLampOn.app */,
+				71D411971DF47879006B0694 /* LivingRoomLampOff.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +205,74 @@
 			productReference = 71D4113D1DF464AF006B0694 /* AmbrogioTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		71D4114E1DF47293006B0694 /* LedPanelOn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D411581DF47293006B0694 /* Build configuration list for PBXNativeTarget "LedPanelOn" */;
+			buildPhases = (
+				71D4114F1DF47293006B0694 /* Sources */,
+				71D411531DF47293006B0694 /* Frameworks */,
+				71D411541DF47293006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LedPanelOn;
+			productName = Ambrogio;
+			productReference = 71D4115B1DF47293006B0694 /* LedPanelOn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71D4116C1DF477B0006B0694 /* LedPanelOff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D411761DF477B0006B0694 /* Build configuration list for PBXNativeTarget "LedPanelOff" */;
+			buildPhases = (
+				71D4116D1DF477B0006B0694 /* Sources */,
+				71D411711DF477B0006B0694 /* Frameworks */,
+				71D411721DF477B0006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LedPanelOff;
+			productName = Ambrogio;
+			productReference = 71D411791DF477B0006B0694 /* LedPanelOff.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71D4117B1DF47820006B0694 /* LivingRoomLampOn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D411851DF47820006B0694 /* Build configuration list for PBXNativeTarget "LivingRoomLampOn" */;
+			buildPhases = (
+				71D4117C1DF47820006B0694 /* Sources */,
+				71D411801DF47820006B0694 /* Frameworks */,
+				71D411811DF47820006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LivingRoomLampOn;
+			productName = Ambrogio;
+			productReference = 71D411881DF47820006B0694 /* LivingRoomLampOn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71D4118A1DF47879006B0694 /* LivingRoomLampOff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D411941DF47879006B0694 /* Build configuration list for PBXNativeTarget "LivingRoomLampOff" */;
+			buildPhases = (
+				71D4118B1DF47879006B0694 /* Sources */,
+				71D4118F1DF47879006B0694 /* Frameworks */,
+				71D411901DF47879006B0694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LivingRoomLampOff;
+			productName = Ambrogio;
+			productReference = 71D411971DF47879006B0694 /* LivingRoomLampOff.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -158,6 +294,18 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 71D411281DF464AF006B0694;
 					};
+					71D4114E1DF47293006B0694 = {
+						DevelopmentTeam = 975R26MN46;
+					};
+					71D4116C1DF477B0006B0694 = {
+						DevelopmentTeam = 975R26MN46;
+					};
+					71D4117B1DF47820006B0694 = {
+						DevelopmentTeam = 975R26MN46;
+					};
+					71D4118A1DF47879006B0694 = {
+						DevelopmentTeam = 975R26MN46;
+					};
 				};
 			};
 			buildConfigurationList = 71D411241DF464AF006B0694 /* Build configuration list for PBXProject "Ambrogio" */;
@@ -175,6 +323,10 @@
 			targets = (
 				71D411281DF464AF006B0694 /* Ambrogio */,
 				71D4113C1DF464AF006B0694 /* AmbrogioTests */,
+				71D4114E1DF47293006B0694 /* LedPanelOn */,
+				71D4116C1DF477B0006B0694 /* LedPanelOff */,
+				71D4117B1DF47820006B0694 /* LivingRoomLampOn */,
+				71D4118A1DF47879006B0694 /* LivingRoomLampOff */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +349,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71D411541DF47293006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411551DF47293006B0694 /* LaunchScreen.storyboard in Resources */,
+				71D411561DF47293006B0694 /* Assets.xcassets in Resources */,
+				71D411571DF47293006B0694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411721DF477B0006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411731DF477B0006B0694 /* LaunchScreen.storyboard in Resources */,
+				71D411741DF477B0006B0694 /* Assets.xcassets in Resources */,
+				71D411751DF477B0006B0694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411811DF47820006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411821DF47820006B0694 /* LaunchScreen.storyboard in Resources */,
+				71D411831DF47820006B0694 /* Assets.xcassets in Resources */,
+				71D411841DF47820006B0694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D411901DF47879006B0694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411911DF47879006B0694 /* LaunchScreen.storyboard in Resources */,
+				71D411921DF47879006B0694 /* Assets.xcassets in Resources */,
+				71D411931DF47879006B0694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -215,6 +407,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				71D411421DF464AF006B0694 /* AmbrogioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D4114F1DF47293006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D411501DF47293006B0694 /* ViewController.swift in Sources */,
+				71D411511DF47293006B0694 /* AppDelegate.swift in Sources */,
+				71D411521DF47293006B0694 /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D4116D1DF477B0006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D4116E1DF477B0006B0694 /* ViewController.swift in Sources */,
+				71D4116F1DF477B0006B0694 /* AppDelegate.swift in Sources */,
+				71D411701DF477B0006B0694 /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D4117C1DF47820006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D4117D1DF47820006B0694 /* ViewController.swift in Sources */,
+				71D4117E1DF47820006B0694 /* AppDelegate.swift in Sources */,
+				71D4117F1DF47820006B0694 /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D4118B1DF47879006B0694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D4118C1DF47879006B0694 /* ViewController.swift in Sources */,
+				71D4118D1DF47879006B0694 /* AppDelegate.swift in Sources */,
+				71D4118E1DF47879006B0694 /* AccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +581,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -362,6 +595,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -395,6 +629,118 @@
 			};
 			name = Release;
 		};
+		71D411591DF47293006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "LedPanelOn-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D4115A1DF47293006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "LedPanelOn-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71D411771DF477B0006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/LedPanelOff-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D411781DF477B0006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/LedPanelOff-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71D411861DF47820006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/LivingRoomLampOn-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D411871DF47820006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/LivingRoomLampOn-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71D411951DF47879006B0694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/LivingRoomLampOff-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D411961DF47879006B0694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 975R26MN46;
+				INFOPLIST_FILE = "$(SRCROOT)/LivingRoomLampOff-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelegruppioni.Ambrogio.LivingRoomLampOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -422,6 +768,42 @@
 				71D4114B1DF464AF006B0694 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+		};
+		71D411581DF47293006B0694 /* Build configuration list for PBXNativeTarget "LedPanelOn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D411591DF47293006B0694 /* Debug */,
+				71D4115A1DF47293006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D411761DF477B0006B0694 /* Build configuration list for PBXNativeTarget "LedPanelOff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D411771DF477B0006B0694 /* Debug */,
+				71D411781DF477B0006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D411851DF47820006B0694 /* Build configuration list for PBXNativeTarget "LivingRoomLampOn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D411861DF47820006B0694 /* Debug */,
+				71D411871DF47820006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D411941DF47879006B0694 /* Build configuration list for PBXNativeTarget "LivingRoomLampOff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D411951DF47879006B0694 /* Debug */,
+				71D411961DF47879006B0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

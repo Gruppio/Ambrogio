@@ -9,6 +9,26 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>LedPanelOn copy 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>LedPanelOn copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>LedPanelOn.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>LivingRoomLampOn copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +38,31 @@
 			<true/>
 		</dict>
 		<key>71D4113C1DF464AF006B0694</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D4114E1DF47293006B0694</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D4115D1DF4775C006B0694</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D4116C1DF477B0006B0694</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D4117B1DF47820006B0694</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D4118A1DF47879006B0694</key>
 		<dict>
 			<key>primary</key>
 			<true/>

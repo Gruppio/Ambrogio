@@ -7,11 +7,13 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<string>com.michelegruppioni.Ambrogio.LivingRoomLampOn</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Lamp On</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -33,10 +35,10 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>Command</key>
-	<string>Command</string>
+	<string>LivingRoomLampOn</string>
 	<key>Title</key>
-	<string>Title</string>
+	<string>💡</string>
 	<key>Description</key>
-	<string>Description</string>
+	<string>Living Room Lamp On</string>
 </dict>
 </plist>
