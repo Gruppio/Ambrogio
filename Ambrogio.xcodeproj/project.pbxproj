@@ -21,6 +21,10 @@
 		71BF107A1DE24AA20092DAE1 /* NullCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF10781DE24AA20092DAE1 /* NullCommand.cpp */; };
 		71BF107D1DE24BC30092DAE1 /* LedPanelOnCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF107B1DE24BC30092DAE1 /* LedPanelOnCommand.cpp */; };
 		71BF10811DE260980092DAE1 /* LedPanelOffCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF107F1DE260980092DAE1 /* LedPanelOffCommand.cpp */; };
+		71E3970C1F88E52300FAA316 /* ApplianceNameFromCommandNameFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E3970A1F88E52300FAA316 /* ApplianceNameFromCommandNameFactory.cpp */; };
+		71E3970F1F88ECCA00FAA316 /* ApplianceStateRecorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E3970D1F88ECCA00FAA316 /* ApplianceStateRecorder.cpp */; };
+		71E397121F88F68A00FAA316 /* CommandDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E397101F88F68A00FAA316 /* CommandDecorator.cpp */; };
+		71E397151F88F79300FAA316 /* ApplianceStateRecorderCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E397131F88F79300FAA316 /* ApplianceStateRecorderCommand.cpp */; };
 		71EF6B151DF36DF700E336CA /* ParticleEventCommandExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71EF6B131DF36DF700E336CA /* ParticleEventCommandExecutor.cpp */; };
 		71F939881DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71F939861DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp */; };
 /* End PBXBuildFile section */
@@ -80,6 +84,15 @@
 		71BF10821DE2626A0092DAE1 /* CommandsName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandsName.h; sourceTree = "<group>"; };
 		71BF10891DE267460092DAE1 /* Pinout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pinout.h; sourceTree = "<group>"; };
 		71BF108A1DE26A0E0092DAE1 /* AukeyCommandCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AukeyCommandCodes.h; sourceTree = "<group>"; };
+		71E397091F88E20700FAA316 /* AppliancesNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppliancesNames.h; sourceTree = "<group>"; };
+		71E3970A1F88E52300FAA316 /* ApplianceNameFromCommandNameFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ApplianceNameFromCommandNameFactory.cpp; sourceTree = "<group>"; };
+		71E3970B1F88E52300FAA316 /* ApplianceNameFromCommandNameFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplianceNameFromCommandNameFactory.h; sourceTree = "<group>"; };
+		71E3970D1F88ECCA00FAA316 /* ApplianceStateRecorder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ApplianceStateRecorder.cpp; sourceTree = "<group>"; };
+		71E3970E1F88ECCA00FAA316 /* ApplianceStateRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplianceStateRecorder.h; sourceTree = "<group>"; };
+		71E397101F88F68A00FAA316 /* CommandDecorator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CommandDecorator.cpp; sourceTree = "<group>"; };
+		71E397111F88F68A00FAA316 /* CommandDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandDecorator.h; sourceTree = "<group>"; };
+		71E397131F88F79300FAA316 /* ApplianceStateRecorderCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ApplianceStateRecorderCommand.cpp; sourceTree = "<group>"; };
+		71E397141F88F79300FAA316 /* ApplianceStateRecorderCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplianceStateRecorderCommand.h; sourceTree = "<group>"; };
 		71EF6B131DF36DF700E336CA /* ParticleEventCommandExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleEventCommandExecutor.cpp; sourceTree = "<group>"; };
 		71EF6B141DF36DF700E336CA /* ParticleEventCommandExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEventCommandExecutor.h; sourceTree = "<group>"; };
 		71F939861DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LedIndicatorCommandExecutor.cpp; sourceTree = "<group>"; };
@@ -110,6 +123,10 @@
 				71BF10791DE24AA20092DAE1 /* NullCommand.h */,
 				71089A5C1DF316F7000D234D /* AukeyCommand.cpp */,
 				71089A5D1DF316F7000D234D /* AukeyCommand.h */,
+				71E397101F88F68A00FAA316 /* CommandDecorator.cpp */,
+				71E397111F88F68A00FAA316 /* CommandDecorator.h */,
+				71E397131F88F79300FAA316 /* ApplianceStateRecorderCommand.cpp */,
+				71E397141F88F79300FAA316 /* ApplianceStateRecorderCommand.h */,
 			);
 			name = Commands;
 			sourceTree = "<group>";
@@ -180,6 +197,7 @@
 				7100A3E81F88DD2B00A32C19 /* Ambrogio.ino */,
 				7100A3ED1F88DDE400A32C19 /* CommandExecutors */,
 				7100A3E01F88DC7C00A32C19 /* CommandsFactory */,
+				71E397081F88E1BD00FAA316 /* Appliances */,
 				7100A3DE1F88DBF200A32C19 /* Commands */,
 				7100A3EB1F88DD5300A32C19 /* Hardware */,
 				7100A3EE1F88DE0D00A32C19 /* Setup */,
@@ -211,6 +229,18 @@
 				71BF105A1DE1EB6F0092DAE1 /* main.cpp */,
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		71E397081F88E1BD00FAA316 /* Appliances */ = {
+			isa = PBXGroup;
+			children = (
+				71E397091F88E20700FAA316 /* AppliancesNames.h */,
+				71E3970A1F88E52300FAA316 /* ApplianceNameFromCommandNameFactory.cpp */,
+				71E3970B1F88E52300FAA316 /* ApplianceNameFromCommandNameFactory.h */,
+				71E3970D1F88ECCA00FAA316 /* ApplianceStateRecorder.cpp */,
+				71E3970E1F88ECCA00FAA316 /* ApplianceStateRecorder.h */,
+			);
+			name = Appliances;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,10 +309,14 @@
 				71089A611DF326EB000D234D /* RCSwitchMock.cpp in Sources */,
 				71BF106E1DE1F2070092DAE1 /* TestCommand.cpp in Sources */,
 				71F939881DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp in Sources */,
+				71E3970C1F88E52300FAA316 /* ApplianceNameFromCommandNameFactory.cpp in Sources */,
+				71E397151F88F79300FAA316 /* ApplianceStateRecorderCommand.cpp in Sources */,
 				71BF107D1DE24BC30092DAE1 /* LedPanelOnCommand.cpp in Sources */,
 				71BF106B1DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp in Sources */,
 				71EF6B151DF36DF700E336CA /* ParticleEventCommandExecutor.cpp in Sources */,
+				71E397121F88F68A00FAA316 /* CommandDecorator.cpp in Sources */,
 				71089A5E1DF316F7000D234D /* AukeyCommand.cpp in Sources */,
+				71E3970F1F88ECCA00FAA316 /* ApplianceStateRecorder.cpp in Sources */,
 				71BF10681DE1ED250092DAE1 /* CommandExecutor.cpp in Sources */,
 				71BF10711DE23DE50092DAE1 /* TestDoubleExecutionCommandExecutor.cpp in Sources */,
 				71BF10811DE260980092DAE1 /* LedPanelOffCommand.cpp in Sources */,

@@ -22,6 +22,7 @@
 #include "AukeyCommand.h"
 #include "RemoteController.h"
 #include "RemoteControllerMock.h"
+#include "ApplianceStateRecorder.h"
 
 // CommandExecutorTests
 void commandExecutorTests();
@@ -42,6 +43,12 @@ void testCommandFactoryLedPanelOff();
 void testCommandFactoryLivingRoomLampOn();
 void testCommandFactoryLivingRoomLampOff();
 
+// ApplianceStateRecorder
+void applianceStateRecorderTests();
+void testStoreAState();
+void testStoreAStateTwice();
+void testGetAnUnstoredValue();
+
 
 int main(int argc, const char * argv[]) {
     std::cout << "Start Tests\n";
@@ -49,6 +56,7 @@ int main(int argc, const char * argv[]) {
     commandExecutorTests();
     commandExecutorDecoratedTests();
     commandFactoryTests();
+    applianceStateRecorderTests();
     
     std::cout << "Done\n\n";
     return 0;
@@ -204,6 +212,34 @@ void testCommandFactoryLivingRoomLampOff() {
     delete remoteController;
 }
 
+/////////////////////////////////////////
+
+void applianceStateRecorderTests() {
+    testStoreAState();
+    testStoreAStateTwice();
+    testGetAnUnstoredValue();
+}
+
+void testStoreAState() {
+    const char * applianceName = "appliance";
+    ApplianceStateRecorder *stateRecorder = new ApplianceStateRecorder();
+    stateRecorder->setApplianceState(applianceName, true);
+    assert(stateRecorder->getApplianceState(applianceName) == true);
+}
+
+void testStoreAStateTwice() {
+    const char * applianceName = "appliance";
+    ApplianceStateRecorder *stateRecorder = new ApplianceStateRecorder();
+    stateRecorder->setApplianceState(applianceName, true);
+    stateRecorder->setApplianceState(applianceName, false);
+    assert(stateRecorder->getApplianceState(applianceName) == false);
+}
+
+void testGetAnUnstoredValue() {
+    const char * applianceName = "appliance";
+    ApplianceStateRecorder *stateRecorder = new ApplianceStateRecorder();
+    assert(stateRecorder->getApplianceState(applianceName) == false);
+}
 
 #endif
 
