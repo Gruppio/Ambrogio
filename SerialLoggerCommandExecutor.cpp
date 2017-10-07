@@ -14,6 +14,6 @@ SerialLoggerCommandExecutor::SerialLoggerCommandExecutor(CommandExecutor *comman
 }
 
 void SerialLoggerCommandExecutor::executeCommand(Command *command) {
-    log(command->description);
+    log(command->getDescription());
     commandExecutor->executeCommand(command);
 }

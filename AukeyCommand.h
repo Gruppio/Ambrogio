@@ -16,7 +16,7 @@
 class AukeyCommand: public Command {
 protected:
     RemoteController *remoteController;
-    
+
 public:
     REMOTE_CONTROLLER_TRANSMIT_TYPE code;
     AukeyCommand(RemoteController *remoteController, REMOTE_CONTROLLER_TRANSMIT_TYPE code, const char *description);

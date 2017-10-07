@@ -26,6 +26,7 @@
 		71E397121F88F68A00FAA316 /* CommandDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E397101F88F68A00FAA316 /* CommandDecorator.cpp */; };
 		71E397151F88F79300FAA316 /* ApplianceStateRecorderCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E397131F88F79300FAA316 /* ApplianceStateRecorderCommand.cpp */; };
 		71E397181F89018700FAA316 /* CompositeCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E397161F89018700FAA316 /* CompositeCommand.cpp */; };
+		71E3971A1F890F8400FAA316 /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E397191F890F8400FAA316 /* Command.cpp */; };
 		71EF6B151DF36DF700E336CA /* ParticleEventCommandExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71EF6B131DF36DF700E336CA /* ParticleEventCommandExecutor.cpp */; };
 		71F939881DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71F939861DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp */; };
 /* End PBXBuildFile section */
@@ -96,6 +97,7 @@
 		71E397141F88F79300FAA316 /* ApplianceStateRecorderCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplianceStateRecorderCommand.h; sourceTree = "<group>"; };
 		71E397161F89018700FAA316 /* CompositeCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CompositeCommand.cpp; sourceTree = "<group>"; };
 		71E397171F89018700FAA316 /* CompositeCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompositeCommand.h; sourceTree = "<group>"; };
+		71E397191F890F8400FAA316 /* Command.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
 		71EF6B131DF36DF700E336CA /* ParticleEventCommandExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleEventCommandExecutor.cpp; sourceTree = "<group>"; };
 		71EF6B141DF36DF700E336CA /* ParticleEventCommandExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEventCommandExecutor.h; sourceTree = "<group>"; };
 		71F939861DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LedIndicatorCommandExecutor.cpp; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				71BF10821DE2626A0092DAE1 /* CommandsName.h */,
 				71BF10641DE1EC5B0092DAE1 /* Command.h */,
+				71E397191F890F8400FAA316 /* Command.cpp */,
 				71BF107F1DE260980092DAE1 /* LedPanelOffCommand.cpp */,
 				71BF10801DE260980092DAE1 /* LedPanelOffCommand.h */,
 				71BF107B1DE24BC30092DAE1 /* LedPanelOnCommand.cpp */,
@@ -309,6 +312,7 @@
 				71BF10741DE244C90092DAE1 /* SerialLoggerCommandExecutor.cpp in Sources */,
 				71BF10771DE2498B0092DAE1 /* CommandFactory.cpp in Sources */,
 				71089A691DF330C8000D234D /* RemoteController433.cpp in Sources */,
+				71E3971A1F890F8400FAA316 /* Command.cpp in Sources */,
 				71BF107A1DE24AA20092DAE1 /* NullCommand.cpp in Sources */,
 				71089A6C1DF3426F000D234D /* RemoteControllerMock.cpp in Sources */,
 				71089A611DF326EB000D234D /* RCSwitchMock.cpp in Sources */,

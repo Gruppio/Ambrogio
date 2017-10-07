@@ -19,6 +19,7 @@ public:
     CommandDecorator(Command *command);
     virtual ~CommandDecorator(){};
     virtual void execute();
+    virtual const char * getDescription();
 };
 
 #endif /* CommandDecorator_h */

@@ -7,6 +7,8 @@
 //
 
 #include "CompositeCommand.h"
+#include <string.h>
+#include <string>
 
 CompositeCommand::CompositeCommand(std::vector<Command*> commands)
 :commands(commands) {
@@ -22,4 +24,15 @@ void CompositeCommand::execute() {
     for(Command * command : commands) {
         command->execute();
     }
+}
+
+const char * CompositeCommand::getDescription() {
+    std::string fullDescription = "";
+    for(Command * command : commands) {
+        const char * desc = command->getDescription();
+        if (strlen(desc) > 2) {
+            fullDescription += desc;
+        }
+    }
+    return fullDescription.c_str();
 }

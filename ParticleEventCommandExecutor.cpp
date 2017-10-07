@@ -15,7 +15,7 @@ ParticleEventCommandExecutor::ParticleEventCommandExecutor(CommandExecutor *comm
 
 void ParticleEventCommandExecutor::executeCommand(Command *command) {
 #if defined(SPARK)
-    Particle.publish("command", String::format("%s", command->description), PRIVATE);
+    Particle.publish("command", String::format("%s", command->getDescription()), PRIVATE);
 #endif
     commandExecutor->executeCommand(command);
 }

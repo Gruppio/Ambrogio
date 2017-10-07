@@ -12,6 +12,7 @@ ApplianceStateRecorderCommand::ApplianceStateRecorderCommand(const char * applia
     this->applianceName = applianceName;
     this->state = state;
     this->stateRecorder = stateRecorder;
+    this->description = 0;
 }
 
 void ApplianceStateRecorderCommand::execute() {

@@ -12,12 +12,13 @@
 #include "Command.h"
 #include "ApplianceStateRecorder.h"
 
+
 class ApplianceStateRecorderCommand: public Command {
 protected:
     const char * applianceName;
     bool state;
     ApplianceStateRecorder *stateRecorder;
-    
+
 public:
     ApplianceStateRecorderCommand(const char * applianceName, bool state, ApplianceStateRecorder *stateRecorder);
     virtual ~ApplianceStateRecorderCommand(){};
@@ -25,4 +26,3 @@ public:
 };
 
 #endif /* ApplianceStateRecorderCommand_h */
-

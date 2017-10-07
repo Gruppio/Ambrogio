@@ -20,6 +20,7 @@ public:
     CompositeCommand(std::vector<Command*> commands);
     virtual ~CompositeCommand();
     virtual void execute();
+    virtual const char * getDescription();
 };
 
 #endif /* CompositeCommand_h */

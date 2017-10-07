@@ -10,12 +10,13 @@
 #define Command_h
 
 class Command {
-public:
+protected:
     const char *description;
-    
+public:
     Command(){};
     virtual ~Command(){};
     virtual void execute() = 0;
+    virtual const char * getDescription();
 };
 
 #endif /* Command_h */
