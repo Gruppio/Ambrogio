@@ -38,6 +38,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7100A3E11F88DD2A00A32C19 /* OnboardLed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardLed.h; sourceTree = "<group>"; };
+		7100A3E21F88DD2A00A32C19 /* WifiCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiCredentials.h; sourceTree = "<group>"; };
+		7100A3E31F88DD2A00A32C19 /* WifiUserTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiUserTracker.h; sourceTree = "<group>"; };
+		7100A3E41F88DD2A00A32C19 /* WifiUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiUser.h; sourceTree = "<group>"; };
+		7100A3E61F88DD2B00A32C19 /* MCP9700.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCP9700.h; sourceTree = "<group>"; };
+		7100A3E71F88DD2B00A32C19 /* Thermometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thermometer.h; sourceTree = "<group>"; };
+		7100A3E81F88DD2B00A32C19 /* Ambrogio.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ambrogio.ino; sourceTree = "<group>"; };
 		71089A5C1DF316F7000D234D /* AukeyCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AukeyCommand.cpp; sourceTree = "<group>"; };
 		71089A5D1DF316F7000D234D /* AukeyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AukeyCommand.h; sourceTree = "<group>"; };
 		71089A5F1DF326EB000D234D /* RCSwitchMock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RCSwitchMock.cpp; sourceTree = "<group>"; };
@@ -90,46 +97,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		71BF10471DE0BE640092DAE1 = {
+		7100A3DE1F88DBF200A32C19 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
-				71EF6B131DF36DF700E336CA /* ParticleEventCommandExecutor.cpp */,
-				71EF6B141DF36DF700E336CA /* ParticleEventCommandExecutor.h */,
 				71BF10821DE2626A0092DAE1 /* CommandsName.h */,
-				71BF108A1DE26A0E0092DAE1 /* AukeyCommandCodes.h */,
-				71089A6A1DF3426F000D234D /* RemoteControllerMock.cpp */,
-				71089A6B1DF3426F000D234D /* RemoteControllerMock.h */,
-				71089A671DF330C8000D234D /* RemoteController433.cpp */,
-				71089A681DF330C8000D234D /* RemoteController433.h */,
-				71089A631DF32F5C000D234D /* RemoteController.h */,
-				71089A621DF32847000D234D /* Ambrogio.h */,
-				71089A5F1DF326EB000D234D /* RCSwitchMock.cpp */,
-				71089A601DF326EB000D234D /* RCSwitchMock.h */,
-				71089A5C1DF316F7000D234D /* AukeyCommand.cpp */,
-				71089A5D1DF316F7000D234D /* AukeyCommand.h */,
-				71F939861DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp */,
-				71F939871DE275E80010DA95 /* LedIndicatorCommandExecutor.h */,
-				71BF10891DE267460092DAE1 /* Pinout.h */,
+				71BF10641DE1EC5B0092DAE1 /* Command.h */,
 				71BF107F1DE260980092DAE1 /* LedPanelOffCommand.cpp */,
 				71BF10801DE260980092DAE1 /* LedPanelOffCommand.h */,
-				71BF107E1DE24DEC0092DAE1 /* Particle.h */,
 				71BF107B1DE24BC30092DAE1 /* LedPanelOnCommand.cpp */,
 				71BF107C1DE24BC30092DAE1 /* LedPanelOnCommand.h */,
 				71BF10781DE24AA20092DAE1 /* NullCommand.cpp */,
 				71BF10791DE24AA20092DAE1 /* NullCommand.h */,
+				71089A5C1DF316F7000D234D /* AukeyCommand.cpp */,
+				71089A5D1DF316F7000D234D /* AukeyCommand.h */,
+			);
+			name = Commands;
+			sourceTree = "<group>";
+		};
+		7100A3E01F88DC7C00A32C19 /* CommandsFactory */ = {
+			isa = PBXGroup;
+			children = (
 				71BF10751DE2498B0092DAE1 /* CommandFactory.cpp */,
 				71BF10761DE2498B0092DAE1 /* CommandFactory.h */,
+			);
+			name = CommandsFactory;
+			sourceTree = "<group>";
+		};
+		7100A3EB1F88DD5300A32C19 /* Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				71BF108A1DE26A0E0092DAE1 /* AukeyCommandCodes.h */,
+				71089A671DF330C8000D234D /* RemoteController433.cpp */,
+				71089A681DF330C8000D234D /* RemoteController433.h */,
+				71089A631DF32F5C000D234D /* RemoteController.h */,
+				7100A3E61F88DD2B00A32C19 /* MCP9700.h */,
+				7100A3E11F88DD2A00A32C19 /* OnboardLed.h */,
+				7100A3E71F88DD2B00A32C19 /* Thermometer.h */,
+			);
+			name = Hardware;
+			sourceTree = "<group>";
+		};
+		7100A3EC1F88DDA600A32C19 /* Wifi */ = {
+			isa = PBXGroup;
+			children = (
+				7100A3E21F88DD2A00A32C19 /* WifiCredentials.h */,
+				7100A3E41F88DD2A00A32C19 /* WifiUser.h */,
+				7100A3E31F88DD2A00A32C19 /* WifiUserTracker.h */,
+			);
+			name = Wifi;
+			sourceTree = "<group>";
+		};
+		7100A3ED1F88DDE400A32C19 /* CommandExecutors */ = {
+			isa = PBXGroup;
+			children = (
+				71F939861DE275E80010DA95 /* LedIndicatorCommandExecutor.cpp */,
+				71F939871DE275E80010DA95 /* LedIndicatorCommandExecutor.h */,
+				71EF6B131DF36DF700E336CA /* ParticleEventCommandExecutor.cpp */,
+				71EF6B141DF36DF700E336CA /* ParticleEventCommandExecutor.h */,
 				71BF10721DE244C90092DAE1 /* SerialLoggerCommandExecutor.cpp */,
 				71BF10731DE244C90092DAE1 /* SerialLoggerCommandExecutor.h */,
-				71BF106F1DE23DE50092DAE1 /* TestDoubleExecutionCommandExecutor.cpp */,
-				71BF10701DE23DE50092DAE1 /* TestDoubleExecutionCommandExecutor.h */,
-				71BF106C1DE1F2070092DAE1 /* TestCommand.cpp */,
-				71BF106D1DE1F2070092DAE1 /* TestCommand.h */,
 				71BF10691DE1F1C60092DAE1 /* CommandExecutorDecorator.cpp */,
 				71BF106A1DE1F1C60092DAE1 /* CommandExecutorDecorator.h */,
 				71BF10661DE1ED250092DAE1 /* CommandExecutor.cpp */,
 				71BF10671DE1ED250092DAE1 /* CommandExecutor.h */,
-				71BF10641DE1EC5B0092DAE1 /* Command.h */,
+			);
+			name = CommandExecutors;
+			sourceTree = "<group>";
+		};
+		7100A3EE1F88DE0D00A32C19 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				71089A621DF32847000D234D /* Ambrogio.h */,
+				71BF10891DE267460092DAE1 /* Pinout.h */,
+				71BF107E1DE24DEC0092DAE1 /* Particle.h */,
+			);
+			name = Setup;
+			sourceTree = "<group>";
+		};
+		71BF10471DE0BE640092DAE1 = {
+			isa = PBXGroup;
+			children = (
+				7100A3E81F88DD2B00A32C19 /* Ambrogio.ino */,
+				7100A3ED1F88DDE400A32C19 /* CommandExecutors */,
+				7100A3E01F88DC7C00A32C19 /* CommandsFactory */,
+				7100A3DE1F88DBF200A32C19 /* Commands */,
+				7100A3EB1F88DD5300A32C19 /* Hardware */,
+				7100A3EE1F88DE0D00A32C19 /* Setup */,
+				7100A3EC1F88DDA600A32C19 /* Wifi */,
 				71BF105C1DE1EB7D0092DAE1 /* Tests */,
 				71BF10511DE0BE640092DAE1 /* Products */,
 			);
@@ -146,6 +200,14 @@
 		71BF105C1DE1EB7D0092DAE1 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				71BF106F1DE23DE50092DAE1 /* TestDoubleExecutionCommandExecutor.cpp */,
+				71BF10701DE23DE50092DAE1 /* TestDoubleExecutionCommandExecutor.h */,
+				71BF106C1DE1F2070092DAE1 /* TestCommand.cpp */,
+				71BF106D1DE1F2070092DAE1 /* TestCommand.h */,
+				71089A6A1DF3426F000D234D /* RemoteControllerMock.cpp */,
+				71089A6B1DF3426F000D234D /* RemoteControllerMock.h */,
+				71089A5F1DF326EB000D234D /* RCSwitchMock.cpp */,
+				71089A601DF326EB000D234D /* RCSwitchMock.h */,
 				71BF105A1DE1EB6F0092DAE1 /* main.cpp */,
 			);
 			name = Tests;

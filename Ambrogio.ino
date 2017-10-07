@@ -27,6 +27,7 @@ int hourOld = 0;
 void setup() {
     pinMode(PIN_433_MHZ_TX, OUTPUT);
     rcSwitch->enableTransmit(PIN_433_MHZ_TX);
+    rcSwitch->setRepeatTransmit(20);
     Particle.variable("temperature", temperature);
     Particle.function("execute", execute);
     WiFi.setCredentials(SSID, PASSWORD);

@@ -197,7 +197,7 @@ void testCommandFactoryLivingRoomLampOff() {
     AukeyCommand *aukeyCommand = dynamic_cast<AukeyCommand*>(command);
     
     assert(aukeyCommand != NULL);
-    assert(aukeyCommand->code == AUKEY_LIVING_ROOM_LAMP_ON_COMMAND_CODE);
+    assert(aukeyCommand->code == AUKEY_LIVING_ROOM_LAMP_OFF_COMMAND_CODE);
     
     delete command;
     delete commandFactory;
