@@ -9,6 +9,8 @@
 #include "ParticleEventCommandExecutor.h"
 #include "RemoteController.h"
 #include "RemoteController433.h"
+#include "ApplianceStateRecorder.h"
+#include "ApplianceNameFromCommandNameFactory.h"
 
 #define LOOP_TIME 1000
 
@@ -18,7 +20,9 @@
 Thermometer *thermometer = new MCP9700();
 RCSwitch *rcSwitch = new RCSwitch();
 RemoteController *remoteController = new RemoteController433(rcSwitch);
-CommandFactory *commandFactory = new CommandFactory(remoteController);
+ApplianceStateRecorder *applianceStateRecorder = new ApplianceStateRecorder();
+ApplianceNameFromCommandNameFactory *applianceNameFactory = new ApplianceNameFromCommandNameFactory();
+CommandFactory *commandFactory = new CommandFactory(remoteController, applianceStateRecorder, applianceNameFactory);
 CommandExecutor *commandExecutor = new ParticleEventCommandExecutor(new SerialLoggerCommandExecutor(new LedIndicatorCommandExecutor(new CommandExecutor())));
 
 double temperature = 0;
@@ -30,6 +34,7 @@ void setup() {
     rcSwitch->setRepeatTransmit(20);
     Particle.variable("temperature", temperature);
     Particle.function("execute", execute);
+    Particle.function("status", status);
     WiFi.setCredentials(SSID, PASSWORD);
     Serial.begin(9600);
 }
@@ -62,4 +67,8 @@ int execute(String message) {
   commandExecutor->executeCommand(command);
   delete command;
   return 0;
+}
+
+int status(String message) {
+  return applianceStateRecorder->getApplianceState(message);
 }

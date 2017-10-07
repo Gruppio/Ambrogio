@@ -12,6 +12,12 @@ CompositeCommand::CompositeCommand(std::vector<Command*> commands)
 :commands(commands) {
 }
 
+CompositeCommand::~CompositeCommand() {
+    for(Command * command : commands) {
+        delete command;
+    }
+}
+
 void CompositeCommand::execute() {
     for(Command * command : commands) {
         command->execute();

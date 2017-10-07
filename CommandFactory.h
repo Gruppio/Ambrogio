@@ -12,11 +12,15 @@
 #include "Command.h"
 #include "NullCommand.h"
 #include "RemoteController.h"
+#include "ApplianceStateRecorder.h"
+#include "ApplianceNameFromCommandNameFactory.h"
 
 class CommandFactory {
 public:
     RemoteController *remoteController;
-    CommandFactory(RemoteController *remoteController);
+    ApplianceStateRecorder *applianceStateRecorder;
+    ApplianceNameFromCommandNameFactory *applianceNameFactory;
+    CommandFactory(RemoteController *remoteController, ApplianceStateRecorder *applianceStateRecorder, ApplianceNameFromCommandNameFactory *applianceNameFactory);
     Command* createCommand(const char* commandName);
 };
 

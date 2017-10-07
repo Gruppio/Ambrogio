@@ -18,7 +18,7 @@ protected:
     
 public:
     CompositeCommand(std::vector<Command*> commands);
-    virtual ~CompositeCommand(){};
+    virtual ~CompositeCommand();
     virtual void execute();
 };
 
