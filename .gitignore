@@ -4,6 +4,7 @@ WifiCredentials.h
 *AccessToken.swift
 
 scripts/
+homebridge/
 
 # Executables
 *.bin
