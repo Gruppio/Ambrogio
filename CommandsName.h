@@ -27,8 +27,6 @@
 #define FAN_OFF "FanOff"
 #define KITCHEN_LIGHT_ON "KitchenLightOn"
 #define KITCHEN_LIGHT_OFF "KitchenLightOff"
-#define LIVINGROOM_LIGHTS_ON "LivingRoomLightsOn"
-#define LIVINGROOM_LIGHTS_OFF "LivingRoomLightsOff"
 #define LIVINGROOM_LIGHT_1_ON "LivingRoomLight1On"
 #define LIVINGROOM_LIGHT_1_OFF "LivingRoomLight1Off"
 #define LIVINGROOM_LIGHT_2_ON "LivingRoomLight2On"
@@ -37,6 +35,21 @@
 #define LIVINGROOM_LIGHT_3_OFF "LivingRoomLight3Off"
 #define MOON_ON "MoonOn"
 #define MOON_OFF "MoonOff"
+
+// Composite Commands
+#define LIVINGROOM_LIGHTS_ON "LivingRoomLightsOn"
+#define LIVINGROOM_LIGHTS_OFF "LivingRoomLightsOff"
+#define EATING_LIGHTS_ON "EatingLightsOn"
+#define EATING_LIGHTS_OFF "EatingLightsOff"
+#define COOKING_LIGHTS_ON "CookingLightsOn"
+#define COOKING_LIGHTS_OFF "CookingLightsOff"
+#define ALL_LIGHTS_ON "AllLightsOn"
+#define ALL_LIGHTS_OFF "AllLightsOff"
+#define TV_LIGHTS_ON "TvLightsOn"
+#define TV_LIGHTS_OFF "TvLightsOff"
+#define OUT_LIGHTS_ON "OutLightsOn"
+#define OUT_LIGHTS_OFF "OutLightsOff"
+
 #define UNKNOWN_COMMAND "UnknownCommand"
 
 #endif /* CommandsName_h */
