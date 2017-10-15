@@ -13,7 +13,7 @@ class Command {
 protected:
     const char *description;
 public:
-    Command(){};
+    Command(const char *description = "");
     virtual ~Command(){};
     virtual void execute() = 0;
     virtual const char * getDescription();

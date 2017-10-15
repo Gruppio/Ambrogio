@@ -8,10 +8,9 @@
 
 #include "AukeyCommand.h"
 
-AukeyCommand::AukeyCommand(RemoteController *remoteController, REMOTE_CONTROLLER_TRANSMIT_TYPE code, const char *description) {
+AukeyCommand::AukeyCommand(RemoteController *remoteController, REMOTE_CONTROLLER_TRANSMIT_TYPE code, const char *description): Command(description) {
     this->remoteController = remoteController;
     this->code = code;
-    this->description = description;
 }
 
 void AukeyCommand::execute() {

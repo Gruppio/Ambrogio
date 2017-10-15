@@ -8,6 +8,10 @@
 
 #include "Command.h"
 
+Command::Command(const char *description) {
+    this->description = description;
+}
+
 const char * Command::getDescription() {
     return description;
 }

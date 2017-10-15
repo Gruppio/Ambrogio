@@ -10,8 +10,7 @@
 #include <string.h>
 #include <string>
 
-CompositeCommand::CompositeCommand(std::vector<Command*> commands)
-:commands(commands) {
+CompositeCommand::CompositeCommand(std::vector<Command*> commands, const char *description): Command(description), commands(commands) {
 }
 
 CompositeCommand::~CompositeCommand() {
@@ -26,13 +25,16 @@ void CompositeCommand::execute() {
     }
 }
 
-const char * CompositeCommand::getDescription() {
-    std::string fullDescription = "";
-    for(Command * command : commands) {
-        const char * desc = command->getDescription();
-        if (strlen(desc) > 2) {
-            fullDescription += desc;
-        }
-    }
-    return fullDescription.c_str();
-}
+//const char * CompositeCommand::getDescription() {
+////    /*std::string fullDescription = "";
+////    for(Command * command : commands) {
+////        const char * desc = command->getDescription();
+////        if (strlen(desc) > 2) {
+////            fullDescription += desc;
+////        }
+////    }
+////    return fullDescription.c_str();*/
+////    return "Composite";
+////}
+//    return description;
+//}

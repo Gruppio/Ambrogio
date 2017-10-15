@@ -14,13 +14,14 @@
 
 class CompositeCommand: public Command {
 protected:
+    const char *description;
     std::vector<Command*> commands;
     
 public:
-    CompositeCommand(std::vector<Command*> commands);
+    CompositeCommand(std::vector<Command*> commands, const char *description = "");
     virtual ~CompositeCommand();
     virtual void execute();
-    virtual const char * getDescription();
+    //virtual const char * getDescription();
 };
 
 #endif /* CompositeCommand_h */

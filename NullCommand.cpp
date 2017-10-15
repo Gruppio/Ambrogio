@@ -11,8 +11,7 @@
 
 #define DELAY 150
 
-NullCommand::NullCommand() {
-    this->description = "Null Command";
+NullCommand::NullCommand(): Command("Null Command") {
     pinMode(PIN_ONBOARD_LED, OUTPUT);
 }
 
