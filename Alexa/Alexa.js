@@ -168,6 +168,198 @@ var handleDiscovery = function(event) {
         }
     };
 
+    var fan = {
+      applianceId: 'Fan',
+      manufacturerName: 'Gruppio',
+      modelName: 'Fan',
+      version: '1.0',
+      friendlyName: 'Fan',
+      friendlyDescription: 'The Fan in the living room',
+      isReachable: true,
+      actions: [
+          "turnOn",
+          "turnOff"
+      ],
+      additionalApplianceDetails: {
+      }
+    };
+
+    var kitchenLight = {
+      applianceId: 'KitchenLight',
+      manufacturerName: 'Gruppio',
+      modelName: 'Kitchen Light',
+      version: '1.0',
+      friendlyName: 'Kitchen Light',
+      friendlyDescription: 'The Kitchen Light',
+      isReachable: true,
+      actions: [
+          "turnOn",
+          "turnOff"
+      ],
+      additionalApplianceDetails: {
+      }
+    };
+
+  var livingRoomLight1 = {
+    applianceId: 'LivingRoomLight1',
+    manufacturerName: 'Gruppio',
+    modelName: 'LivingRoomLight1',
+    version: '1.0',
+    friendlyName: 'Livingroom Light 1',
+    friendlyDescription: 'The Livingroom Light 1',
+    isReachable: true,
+    actions: [
+        "turnOn",
+        "turnOff"
+    ],
+    additionalApplianceDetails: {
+    }
+  };
+
+  var livingRoomLight2 = {
+    applianceId: 'LivingRoomLight2',
+    manufacturerName: 'Gruppio',
+    modelName: 'LivingRoomLight2',
+    version: '1.0',
+    friendlyName: 'Livingroom Light 2',
+    friendlyDescription: 'The Livingroom Light 2',
+    isReachable: true,
+    actions: [
+        "turnOn",
+        "turnOff"
+    ],
+    additionalApplianceDetails: {
+    }
+  };
+
+  var livingRoomLight3 = {
+    applianceId: 'LivingRoomLight3',
+    manufacturerName: 'Gruppio',
+    modelName: 'LivingRoomLight3',
+    version: '1.0',
+    friendlyName: 'Livingroom Light 3',
+    friendlyDescription: 'The Livingroom Light 3',
+    isReachable: true,
+    actions: [
+        "turnOn",
+        "turnOff"
+    ],
+    additionalApplianceDetails: {
+    }
+  };
+
+  var moon = {
+    applianceId: 'Moon',
+    manufacturerName: 'Gruppio',
+    modelName: 'Moon',
+    version: '1.0',
+    friendlyName: 'Moon',
+    friendlyDescription: 'The Moon',
+    isReachable: true,
+    actions: [
+        "turnOn",
+        "turnOff"
+    ],
+    additionalApplianceDetails: {
+    }
+  };
+
+  var livingRoomLights = {
+    applianceId: 'LivingRoomLights',
+    manufacturerName: 'Gruppio',
+    modelName: 'LivingRoomLights',
+    version: '1.0',
+    friendlyName: 'Livingroom Lights',
+    friendlyDescription: 'The Livingroom Lights',
+    isReachable: true,
+    actions: [
+        "turnOn",
+        "turnOff"
+    ],
+    additionalApplianceDetails: {
+    }
+  };
+
+  var eatingLights = {
+    applianceId: 'EatingLights',
+    manufacturerName: 'Gruppio',
+    modelName: 'EatingLights',
+    version: '1.0',
+    friendlyName: 'Eating Lights',
+    friendlyDescription: 'The Lights for eat',
+    isReachable: true,
+    actions: [
+        "turnOn",
+        "turnOff"
+    ],
+    additionalApplianceDetails: {
+    }
+  };
+
+  var cookingLights = {
+    applianceId: 'CookingLights',
+    manufacturerName: 'Gruppio',
+    modelName: 'CookingLights',
+    version: '1.0',
+    friendlyName: 'Cooking Lights',
+    friendlyDescription: 'The Lights for Cooking',
+    isReachable: true,
+    actions: [
+        "turnOn",
+        "turnOff"
+    ],
+    additionalApplianceDetails: {
+    }
+  };
+
+  var allLights = {
+    applianceId: 'AllLights',
+    manufacturerName: 'Gruppio',
+    modelName: 'AllLights',
+    version: '1.0',
+    friendlyName: 'All Lights',
+    friendlyDescription: 'All Lights',
+    isReachable: true,
+    actions: [
+        "turnOn",
+        "turnOff"
+    ],
+    additionalApplianceDetails: {
+    }
+  };
+
+  var tvLights = {
+    applianceId: 'TvLights',
+    manufacturerName: 'Gruppio',
+    modelName: 'TvLights',
+    version: '1.0',
+    friendlyName: 'Tv Lights',
+    friendlyDescription: 'The Lights for watch TV',
+    isReachable: true,
+    actions: [
+        "turnOn",
+        "turnOff"
+    ],
+    additionalApplianceDetails: {
+    }
+  };
+
+  var outLights = {
+    applianceId: 'OutLights',
+    manufacturerName: 'Gruppio',
+    modelName: 'OutLights',
+    version: '1.0',
+    friendlyName: 'Out Lights',
+    friendlyDescription: 'The Lights for going out',
+    isReachable: true,
+    actions: [
+        "turnOn",
+        "turnOff"
+    ],
+    additionalApplianceDetails: {
+    }
+  };
+
     appliances.push(ledPanel);
     appliances.push(livingRoomLamp);
     appliances.push(ledStripLeft);
@@ -175,6 +367,17 @@ var handleDiscovery = function(event) {
     appliances.push(coffeeMachine);
     appliances.push(tv);
     appliances.push(christmasTree);
+    appliances.push(fan);
+    appliances.push(livingRoomLight1);
+    appliances.push(livingRoomLight2);
+    appliances.push(livingRoomLight3);
+    appliances.push(moon);
+    appliances.push(livingRoomLights);
+    appliances.push(eatingLights);
+    appliances.push(cookingLights);
+    appliances.push(allLights);
+    appliances.push(tvLights);
+    appliances.push(outLights);
 
   var header = createHeader(NAMESPACE_DISCOVERY, RESPONSE_DISCOVER);
   var payload = {
