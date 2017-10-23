@@ -18,10 +18,8 @@
 #define CHRISTMAS_TREE "ChristmasTree"
 #define FAN "Fan"
 #define KITCHEN_LIGHT "KitchenLight"
-#define LIVINGROOM_LIGHTS "LivingRoomLights"
-#define LIVINGROOM_LIGHT_1 "LivingRoomLight1"
-#define LIVINGROOM_LIGHT_2 "LivingRoomLight2"
-#define LIVINGROOM_LIGHT_3 "LivingRoomLight3"
+#define LIVINGROOM_LIGHT "LivingRoomLight"
+#define KITCHEN_LED_STRIP "KitchenLedStrip"
 #define MOON "Moon"
 #define UNKNOWN_APPLIANCE "UnknownAppliance"
 

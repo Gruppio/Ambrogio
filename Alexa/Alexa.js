@@ -200,13 +200,13 @@ var handleDiscovery = function(event) {
       }
     };
 
-  var livingRoomLight1 = {
-    applianceId: 'LivingRoomLight1',
+  var livingRoomLight = {
+    applianceId: 'LivingRoomLight',
     manufacturerName: 'Gruppio',
-    modelName: 'LivingRoomLight1',
+    modelName: 'LivingRoomLight',
     version: '1.0',
-    friendlyName: 'Livingroom Light 1',
-    friendlyDescription: 'The Livingroom Light 1',
+    friendlyName: 'Livingroom Light',
+    friendlyDescription: 'The Livingroom Light',
     isReachable: true,
     actions: [
         "turnOn",
@@ -216,29 +216,13 @@ var handleDiscovery = function(event) {
     }
   };
 
-  var livingRoomLight2 = {
-    applianceId: 'LivingRoomLight2',
+  var kitchenLedStrip = {
+    applianceId: 'KitchenLedStrip',
     manufacturerName: 'Gruppio',
-    modelName: 'LivingRoomLight2',
+    modelName: 'KitchenLedStrip',
     version: '1.0',
-    friendlyName: 'Livingroom Light 2',
-    friendlyDescription: 'The Livingroom Light 2',
-    isReachable: true,
-    actions: [
-        "turnOn",
-        "turnOff"
-    ],
-    additionalApplianceDetails: {
-    }
-  };
-
-  var livingRoomLight3 = {
-    applianceId: 'LivingRoomLight3',
-    manufacturerName: 'Gruppio',
-    modelName: 'LivingRoomLight3',
-    version: '1.0',
-    friendlyName: 'Livingroom Light 3',
-    friendlyDescription: 'The Livingroom Light 3',
+    friendlyName: 'Kitchen Led Strip',
+    friendlyDescription: 'The Kitchen Led Strip',
     isReachable: true,
     actions: [
         "turnOn",
@@ -368,9 +352,9 @@ var handleDiscovery = function(event) {
     appliances.push(tv);
     appliances.push(christmasTree);
     appliances.push(fan);
-    appliances.push(livingRoomLight1);
-    appliances.push(livingRoomLight2);
-    appliances.push(livingRoomLight3);
+    appliances.push(livingRoomLight);
+    appliances.push(kitchenLight);
+    appliances.push(kitchenLedStrip);
     appliances.push(moon);
     appliances.push(livingRoomLights);
     appliances.push(eatingLights);

@@ -76,28 +76,20 @@ const char * ApplianceNameFromCommandNameFactory::getApplianceName(const char * 
         return KITCHEN_LIGHT;
     }
         
-    if (strcmp(commandName, LIVINGROOM_LIGHT_1_ON) == 0) {
-        return LIVINGROOM_LIGHT_1;
+    if (strcmp(commandName, LIVINGROOM_LIGHT_ON) == 0) {
+        return LIVINGROOM_LIGHT;
     }
     
-    if (strcmp(commandName, LIVINGROOM_LIGHT_1_OFF) == 0) {
-        return LIVINGROOM_LIGHT_1;
+    if (strcmp(commandName, LIVINGROOM_LIGHT_OFF) == 0) {
+        return LIVINGROOM_LIGHT;
     }
     
-    if (strcmp(commandName, LIVINGROOM_LIGHT_2_ON) == 0) {
-        return LIVINGROOM_LIGHT_2;
+    if (strcmp(commandName, KITCHEN_LED_STRIP_ON) == 0) {
+        return KITCHEN_LED_STRIP;
     }
     
-    if (strcmp(commandName, LIVINGROOM_LIGHT_2_OFF) == 0) {
-        return LIVINGROOM_LIGHT_2;
-    }
-    
-    if (strcmp(commandName, LIVINGROOM_LIGHT_3_ON) == 0) {
-        return LIVINGROOM_LIGHT_3;
-    }
-    
-    if (strcmp(commandName, LIVINGROOM_LIGHT_3_OFF) == 0) {
-        return LIVINGROOM_LIGHT_3;
+    if (strcmp(commandName, KITCHEN_LED_STRIP_OFF) == 0) {
+        return KITCHEN_LED_STRIP;
     }
     
     if (strcmp(commandName, MOON_ON) == 0) {
