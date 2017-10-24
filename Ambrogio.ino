@@ -12,7 +12,7 @@
 #include "ApplianceStateRecorder.h"
 #include "ApplianceNameFromCommandNameFactory.h"
 
-#define LOOP_TIME 1000
+#define LOOP_TIME 10000
 
 /*WifiUser wifiUsers[]  = { WifiUser(IPAddress(192,168,0,5), "Gruppio"),
                           WifiUser(IPAddress(192,168,0,3), "Fede") };*/
@@ -36,8 +36,12 @@ void setup() {
     Particle.variable("temperature", temperature);
     Particle.function("execute", execute);
     Particle.function("status", status);
-    WiFi.setCredentials(SSID, PASSWORD);
     Serial.begin(9600);
+    WiFi.setCredentials(SSID, PASSWORD);
+    WiFi.connect();
+    while (!WiFi.ready())
+    Particle.process();
+    Particle.process();
 }
 
 void loop() {
@@ -46,6 +50,7 @@ void loop() {
     Particle.publish("temperature", String::format("%.1f", temperature), PRIVATE);
   }
   delay(LOOP_TIME);
+  Particle.process();
 }
 
 void readTemperature() {
