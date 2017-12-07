@@ -96,7 +96,6 @@ Command* CommandFactory::createCommand(const char* commandName) {
         return new CompositeCommand({new AukeyCommand(remoteController, AUKEY_FAN_OFF_COMMAND_CODE), applianceStateRecorderCommand}, commandName);
     }
 
-    //192.168.1.124
     if (strcmp(commandName, LIVINGROOM_LIGHT_ON) == 0) {
         Command *applianceStateRecorderCommand = new ApplianceStateRecorderCommand(applianceName, true, applianceStateRecorder);
         return new CompositeCommand({new HttpGetCommand(LIGHT_LOCAL_IP_ADDRESS, "/toggle"), applianceStateRecorderCommand}, commandName);
@@ -117,16 +116,6 @@ Command* CommandFactory::createCommand(const char* commandName) {
         return new CompositeCommand({new AukeyCommand(remoteController, AUKEY_KITCHEN_LIGHT_OFF_COMMAND_CODE), applianceStateRecorderCommand}, commandName);
     }
 
-    if (strcmp(commandName, KITCHEN_LED_STRIP_ON) == 0) {
-        Command *applianceStateRecorderCommand = new ApplianceStateRecorderCommand(applianceName, true, applianceStateRecorder);
-        return new CompositeCommand({new AukeyCommand(remoteController, AUKEY_KITCHEN_LED_STRIP_ON_COMMAND_CODE), applianceStateRecorderCommand}, commandName);
-    }
-
-    if (strcmp(commandName, KITCHEN_LED_STRIP_OFF) == 0) {
-        Command *applianceStateRecorderCommand = new ApplianceStateRecorderCommand(applianceName, false, applianceStateRecorder);
-        return new CompositeCommand({new AukeyCommand(remoteController, AUKEY_KITCHEN_LED_STRIP_OFF_COMMAND_CODE), applianceStateRecorderCommand}, commandName);
-    }
-
     if (strcmp(commandName, MOON_ON) == 0) {
         Command *applianceStateRecorderCommand = new ApplianceStateRecorderCommand(applianceName, true, applianceStateRecorder);
         return new CompositeCommand({new NullCommand() , applianceStateRecorderCommand}, commandName);
@@ -138,6 +127,22 @@ Command* CommandFactory::createCommand(const char* commandName) {
     }
 
     // Composite Commands
+
+    if (strcmp(commandName, KITCHEN_LAMP_ON) == 0) {
+        return createCommand(KITCHEN_LIGHT_ON);
+    }
+
+    if (strcmp(commandName, KITCHEN_LAMP_OFF) == 0) {
+        return createCommand(KITCHEN_LIGHT_OFF);
+    }
+
+    if (strcmp(commandName, LED_STRIPS_ON) == 0) {
+        return new CompositeCommand({createCommand(LED_STRIP_LEFT_ON), createCommand(LED_STRIP_RIGHT_ON)}, commandName);
+    }
+
+    if (strcmp(commandName, LED_STRIPS_OFF) == 0) {
+        return new CompositeCommand({createCommand(LED_STRIP_LEFT_OFF), createCommand(LED_STRIP_RIGHT_OFF)}, commandName);
+    }
 
     if (strcmp(commandName, LIVINGROOM_LIGHTS_ON) == 0) {
         return new CompositeCommand({ createCommand(LIVINGROOM_LIGHT_ON), createCommand(LIVING_ROOM_LAMP_ON)}, commandName);
@@ -164,15 +169,15 @@ Command* CommandFactory::createCommand(const char* commandName) {
     }
 
     if (strcmp(commandName, ALL_LIGHTS_ON) == 0) {
-        return new CompositeCommand({ createCommand(LIVINGROOM_LIGHT_ON), createCommand(KITCHEN_LED_STRIP_ON), createCommand(KITCHEN_LIGHT_ON), createCommand(LED_PANEL_ON), createCommand(LED_STRIP_LEFT_ON), createCommand(LED_STRIP_RIGHT_ON), createCommand(LIVING_ROOM_LAMP_ON)}, commandName);
+        return new CompositeCommand({ createCommand(LIVINGROOM_LIGHT_ON), createCommand(KITCHEN_LIGHT_ON), createCommand(LED_PANEL_ON), createCommand(LED_STRIP_LEFT_ON), createCommand(LED_STRIP_RIGHT_ON), createCommand(LIVING_ROOM_LAMP_ON)}, commandName);
     }
 
     if (strcmp(commandName, ALL_LIGHTS_OFF) == 0) {
-        return new CompositeCommand({ createCommand(LIVINGROOM_LIGHT_OFF), createCommand(KITCHEN_LED_STRIP_OFF), createCommand(KITCHEN_LIGHT_OFF), createCommand(LED_PANEL_OFF), createCommand(LED_STRIP_LEFT_OFF), createCommand(LED_STRIP_RIGHT_OFF), createCommand(LIVING_ROOM_LAMP_OFF)}, commandName);
+        return new CompositeCommand({ createCommand(LIVINGROOM_LIGHT_OFF), createCommand(KITCHEN_LIGHT_OFF), createCommand(LED_PANEL_OFF), createCommand(LED_STRIP_LEFT_OFF), createCommand(LED_STRIP_RIGHT_OFF), createCommand(LIVING_ROOM_LAMP_OFF)}, commandName);
     }
 
     if (strcmp(commandName, TV_LIGHTS_ON) == 0) {
-        return new CompositeCommand({ createCommand(LIVINGROOM_LIGHT_OFF), createCommand(KITCHEN_LED_STRIP_OFF), createCommand(KITCHEN_LIGHT_OFF), createCommand(LED_PANEL_OFF), createCommand(LED_STRIP_LEFT_OFF), createCommand(LED_STRIP_RIGHT_OFF), createCommand(LIVING_ROOM_LAMP_ON)}, commandName);
+        return new CompositeCommand({ createCommand(LIVINGROOM_LIGHT_OFF), createCommand(KITCHEN_LIGHT_OFF), createCommand(LED_PANEL_OFF), createCommand(LED_STRIP_LEFT_OFF), createCommand(LED_STRIP_RIGHT_OFF), createCommand(LIVING_ROOM_LAMP_ON)}, commandName);
     }
 
     if (strcmp(commandName, TV_LIGHTS_OFF) == 0) {
@@ -180,7 +185,7 @@ Command* CommandFactory::createCommand(const char* commandName) {
     }
 
     if (strcmp(commandName, OUT_LIGHTS_ON) == 0) {
-        return new CompositeCommand({ createCommand(LIVINGROOM_LIGHT_OFF), createCommand(KITCHEN_LED_STRIP_OFF), createCommand(KITCHEN_LIGHT_OFF), createCommand(LED_PANEL_OFF), createCommand(LED_STRIP_LEFT_OFF), createCommand(LED_STRIP_RIGHT_OFF), createCommand(LIVING_ROOM_LAMP_ON)}, commandName);
+        return new CompositeCommand({ createCommand(LIVINGROOM_LIGHT_OFF), createCommand(KITCHEN_LIGHT_OFF), createCommand(LED_PANEL_OFF), createCommand(LED_STRIP_LEFT_OFF), createCommand(LED_STRIP_RIGHT_OFF), createCommand(LIVING_ROOM_LAMP_ON)}, commandName);
     }
 
     if (strcmp(commandName, OUT_LIGHTS_OFF) == 0) {

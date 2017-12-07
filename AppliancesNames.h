@@ -19,7 +19,6 @@
 #define FAN "Fan"
 #define KITCHEN_LIGHT "KitchenLight"
 #define LIVINGROOM_LIGHT "LivingRoomLight"
-#define KITCHEN_LED_STRIP "KitchenLedStrip"
 #define MOON "Moon"
 #define UNKNOWN_APPLIANCE "UnknownAppliance"
 

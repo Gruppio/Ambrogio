@@ -23,6 +23,7 @@
 		71BF10811DE260980092DAE1 /* LedPanelOffCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71BF107F1DE260980092DAE1 /* LedPanelOffCommand.cpp */; };
 		71E1DEAC1F9FE1E10083B9B8 /* HttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E1DEAA1F9FE1E10083B9B8 /* HttpClient.cpp */; };
 		71E1DEAF1F9FE25A0083B9B8 /* HttpGetCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E1DEAD1F9FE25A0083B9B8 /* HttpGetCommand.cpp */; };
+		71E1DEB41F9FFC010083B9B8 /* WebDuino.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E1DEB21F9FFC010083B9B8 /* WebDuino.cpp */; };
 		71E3970C1F88E52300FAA316 /* ApplianceNameFromCommandNameFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E3970A1F88E52300FAA316 /* ApplianceNameFromCommandNameFactory.cpp */; };
 		71E3970F1F88ECCA00FAA316 /* ApplianceStateRecorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E3970D1F88ECCA00FAA316 /* ApplianceStateRecorder.cpp */; };
 		71E397121F88F68A00FAA316 /* CommandDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E397101F88F68A00FAA316 /* CommandDecorator.cpp */; };
@@ -93,6 +94,8 @@
 		71E1DEAD1F9FE25A0083B9B8 /* HttpGetCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HttpGetCommand.cpp; sourceTree = "<group>"; };
 		71E1DEAE1F9FE25A0083B9B8 /* HttpGetCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpGetCommand.h; sourceTree = "<group>"; };
 		71E1DEB01F9FF7370083B9B8 /* IP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IP.h; sourceTree = "<group>"; };
+		71E1DEB21F9FFC010083B9B8 /* WebDuino.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WebDuino.cpp; sourceTree = "<group>"; };
+		71E1DEB31F9FFC010083B9B8 /* WebDuino.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebDuino.h; sourceTree = "<group>"; };
 		71E397091F88E20700FAA316 /* AppliancesNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppliancesNames.h; sourceTree = "<group>"; };
 		71E3970A1F88E52300FAA316 /* ApplianceNameFromCommandNameFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ApplianceNameFromCommandNameFactory.cpp; sourceTree = "<group>"; };
 		71E3970B1F88E52300FAA316 /* ApplianceNameFromCommandNameFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplianceNameFromCommandNameFactory.h; sourceTree = "<group>"; };
@@ -212,6 +215,7 @@
 		71BF10471DE0BE640092DAE1 = {
 			isa = PBXGroup;
 			children = (
+				71E1DEB11F9FFBDE0083B9B8 /* WebDuino */,
 				7100A3E81F88DD2B00A32C19 /* Ambrogio.ino */,
 				71E1DEA91F9FE1C70083B9B8 /* HttpClient */,
 				7100A3ED1F88DDE400A32C19 /* CommandExecutors */,
@@ -257,6 +261,15 @@
 				71E1DEAB1F9FE1E10083B9B8 /* HttpClient.h */,
 			);
 			name = HttpClient;
+			sourceTree = "<group>";
+		};
+		71E1DEB11F9FFBDE0083B9B8 /* WebDuino */ = {
+			isa = PBXGroup;
+			children = (
+				71E1DEB21F9FFC010083B9B8 /* WebDuino.cpp */,
+				71E1DEB31F9FFC010083B9B8 /* WebDuino.h */,
+			);
+			name = WebDuino;
 			sourceTree = "<group>";
 		};
 		71E397081F88E1BD00FAA316 /* Appliances */ = {
@@ -348,6 +361,7 @@
 				71E397181F89018700FAA316 /* CompositeCommand.cpp in Sources */,
 				71E397121F88F68A00FAA316 /* CommandDecorator.cpp in Sources */,
 				71089A5E1DF316F7000D234D /* AukeyCommand.cpp in Sources */,
+				71E1DEB41F9FFC010083B9B8 /* WebDuino.cpp in Sources */,
 				71E3970F1F88ECCA00FAA316 /* ApplianceStateRecorder.cpp in Sources */,
 				71BF10681DE1ED250092DAE1 /* CommandExecutor.cpp in Sources */,
 				71BF10711DE23DE50092DAE1 /* TestDoubleExecutionCommandExecutor.cpp in Sources */,

@@ -84,12 +84,12 @@ const char * ApplianceNameFromCommandNameFactory::getApplianceName(const char * 
         return LIVINGROOM_LIGHT;
     }
     
-    if (strcmp(commandName, KITCHEN_LED_STRIP_ON) == 0) {
-        return KITCHEN_LED_STRIP;
+    if (strcmp(commandName, KITCHEN_LAMP_ON) == 0) {
+        return KITCHEN_LIGHT;
     }
     
-    if (strcmp(commandName, KITCHEN_LED_STRIP_OFF) == 0) {
-        return KITCHEN_LED_STRIP;
+    if (strcmp(commandName, KITCHEN_LAMP_OFF) == 0) {
+        return KITCHEN_LIGHT;
     }
     
     if (strcmp(commandName, MOON_ON) == 0) {
