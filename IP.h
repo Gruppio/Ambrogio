@@ -10,5 +10,6 @@
 #define IP_h
 
 #define LIGHT_LOCAL_IP_ADDRESS "192.168.1.124" //light.local
+#define MOON_LOCAL_IP_ADDRESS "192.168.1.120" //moon.local
 
 #endif /* IP_h */

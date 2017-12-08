@@ -118,12 +118,12 @@ Command* CommandFactory::createCommand(const char* commandName) {
 
     if (strcmp(commandName, MOON_ON) == 0) {
         Command *applianceStateRecorderCommand = new ApplianceStateRecorderCommand(applianceName, true, applianceStateRecorder);
-        return new CompositeCommand({new NullCommand() , applianceStateRecorderCommand}, commandName);
+        return new CompositeCommand({new HttpGetCommand(MOON_LOCAL_IP_ADDRESS, "/on"), applianceStateRecorderCommand}, commandName);
     }
 
     if (strcmp(commandName, MOON_OFF) == 0) {
         Command *applianceStateRecorderCommand = new ApplianceStateRecorderCommand(applianceName, true, applianceStateRecorder);
-        return new CompositeCommand({new NullCommand() , applianceStateRecorderCommand}, commandName);
+        return new CompositeCommand({new HttpGetCommand(MOON_LOCAL_IP_ADDRESS, "/off"), applianceStateRecorderCommand}, commandName);
     }
 
     // Composite Commands
